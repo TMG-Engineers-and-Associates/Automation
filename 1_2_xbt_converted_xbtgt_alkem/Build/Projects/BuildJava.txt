@@ -1,0 +1,3 @@
+-classpath "C:\Users\Public\Documents\Vijeo-Designer\Vijeo-Manager\1_2_xbt_converted_xbtgt_alkem\Build";"C:\Program Files\Schneider Electric\Vijeo-Designer\Vijeo-Runtime\Public";"C:\Program Files\Schneider Electric\Vijeo-Designer\Vijeo-Runtime\Public\PERC\lib\PERClib.zip"
+-compiler "C:\Program Files\Schneider Electric\Vijeo-Designer\Vijeo-Runtime\Public\Bin\jikes.exe"
+-options -encoding UTF16_LittleEndian
