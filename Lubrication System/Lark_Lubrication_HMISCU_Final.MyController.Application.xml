@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Symbolconfiguration xmlns="http://www.3s-software.com/schemas/Symbolconfiguration.xsd">
+  <Header>
+    <Version>3.5.3.50</Version>
+    <SymbolConfigObject version="3.5.3.50" />
+    <ProjectInfo name="Lark_Lubrication_HMISCU_Final" devicename="MyController" appname="Application" />
+  </Header>
+  <TypeList>
+    <TypeSimple name="T_BOOL" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" />
+    <TypeSimple name="T_DINT" size="4" swapsize="4" typeclass="DInt" iecname="DINT" />
+  </TypeList>
+  <NodeList>
+    <Node name="Application">
+      <Node name="GVL">
+        <Node name="AutoSS" type="T_BOOL" access="ReadWrite" />
+        <Node name="Line1FB" type="T_BOOL" access="ReadWrite" />
+        <Node name="Line1IntervalTime" type="T_DINT" access="ReadWrite" />
+        <Node name="Line1IntervalTimeAct" type="T_DINT" access="ReadWrite" />
+        <Node name="Line1On" type="T_BOOL" access="ReadWrite" />
+        <Node name="Line1SetTime" type="T_DINT" access="ReadWrite" />
+        <Node name="Line1SetTimeAct" type="T_DINT" access="ReadWrite" />
+        <Node name="Line2FB" type="T_BOOL" access="ReadWrite" />
+        <Node name="Line2IntervalTime" type="T_DINT" access="ReadWrite" />
+        <Node name="Line2IntervalTimeAct" type="T_DINT" access="ReadWrite" />
+        <Node name="Line2On" type="T_BOOL" access="ReadWrite" />
+        <Node name="Line2SetTime" type="T_DINT" access="ReadWrite" />
+        <Node name="Line2SetTimeAct" type="T_DINT" access="ReadWrite" />
+        <Node name="MotorOn" type="T_BOOL" access="ReadWrite" />
+        <Node name="MotorTrip" type="T_BOOL" access="ReadWrite" />
+        <Node name="TankEmpty" type="T_BOOL" access="ReadWrite" />
+      </Node>
+    </Node>
+  </NodeList>
+</Symbolconfiguration>
