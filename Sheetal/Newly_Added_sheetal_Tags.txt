@@ -25,6 +25,8 @@ PIDderivative
 PIDintegral
 Ph1actweight
 Ph2actweight
+MolassesOnHMI
+MolassesAutoHMI
 
 
 LOCAL VARIABLE
