@@ -1,0 +1,366 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="Setup" pageSize="800,480" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" templateFile="templatepage1.jmx" staticFile="opt/setup.png" id="Setup" staticOptEnable="true">
+  <wgtStyle width="800" x="0" y="0" height="480" ver="020000161" color="rgb(255,240,200)" v="02.00.00.161"/>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Tahoma"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="NATURAL SETTING" id="2"/>
+    <MLText L1="TRENDS" id="3"/>
+    <MLText L1="SETUP" id="171"/>
+    <MLText L1="Message" id="172"/>
+    <MLText L1="Message" id="173"/>
+    <MLText L1="Message" id="174"/>
+    <MLText L1="DAYWISE CURVE" id="179"/>
+    <MLText L1="M-PHASE SETTINGS" id="180"/>
+    <MLText L1="TUNNEL-MOTOR CALIBRATION" id="182"/>
+    <MLText L1="COOLING SETTINGS" id="183"/>
+    <MLText L1="TEMPERATURE SETUP" id="243"/>
+    <MLText L1="ANIMAL SETUP" id="250"/>
+    <MLText L1="T-PHASE SETTINGS" id="251"/>
+    <MLText L1="SENSORS DATA" id="253"/>
+    <MLText L1="LIGHTING" id="255"/>
+    <MLText L1="OUTPUTS STATUS" id="256"/>
+   </MLTexts>
+  </object>
+  <object class="GroupWgt" id="GroupWgt1">
+   <wgtStyle width="162" x="311.50" y="4" cx="81" cy="24" height="48"/>
+   <object class="ShapeWgt" id="GroupWgt1.roundrect11" static="true">
+    <wgtStyle width="162" x="0" y="4.92" fill="rgb(210,180,140)" cx="78.55" cy="20.32" rx="20" height="42" nodeName="rect" ry="20"/>
+   </object>
+   <object class="MsgTextWgt" id="GroupWgt1.msgtext1">
+    <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="42" cx="61.73" cy="22.74" alignment="center" x="18.36" y="0" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(23,30,40)" min="0" width="125.59" continous="true" lineSeparator="" height="48" font-size="32">
+     <msgtxt>
+      <msg index="0"/>
+      <msg index="1"/>
+      <msg index="2"/>
+      <msg index="3"/>
+     </msgtxt>
+    </wgtStyle>
+    <links>
+     <lang class="MLMsgLink">
+      <MLFontFamily L1="Cambria"/>
+      <textid idx="0" val="171"/>
+      <textid idx="1" val="172"/>
+      <textid idx="2" val="173"/>
+      <textid idx="3" val="174"/>
+     </lang>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd1" customType="Button">
+   <wgtStyle width="227" x="43" y="55" cx="113.50" cy="32.50" height="65"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image16" static="true">
+    <wgtStyle width="227" imagePath="images/frame_rect_copper.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(210,180,140)" cx="182.26" cy="56.77" bdrSize="0.17,0.14,0.16,0.16" height="65" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd1">
+    <wgtStyle width="165.88" x="30.56" y="8.75" bdrImageSize="38.00,37.00" fill="rgb(255,173,91)" cx="138.99" form="standard" cy="42.65" bdrSize="0.11,0.11,0.08,0.09" height="47.50" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action pageName="tempsetup.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label9">
+    <wgtStyle width="139.69" font-color="rgb(40,40,40)" x="39.29" forcePaint="1" font-sizepx="18" y="12.50" font-family="Cambria" font-bold="true" wrapping="true" cx="135.28" cy="36.67" height="38.75" alignment="center" vert-align="middle" keypad-type="None" font-size="14"/>
+    <links>
+     <lang class="MLTextLink" textid="243">
+      <MLFontFamily L1="Cambria"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image18" static="true">
+    <wgtStyle width="87.31" enableCache="false" x="65.48" y="21.25" cx="58.32" cy="13.10" height="21.25"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd2" customType="Button">
+   <wgtStyle width="225" x="45" y="131" cx="112.50" cy="32.50" height="65"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image1" static="true">
+    <wgtStyle width="225" imagePath="images/frame_rect_copper.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(210,180,140)" cx="180.65" cy="56.77" bdrSize="0.17,0.14,0.16,0.16" height="65" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd2">
+    <wgtStyle width="164.42" x="30.29" y="8.75" bdrImageSize="38.00,37.00" fill="rgb(255,173,91)" cx="137.76" form="standard" cy="42.65" bdrSize="0.11,0.11,0.08,0.09" height="47.50" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action pageName="daywisesetup.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label1">
+    <wgtStyle width="138.46" font-color="rgb(40,40,40)" x="38.95" forcePaint="1" font-sizepx="18" y="12.50" font-family="Cambria" font-bold="true" wrapping="true" cx="134.09" cy="36.67" height="38.75" alignment="center" vert-align="middle" keypad-type="None" font-size="14"/>
+    <links>
+     <lang class="MLTextLink" textid="179">
+      <MLFontFamily L1="Cambria"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image2" static="true">
+    <wgtStyle width="86.54" enableCache="false" x="64.91" y="21.25" cx="57.80" cy="13.10" height="21.25"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd3" customType="Button">
+   <wgtStyle width="225" x="45" y="208" cx="112.50" cy="32.50" height="65"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image3" static="true">
+    <wgtStyle width="225" imagePath="images/frame_rect_copper.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(210,180,140)" cx="180.65" cy="56.77" bdrSize="0.17,0.14,0.16,0.16" height="65" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd3">
+    <wgtStyle width="164.42" x="30.29" y="8.75" bdrImageSize="38.00,37.00" fill="rgb(255,173,91)" cx="137.76" form="standard" cy="42.65" bdrSize="0.11,0.11,0.08,0.09" height="47.50" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action pageName="mphasesettingnew.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label2">
+    <wgtStyle width="138.46" font-color="rgb(40,40,40)" x="38.95" forcePaint="1" font-sizepx="18" y="12.50" font-family="Cambria" font-bold="true" wrapping="true" cx="134.09" cy="36.67" height="38.75" alignment="center" vert-align="middle" keypad-type="None" font-size="14"/>
+    <links>
+     <lang class="MLTextLink" textid="180">
+      <MLFontFamily L1="Cambria"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image4" static="true">
+    <wgtStyle width="86.54" enableCache="false" x="64.91" y="21.25" cx="57.80" cy="13.10" height="21.25"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd4" customType="Button">
+   <wgtStyle width="228" x="42" y="284" cx="114" cy="32.50" height="65"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image5" static="true">
+    <wgtStyle width="228" imagePath="images/frame_rect_copper.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(210,180,140)" cx="183.06" cy="56.77" bdrSize="0.17,0.14,0.16,0.16" height="65" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd4">
+    <wgtStyle width="166.61" x="30.69" y="8.75" bdrImageSize="38.00,37.00" fill="rgb(255,173,91)" cx="139.60" form="standard" cy="42.65" bdrSize="0.11,0.11,0.08,0.09" height="47.50" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action pageName="tunnelcalibration.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label3">
+    <wgtStyle width="140.31" font-color="rgb(40,40,40)" x="39.47" forcePaint="1" font-sizepx="18" y="12.50" font-family="Cambria" font-bold="true" wrapping="true" cx="135.88" cy="36.67" height="38.75" alignment="center" vert-align="middle" keypad-type="None" font-size="14"/>
+    <links>
+     <lang class="MLTextLink" textid="182">
+      <MLFontFamily L1="Cambria"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image6" static="true">
+    <wgtStyle width="87.69" enableCache="false" x="65.77" y="21.25" cx="58.57" cy="13.10" height="21.25"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd5" customType="Button">
+   <wgtStyle width="226" x="44" y="361" cx="113" cy="32.50" height="65"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image7" static="true">
+    <wgtStyle width="226" imagePath="images/frame_rect_copper.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(210,180,140)" cx="181.46" cy="56.77" bdrSize="0.17,0.14,0.16,0.16" height="65" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd5">
+    <wgtStyle width="165.15" x="30.42" y="8.75" bdrImageSize="38.00,37.00" fill="rgb(255,173,91)" cx="138.38" form="standard" cy="42.65" bdrSize="0.11,0.11,0.08,0.09" height="47.50" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action pageName="coolingsetup.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label4">
+    <wgtStyle width="139.08" font-color="rgb(40,40,40)" x="39.12" forcePaint="1" font-sizepx="18" y="12.50" font-family="Cambria" font-bold="true" wrapping="true" cx="134.69" cy="36.67" height="38.75" alignment="center" vert-align="middle" keypad-type="None" font-size="14"/>
+    <links>
+     <lang class="MLTextLink" textid="183">
+      <MLFontFamily L1="Cambria"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image8" static="true">
+    <wgtStyle width="86.92" enableCache="false" x="65.20" y="21.25" cx="58.06" cy="13.10" height="21.25"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd6" customType="Button">
+   <wgtStyle width="210" x="531" y="55" cx="105" cy="32.50" height="65"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image9" static="true">
+    <wgtStyle width="210" imagePath="images/frame_rect_copper.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(210,180,140)" cx="168.61" cy="56.77" bdrSize="0.17,0.14,0.16,0.16" height="65" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd6">
+    <wgtStyle width="153.46" x="28.27" y="8.75" bdrImageSize="38.00,37.00" fill="rgb(255,173,91)" cx="128.58" form="standard" cy="42.65" bdrSize="0.11,0.11,0.08,0.09" height="47.50" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action pageName="animaldata.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label5">
+    <wgtStyle width="129.23" font-color="rgb(40,40,40)" x="36.35" forcePaint="1" font-sizepx="18" y="12.50" font-family="Cambria" font-bold="true" wrapping="true" cx="125.15" cy="36.67" height="38.75" alignment="center" vert-align="middle" keypad-type="None" font-size="14"/>
+    <links>
+     <lang class="MLTextLink" textid="250">
+      <MLFontFamily L1="Cambria"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image10" static="true">
+    <wgtStyle width="80.77" enableCache="false" x="60.58" y="21.25" cx="53.95" cy="13.10" height="21.25"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd9" customType="Button">
+   <wgtStyle width="210" x="533" y="131" cx="105" cy="32.50" height="65"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image19" static="true">
+    <wgtStyle width="210" imagePath="images/frame_rect_copper.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(210,180,140)" cx="168.61" cy="56.77" bdrSize="0.17,0.14,0.16,0.16" height="65" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd9">
+    <wgtStyle width="153.46" x="28.27" y="8.75" bdrImageSize="38.00,37.00" fill="rgb(255,173,91)" cx="128.58" form="standard" cy="42.65" bdrSize="0.11,0.11,0.08,0.09" height="47.50" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action pageName="tphasesettingnew.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label10">
+    <wgtStyle width="129.23" font-color="rgb(40,40,40)" x="36.35" forcePaint="1" font-sizepx="18" y="12.50" font-family="Cambria" font-bold="true" wrapping="true" cx="125.15" cy="36.67" height="38.75" alignment="center" vert-align="middle" keypad-type="None" font-size="14"/>
+    <links>
+     <lang class="MLTextLink" textid="251">
+      <MLFontFamily L1="Cambria"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image20" static="true">
+    <wgtStyle width="80.77" enableCache="false" x="60.58" y="21.25" cx="53.95" cy="13.10" height="21.25"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd10" customType="Button">
+   <wgtStyle width="210" x="536" y="205" cx="105" cy="32.50" height="65"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image21" static="true">
+    <wgtStyle width="210" imagePath="images/frame_rect_copper.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(210,180,140)" cx="168.61" cy="56.77" bdrSize="0.17,0.14,0.16,0.16" height="65" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd10">
+    <wgtStyle width="153.46" x="28.27" y="8.75" bdrImageSize="38.00,37.00" fill="rgb(255,173,91)" cx="128.58" form="standard" cy="42.65" bdrSize="0.11,0.11,0.08,0.09" height="47.50" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action pageName="sensorcalibration.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label11">
+    <wgtStyle width="129.23" font-color="rgb(40,40,40)" x="36.35" forcePaint="1" font-sizepx="18" y="12.50" font-family="Cambria" font-bold="true" wrapping="true" cx="125.15" cy="36.67" height="38.75" alignment="center" vert-align="middle" keypad-type="None" font-size="14"/>
+    <links>
+     <lang class="MLTextLink" textid="253">
+      <MLFontFamily L1="Cambria"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image22" static="true">
+    <wgtStyle width="80.77" enableCache="false" x="60.58" y="21.25" cx="53.95" cy="13.10" height="21.25"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd12" customType="Button">
+   <wgtStyle width="210" x="534" y="284" cx="105" cy="32.50" height="65"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image23" static="true">
+    <wgtStyle width="210" imagePath="images/frame_rect_copper.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(210,180,140)" cx="168.61" cy="56.77" bdrSize="0.17,0.14,0.16,0.16" height="65" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd12">
+    <wgtStyle width="153.46" x="28.27" y="8.75" bdrImageSize="38.00,37.00" fill="rgb(255,173,91)" cx="128.58" form="standard" cy="42.65" bdrSize="0.11,0.11,0.08,0.09" height="47.50" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action pageName="lighting.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label12">
+    <wgtStyle width="129.23" font-color="rgb(40,40,40)" x="36.35" forcePaint="1" font-sizepx="18" y="12.50" font-family="Cambria" font-bold="true" wrapping="true" cx="125.15" cy="36.67" height="38.75" alignment="center" vert-align="middle" keypad-type="None" font-size="14"/>
+    <links>
+     <lang class="MLTextLink" textid="255">
+      <MLFontFamily L1="Cambria"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image24" static="true">
+    <wgtStyle width="80.77" enableCache="false" x="60.58" y="21.25" cx="53.95" cy="13.10" height="21.25"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd13" customType="Button">
+   <wgtStyle width="210" x="534" y="361" cx="105" cy="32.50" height="65"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image25" static="true">
+    <wgtStyle width="210" imagePath="images/frame_rect_copper.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(210,180,140)" cx="168.61" cy="56.77" bdrSize="0.17,0.14,0.16,0.16" height="65" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd13">
+    <wgtStyle width="153.46" x="28.27" y="8.75" bdrImageSize="38.00,37.00" fill="rgb(255,173,91)" cx="128.58" form="standard" cy="42.65" bdrSize="0.11,0.11,0.08,0.09" height="47.50" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action pageName="outputstatus.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label13">
+    <wgtStyle width="129.23" font-color="rgb(40,40,40)" x="36.35" forcePaint="1" font-sizepx="18" y="12.50" font-family="Cambria" font-bold="true" wrapping="true" cx="125.15" cy="36.67" height="38.75" alignment="center" vert-align="middle" keypad-type="None" font-size="14"/>
+    <links>
+     <lang class="MLTextLink" textid="256">
+      <MLFontFamily L1="Cambria"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image26" static="true">
+    <wgtStyle width="80.77" enableCache="false" x="60.58" y="21.25" cx="53.95" cy="13.10" height="21.25"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd7" customType="Button">
+   <wgtStyle width="226" x="287" y="284" cx="113" cy="32.50" height="65"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image11" static="true">
+    <wgtStyle width="226" imagePath="images/frame_rect_copper.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(210,180,140)" cx="181.46" cy="56.77" bdrSize="0.17,0.14,0.16,0.16" height="65" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd7">
+    <wgtStyle width="165.15" x="30.42" y="8.75" bdrImageSize="38.00,37.00" fill="rgb(255,173,91)" cx="138.38" form="standard" cy="42.65" bdrSize="0.11,0.11,0.08,0.09" height="47.50" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action pageName="natural.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label7">
+    <wgtStyle width="139.08" font-color="rgb(40,40,40)" x="39.12" forcePaint="1" font-sizepx="18" y="12.50" font-family="Cambria" font-bold="true" wrapping="true" cx="134.69" cy="36.67" height="38.75" alignment="center" vert-align="middle" keypad-type="None" font-size="14"/>
+    <links>
+     <lang class="MLTextLink" textid="2">
+      <MLFontFamily L1="Cambria"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image12" static="true">
+    <wgtStyle width="86.92" enableCache="false" x="65.20" y="21.25" cx="58.06" cy="13.10" height="21.25"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd8" customType="Button">
+   <wgtStyle width="226" x="287" y="361" cx="113" cy="32.50" height="65"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image13" static="true">
+    <wgtStyle width="226" imagePath="images/frame_rect_copper.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(210,180,140)" cx="181.46" cy="56.77" bdrSize="0.17,0.14,0.16,0.16" height="65" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd8">
+    <wgtStyle width="165.15" x="30.42" y="8.75" bdrImageSize="38.00,37.00" fill="rgb(255,173,91)" cx="138.38" form="standard" cy="42.65" bdrSize="0.11,0.11,0.08,0.09" height="47.50" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action pageName="trends.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label8">
+    <wgtStyle width="139.08" font-color="rgb(40,40,40)" x="39.12" forcePaint="1" font-sizepx="18" y="12.50" font-family="Cambria" font-bold="true" wrapping="true" cx="134.69" cy="36.67" height="38.75" alignment="center" vert-align="middle" keypad-type="None" font-size="14"/>
+    <links>
+     <lang class="MLTextLink" textid="3">
+      <MLFontFamily L1="Cambria"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image14" static="true">
+    <wgtStyle width="86.92" enableCache="false" x="65.20" y="21.25" cx="58.06" cy="13.10" height="21.25"/>
+   </object>
+  </object>
+ </object>
+</wgtPage>

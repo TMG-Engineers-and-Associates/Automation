@@ -1,0 +1,511 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="SensorCalibration" pageSize="800,480" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" templateFile="templatepage1.jmx" staticFile="opt/sensorcalibration.png" id="SensorCalibration" staticOptEnable="true">
+  <wgtStyle width="800" x="0" y="0" height="480" ver="020000161" color="rgb(255,240,200)" v="02.00.00.161"/>
+  <object class="ShapeWgt" id="GroupWgt2.roundrect1" static="true">
+   <wgtStyle width="73" x="58" y="198" fill="rgb(4,231,231)" cx="35.04" cy="16.93" rx="20" height="35" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt2.roundrect2" static="true">
+   <wgtStyle width="73" x="58" y="259" fill="rgb(4,231,231)" cx="35.04" cy="16.93" rx="20" height="35" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Tahoma"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="SENSOR ENABLE" id="0"/>
+    <MLText L1="SENSOR ENABLE" id="2"/>
+    <MLText L1="SENSOR ENABLE" id="3"/>
+    <MLText L1="HOUSE TEMP" id="46"/>
+    <MLText L1="Message" id="47"/>
+    <MLText L1="Message" id="48"/>
+    <MLText L1="Message" id="49"/>
+    <MLText L1="PV" id="54"/>
+    <MLText L1="Message" id="55"/>
+    <MLText L1="Message" id="56"/>
+    <MLText L1="Message" id="57"/>
+    <MLText L1="OFFSET" id="63"/>
+    <MLText L1="Message" id="64"/>
+    <MLText L1="Message" id="65"/>
+    <MLText L1="Message" id="66"/>
+    <MLText L1="1" id="155"/>
+    <MLText L1="Message" id="156"/>
+    <MLText L1="Message" id="157"/>
+    <MLText L1="Message" id="158"/>
+    <MLText L1="Message" id="163"/>
+    <MLText L1="Message" id="164"/>
+    <MLText L1="Message" id="165"/>
+    <MLText L1="SENSORS CALIBRATION" id="166"/>
+    <MLText L1="OUTSIDE TEMP" id="167"/>
+    <MLText L1="Message" id="168"/>
+    <MLText L1="Message" id="169"/>
+    <MLText L1="Message" id="170"/>
+    <MLText L1="RH SENSOR" id="171"/>
+    <MLText L1="Message" id="172"/>
+    <MLText L1="Message" id="173"/>
+    <MLText L1="Message" id="174"/>
+    <MLText L1="HOUSE" id="175"/>
+    <MLText L1="Message" id="176"/>
+    <MLText L1="Message" id="177"/>
+    <MLText L1="Message" id="178"/>
+    <MLText L1="OUT" id="179"/>
+    <MLText L1="Message" id="180"/>
+    <MLText L1="Message" id="181"/>
+    <MLText L1="Message" id="182"/>
+    <MLText L1="2" id="189"/>
+    <MLText L1="Message" id="190"/>
+    <MLText L1="Message" id="191"/>
+    <MLText L1="Message" id="192"/>
+    <MLText L1="3" id="193"/>
+    <MLText L1="Message" id="194"/>
+    <MLText L1="Message" id="195"/>
+    <MLText L1="Message" id="196"/>
+   </MLTexts>
+  </object>
+  <object class="MsgTextWgt" id="msgtext1">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="21" cx="64.39" cy="12.79" x="91" y="52" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(72,0,72)" min="0" width="131" continous="true" lineSeparator="" font-underline="true" height="27" font-size="16">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="46"/>
+     <textid idx="1" val="47"/>
+     <textid idx="2" val="48"/>
+     <textid idx="3" val="49"/>
+    </lang>
+   </links>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt1.roundrect11" static="true">
+   <wgtStyle width="488" x="154" y="2" fill="rgb(210,180,140)" cx="236.61" cy="20.80" rx="20" height="43" nodeName="rect" ry="20"/>
+  </object>
+  <object class="MsgTextWgt" id="GroupWgt1.msgtext1">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="42" cx="223.64" cy="23.21" x="173" y="-2" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(23,30,40)" min="0" width="455" continous="true" lineSeparator="" height="49" font-size="32">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="166"/>
+     <textid idx="1" val="163"/>
+     <textid idx="2" val="164"/>
+     <textid idx="3" val="165"/>
+    </lang>
+   </links>
+  </object>
+  <object class="MsgTextWgt" id="msgtext2">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="18" cx="13.27" cy="9" x="74" y="93" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(72,0,72)" min="0" width="27" continous="true" height="19" font-size="14">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="54"/>
+     <textid idx="1" val="55"/>
+     <textid idx="2" val="56"/>
+     <textid idx="3" val="57"/>
+    </lang>
+   </links>
+  </object>
+  <object class="MsgTextWgt" id="msgtext3">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="18" cx="32.93" cy="9.47" x="174" y="94" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(72,0,72)" min="0" width="67" continous="true" lineSeparator="" height="20" font-size="14">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="63"/>
+     <textid idx="1" val="64"/>
+     <textid idx="2" val="65"/>
+     <textid idx="3" val="66"/>
+    </lang>
+   </links>
+  </object>
+  <object class="MsgTextWgt" id="msgtext4">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="18" cx="6.39" cy="10.89" x="16" y="143" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(72,0,72)" min="0" width="13" continous="true" height="23" font-size="14">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="155"/>
+     <textid idx="1" val="156"/>
+     <textid idx="2" val="157"/>
+     <textid idx="3" val="158"/>
+    </lang>
+   </links>
+  </object>
+  <object class="MsgTextWgt" id="msgtext5">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="18" cx="6.39" cy="10.89" x="16" y="203" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(72,0,72)" min="0" width="13" continous="true" lineSeparator="" height="23" font-size="14">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="189"/>
+     <textid idx="1" val="190"/>
+     <textid idx="2" val="191"/>
+     <textid idx="3" val="192"/>
+    </lang>
+   </links>
+  </object>
+  <object class="MsgTextWgt" id="msgtext6">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="18" cx="6.39" cy="10.89" x="16" y="266" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(72,0,72)" min="0" width="13" continous="true" lineSeparator="" height="23" font-size="14">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="193"/>
+     <textid idx="1" val="194"/>
+     <textid idx="2" val="195"/>
+     <textid idx="3" val="196"/>
+    </lang>
+   </links>
+  </object>
+  <object class="MsgTextWgt" id="msgtext13">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="21" cx="73.73" cy="13.74" x="538" y="52" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(72,0,72)" min="0" width="150" continous="true" lineSeparator="" font-underline="true" height="29" font-size="16">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="167"/>
+     <textid idx="1" val="168"/>
+     <textid idx="2" val="169"/>
+     <textid idx="3" val="170"/>
+    </lang>
+   </links>
+  </object>
+  <object class="MsgTextWgt" id="msgtext14">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="18" cx="13.27" cy="9" x="534" y="94" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(72,0,72)" min="0" width="27" continous="true" lineSeparator="" height="19" font-size="14">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="54"/>
+     <textid idx="1" val="55"/>
+     <textid idx="2" val="56"/>
+     <textid idx="3" val="57"/>
+    </lang>
+   </links>
+  </object>
+  <object class="MsgTextWgt" id="msgtext15">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="18" cx="32.93" cy="9.47" x="630" y="95" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(72,0,72)" min="0" width="67" continous="true" lineSeparator="" height="20" font-size="14">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="63"/>
+     <textid idx="1" val="64"/>
+     <textid idx="2" val="65"/>
+     <textid idx="3" val="66"/>
+    </lang>
+   </links>
+  </object>
+  <object class="MsgTextWgt" id="msgtext16">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="21" cx="55.05" cy="12.79" x="564" y="240" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(72,0,72)" min="0" width="112" continous="true" lineSeparator="" font-underline="true" height="27" font-size="16">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="171"/>
+     <textid idx="1" val="172"/>
+     <textid idx="2" val="173"/>
+     <textid idx="3" val="174"/>
+    </lang>
+   </links>
+  </object>
+  <object class="MsgTextWgt" id="msgtext17">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="18" cx="30.47" cy="9.47" x="447" y="289" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(72,0,72)" min="0" width="62" continous="true" lineSeparator="" height="20" font-size="14">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="175"/>
+     <textid idx="1" val="176"/>
+     <textid idx="2" val="177"/>
+     <textid idx="3" val="178"/>
+    </lang>
+   </links>
+  </object>
+  <object class="MsgTextWgt" id="msgtext18">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="18" cx="19.66" cy="9.47" x="448" y="340" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(72,0,72)" min="0" width="40" continous="true" lineSeparator="" height="20" font-size="14">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="179"/>
+     <textid idx="1" val="180"/>
+     <textid idx="2" val="181"/>
+     <textid idx="3" val="182"/>
+    </lang>
+   </links>
+  </object>
+  <object class="GroupWgt" id="BtnStd6" customType="Button">
+   <wgtStyle width="93" x="279" y="132" cx="46.50" cy="20.50" height="41"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image13" static="true">
+    <wgtStyle width="93" imagePath="images/frame_rect45bar_chrome.svg" enableCache="false" x="0" y="0" cx="51" cy="33.28" height="41"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd6">
+    <wgtStyle width="85" x="4" forcePaint="136" y="4.82" fill="rgb(255,173,91)" dx="1" cx="46.74" form="standard" cy="24.97" height="30.15" releasePath="images\btn_shiney_rect45bar_1.svg" needlePath="images\btn_shiney_rect45bar_2.svg" type="momentary" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="fill" tag="/enHS1" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#ff0000;#55ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ToggleBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="/enHS1" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label7">
+    <wgtStyle width="74" font-color="rgb(40,40,40)" x="7" forcePaint="1" font-sizepx="13" y="6.03" font-family="Cambria" font-bold="true" wrapping="true" cx="40.92" cy="21.01" height="25.32" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="2">
+      <MLFontFamily L1="Cambria"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image15" static="true">
+    <wgtStyle width="27" enableCache="false" x="31" y="9.65" cx="15.16" cy="17.07" height="20.50"/>
+   </object>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt2.roundrect3" static="true">
+   <wgtStyle width="73" x="58" y="138" fill="rgb(4,231,231)" cx="35.04" cy="16.93" rx="20" height="35" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="NumericWgt" id="GroupWgt2.field4">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="27.60" cy="9" step="1" timeSpec="local" alignment="right" x="60" y="144" vert-align="top" text="0" max="3.40282e+038" usingFormat="#.#" value="0" keypad-type="None" font-color="rgb(23,30,40)" min="-3.40282e+038" width="60" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="float" attribute="value" tag="/hTemp1" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt4.field4">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="27.60" cy="9" step="1" timeSpec="local" alignment="right" x="60" y="204" vert-align="top" text="0" max="3.40282e+038" usingFormat="#.#" value="0" keypad-type="None" font-color="rgb(23,30,40)" min="-3.40282e+038" width="60" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="float" attribute="value" tag="/hTemp2" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt6.field4">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="27.60" cy="9" step="1" timeSpec="local" alignment="right" x="60" y="267" vert-align="top" text="0" max="3.40282e+038" usingFormat="#.#" value="0" keypad-type="None" font-color="rgb(23,30,40)" min="-3.40282e+038" width="60" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="float" attribute="value" tag="/hTemp3" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt1.roundrect4" static="true">
+   <wgtStyle width="60" x="177" y="138" fill="rgb(4,231,231)" cx="28.80" cy="16.93" rx="20" height="35" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="NumericWgt" id="GroupWgt1.field5">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="27.60" cy="9" step="1" timeSpec="local" alignment="right" x="174" y="144" vert-align="top" text="0" max="60" usingFormat="#.#" value="0" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-60" width="60" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="float" attribute="value" tag="/tempsen1Offset" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt3.roundrect4" static="true">
+   <wgtStyle width="60" x="177" y="198" fill="rgb(4,231,231)" cx="28.80" cy="16.93" rx="20" height="35" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="NumericWgt" id="GroupWgt3.field5">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="27.60" cy="9" step="1" timeSpec="local" alignment="right" x="174" y="204" vert-align="top" text="0" max="60" usingFormat="#.#" value="0" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-60" width="60" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="float" attribute="value" tag="/tempsen2Offset" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt5.roundrect4" static="true">
+   <wgtStyle width="60" x="177" y="261" fill="rgb(4,231,231)" cx="28.80" cy="16.93" rx="20" height="35" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="NumericWgt" id="GroupWgt5.field5">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="27.60" cy="9" step="1" timeSpec="local" alignment="right" x="174" y="267" vert-align="top" text="0" max="60" usingFormat="#.#" value="0" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-60" width="60" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="float" attribute="value" tag="/tempsen3Offset" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt18.roundrect3" static="true">
+   <wgtStyle width="60" x="524" y="132" fill="rgb(4,231,231)" cx="28.80" cy="16.93" rx="20" height="35" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="NumericWgt" id="GroupWgt18.field4">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="27.60" cy="9" step="1" timeSpec="local" alignment="right" x="521" y="138" vert-align="top" text="0" max="3.40282e+038" usingFormat="#.#" value="0" keypad-type="None" font-color="rgb(23,30,40)" min="-3.40282e+038" width="60" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="float" attribute="value" tag="/oTemp" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt17.roundrect4" static="true">
+   <wgtStyle width="60" x="634" y="132" fill="rgb(4,231,231)" cx="28.80" cy="16.93" rx="20" height="35" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="NumericWgt" id="GroupWgt17.field5">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="27.60" cy="9" step="1" timeSpec="local" alignment="right" x="631" y="138" vert-align="top" text="0" max="60" usingFormat="#.#" value="0" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-60" width="60" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="float" attribute="value" tag="/outTempSensOffset" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt8.roundrect3" static="true">
+   <wgtStyle width="60" x="530" y="281" fill="rgb(4,231,231)" cx="28.80" cy="16.93" rx="20" height="35" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="NumericWgt" id="GroupWgt8.field4">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="27.60" cy="9" step="1" timeSpec="local" alignment="right" x="527" y="287" vert-align="top" text="0" max="3.40282e+038" usingFormat="#.#" value="0" keypad-type="None" font-color="rgb(23,30,40)" min="-3.40282e+038" width="60" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="float" attribute="value" tag="/hRH" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt10.roundrect3" static="true">
+   <wgtStyle width="60" x="530" y="333" fill="rgb(4,231,231)" cx="28.80" cy="16.93" rx="20" height="35" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="NumericWgt" id="GroupWgt10.field4">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="27.60" cy="9" step="1" timeSpec="local" alignment="right" x="527" y="339" vert-align="top" text="0" max="3.40282e+038" usingFormat="#.#" value="0" keypad-type="None" font-color="rgb(23,30,40)" min="-3.40282e+038" width="60" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="float" attribute="value" tag="/oRH" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt7.roundrect4" static="true">
+   <wgtStyle width="60" x="640" y="281" fill="rgb(4,231,231)" cx="28.80" cy="16.93" rx="20" height="35" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="NumericWgt" id="GroupWgt7.field5">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="27.60" cy="9" step="1" timeSpec="local" alignment="right" x="637" y="287" vert-align="top" text="0" max="60" usingFormat="#.#" value="0" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-60" width="60" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="float" attribute="value" tag="/houseRHOffset" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt9.roundrect4" static="true">
+   <wgtStyle width="60" x="640" y="333" fill="rgb(4,231,231)" cx="28.80" cy="16.93" rx="20" height="35" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="NumericWgt" id="GroupWgt9.field5">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="27.60" cy="9" step="1" timeSpec="local" alignment="right" x="637" y="339" vert-align="top" text="0" max="60" usingFormat="#.#" value="0" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-60" width="60" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="float" attribute="value" tag="/outRHOffset" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="GroupWgt" id="BtnStd5" customType="Button">
+   <wgtStyle width="93" x="279" y="194" cx="46.50" cy="20.50" height="41"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image9" static="true">
+    <wgtStyle width="93" imagePath="images/frame_rect45bar_chrome.svg" enableCache="false" x="0" y="0" cx="51" cy="33.28" height="41"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd5">
+    <wgtStyle width="85" x="4" forcePaint="136" y="4.82" fill="rgb(255,173,91)" dx="1" cx="46.74" form="standard" cy="24.97" height="30.15" releasePath="images\btn_shiney_rect45bar_1.svg" needlePath="images\btn_shiney_rect45bar_2.svg" type="momentary" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="fill" tag="/enHS2" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#ff0000;#55ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ToggleBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="/enHS2" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label5">
+    <wgtStyle width="74" font-color="rgb(40,40,40)" x="7" forcePaint="1" font-sizepx="13" y="6.03" font-family="Cambria" font-bold="true" wrapping="true" cx="40.92" cy="21.01" height="25.32" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="3">
+      <MLFontFamily L1="Cambria"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image10" static="true">
+    <wgtStyle width="27" enableCache="false" x="31" y="9.65" cx="15.16" cy="17.07" height="20.50"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd7" customType="Button">
+   <wgtStyle width="93" x="279" y="257" cx="46.50" cy="20.50" height="41"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image11" static="true">
+    <wgtStyle width="93" imagePath="images/frame_rect45bar_chrome.svg" enableCache="false" x="0" y="0" cx="51" cy="33.28" height="41"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd7">
+    <wgtStyle width="85" x="4" forcePaint="136" y="4.82" fill="rgb(255,173,91)" dx="1" cx="46.74" form="standard" cy="24.97" height="30.15" releasePath="images\btn_shiney_rect45bar_1.svg" needlePath="images\btn_shiney_rect45bar_2.svg" type="momentary" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="fill" tag="/enHS3" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#ff0000;#55ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ToggleBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="/enHS3" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label8">
+    <wgtStyle width="74" font-color="rgb(40,40,40)" x="7" forcePaint="1" font-sizepx="13" y="6.03" font-family="Cambria" font-bold="true" wrapping="true" cx="40.92" cy="21.01" height="25.32" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="0">
+      <MLFontFamily L1="Cambria"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image12" static="true">
+    <wgtStyle width="27" enableCache="false" x="31" y="9.65" cx="15.16" cy="17.07" height="20.50"/>
+   </object>
+  </object>
+  <object class="GroupSubscribeWgt" id="SensorCalibration@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+ </object>
+</wgtPage>

@@ -1,0 +1,323 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="Lighting" pageSize="800,480" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" templateFile="templatepage1.jmx" staticFile="opt/lighting.png" id="Lighting" staticOptEnable="true">
+  <wgtStyle width="800" x="0" y="0" height="480" ver="020000161" color="rgb(255,240,200)" v="02.00.00.161"/>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Tahoma"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="HOURS" id="7"/>
+    <MLText L1="Message" id="8"/>
+    <MLText L1="Message" id="9"/>
+    <MLText L1="Message" id="10"/>
+    <MLText L1="MINUTES" id="11"/>
+    <MLText L1="Message" id="12"/>
+    <MLText L1="Message" id="13"/>
+    <MLText L1="Message" id="14"/>
+    <MLText L1="1." id="15"/>
+    <MLText L1="Message" id="16"/>
+    <MLText L1="Message" id="17"/>
+    <MLText L1="Message" id="18"/>
+    <MLText L1="2." id="19"/>
+    <MLText L1="Message" id="20"/>
+    <MLText L1="Message" id="21"/>
+    <MLText L1="Message" id="22"/>
+    <MLText L1="3." id="23"/>
+    <MLText L1="Message" id="24"/>
+    <MLText L1="Message" id="25"/>
+    <MLText L1="Message" id="26"/>
+    <MLText L1="ON TIME " id="85"/>
+    <MLText L1="Message" id="86"/>
+    <MLText L1="Message" id="87"/>
+    <MLText L1="Message" id="88"/>
+    <MLText L1="OFF TIME " id="89"/>
+    <MLText L1="Message" id="90"/>
+    <MLText L1="Message" id="91"/>
+    <MLText L1="Message" id="92"/>
+   </MLTexts>
+  </object>
+  <object class="MsgTextWgt" id="GroupWgt2.msgtext2">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="24" cx="55.50" cy="14.50" alignment="center" x="183" y="33" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(72,0,72)" min="0" width="111" continous="true" lineSeparator="" font-underline="true" height="29" font-size="18">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="85"/>
+     <textid idx="1" val="86"/>
+     <textid idx="2" val="87"/>
+     <textid idx="3" val="88"/>
+    </lang>
+   </links>
+  </object>
+  <object class="MsgTextWgt" id="GroupWgt2.msgtext3">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="18" cx="40.50" cy="12" alignment="center" x="153" y="80" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(23,30,40)" min="0" width="81" continous="true" lineSeparator="" height="24" font-size="14">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="7"/>
+     <textid idx="1" val="8"/>
+     <textid idx="2" val="9"/>
+     <textid idx="3" val="10"/>
+    </lang>
+   </links>
+  </object>
+  <object class="MsgTextWgt" id="GroupWgt2.msgtext4">
+   <wgtStyle font-bold="true" marker="true" forcePaint="1" font-family="Cambria" font-sizepx="18" cx="47.50" cy="12" alignment="center" x="232" y="80" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(23,30,40)" min="0" width="95" continous="true" lineSeparator="" height="24" font-size="14">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="11"/>
+     <textid idx="1" val="12"/>
+     <textid idx="2" val="13"/>
+     <textid idx="3" val="14"/>
+    </lang>
+   </links>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt2.GroupWgt9.roundrect2" static="true">
+   <wgtStyle width="55" x="165" y="113" fill="rgb(4,231,231)" cx="26.40" cy="13.54" rx="20" height="28" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="NumericWgt" id="GroupWgt2.GroupWgt9.field1">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="20.24" cy="9" step="1" timeSpec="local" alignment="center" x="171" y="116" vert-align="top" text="999" max="23" usingFormat="#" value="999" keypad-type="Numeric" min="0" width="44" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/lightOnHr1" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt2.GroupWgt9.roundrect1" static="true">
+   <wgtStyle width="55" x="250" y="113" fill="rgb(4,231,231)" cx="26.40" cy="13.54" rx="20" height="28" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="NumericWgt" id="GroupWgt2.GroupWgt9.field2">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="20.24" cy="9" step="1" timeSpec="local" alignment="center" x="256" y="116" vert-align="top" text="999" max="59" usingFormat="#" value="999" keypad-type="Numeric" min="0" width="44" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/lightOnMin1" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt2.GroupWgt9.roundrect3" static="true">
+   <wgtStyle width="55" x="165" y="162" fill="rgb(4,231,231)" cx="26.40" cy="13.54" rx="20" height="28" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="NumericWgt" id="GroupWgt2.GroupWgt9.field3">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="20.24" cy="9" step="1" timeSpec="local" alignment="center" x="171" y="165" vert-align="top" text="999" max="23" usingFormat="#" value="999" keypad-type="Numeric" min="0" width="44" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/lightOnHr2" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt2.GroupWgt9.roundrect4" static="true">
+   <wgtStyle width="55" x="250" y="162" fill="rgb(4,231,231)" cx="26.40" cy="13.54" rx="20" height="28" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="NumericWgt" id="GroupWgt2.GroupWgt9.field4">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="20.24" cy="9" step="1" timeSpec="local" alignment="center" x="256" y="165" vert-align="top" text="999" max="59" usingFormat="#" value="999" keypad-type="Numeric" min="0" width="44" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/lightOnMin2" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt2.GroupWgt9.roundrect5" static="true">
+   <wgtStyle width="55" x="165" y="212" fill="rgb(4,231,231)" cx="26.40" cy="13.54" rx="20" height="28" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="NumericWgt" id="GroupWgt2.GroupWgt9.field5">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="20.24" cy="9" step="1" timeSpec="local" alignment="center" x="171" y="215" vert-align="top" text="999" max="23" usingFormat="#" value="999" keypad-type="Numeric" min="0" width="44" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/lightOnHr3" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt2.GroupWgt9.roundrect6" static="true">
+   <wgtStyle width="55" x="250" y="212" fill="rgb(4,231,231)" cx="26.40" cy="13.54" rx="20" height="28" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="NumericWgt" id="GroupWgt2.GroupWgt9.field6">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="20.24" cy="9" step="1" timeSpec="local" alignment="center" x="256" y="215" vert-align="top" text="999" max="59" usingFormat="#" value="999" keypad-type="Numeric" min="0" width="44" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/lightOnMin3" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="MsgTextWgt" id="GroupWgt2.msgtext5">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="18" cx="10" cy="11" alignment="center" x="133" y="116" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(72,0,72)" min="0" width="20" continous="true" lineSeparator="" height="22" font-size="14">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="15"/>
+     <textid idx="1" val="16"/>
+     <textid idx="2" val="17"/>
+     <textid idx="3" val="18"/>
+    </lang>
+   </links>
+  </object>
+  <object class="MsgTextWgt" id="GroupWgt2.msgtext6">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="18" cx="10" cy="11" alignment="center" x="133" y="165" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(72,0,72)" min="0" width="20" continous="true" lineSeparator="" height="22" font-size="14">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="19"/>
+     <textid idx="1" val="20"/>
+     <textid idx="2" val="21"/>
+     <textid idx="3" val="22"/>
+    </lang>
+   </links>
+  </object>
+  <object class="MsgTextWgt" id="GroupWgt2.msgtext7">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="18" cx="10" cy="11" alignment="center" x="133" y="215" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(72,0,72)" min="0" width="20" continous="true" lineSeparator="" height="22" font-size="14">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="23"/>
+     <textid idx="1" val="24"/>
+     <textid idx="2" val="25"/>
+     <textid idx="3" val="26"/>
+    </lang>
+   </links>
+  </object>
+  <object class="MsgTextWgt" id="GroupWgt1.msgtext1">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="24" cx="59" cy="14.50" alignment="center" x="502" y="33" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(72,0,72)" min="0" width="118" continous="true" lineSeparator="" font-underline="true" height="29" font-size="18">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="89"/>
+     <textid idx="1" val="90"/>
+     <textid idx="2" val="91"/>
+     <textid idx="3" val="92"/>
+    </lang>
+   </links>
+  </object>
+  <object class="MsgTextWgt" id="GroupWgt1.msgtext15">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="18" cx="40.50" cy="12" alignment="center" x="478" y="80" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(23,30,40)" min="0" width="81" continous="true" lineSeparator="" height="24" font-size="14">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="7"/>
+     <textid idx="1" val="8"/>
+     <textid idx="2" val="9"/>
+     <textid idx="3" val="10"/>
+    </lang>
+   </links>
+  </object>
+  <object class="MsgTextWgt" id="GroupWgt1.msgtext16">
+   <wgtStyle font-bold="true" marker="true" forcePaint="1" font-family="Cambria" font-sizepx="18" cx="47.50" cy="12" alignment="center" x="557" y="80" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(23,30,40)" min="0" width="95" continous="true" lineSeparator="" height="24" font-size="14">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="11"/>
+     <textid idx="1" val="12"/>
+     <textid idx="2" val="13"/>
+     <textid idx="3" val="14"/>
+    </lang>
+   </links>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt1.GroupWgt9.roundrect21" static="true">
+   <wgtStyle width="55" x="490" y="113" fill="rgb(4,231,231)" cx="26.40" cy="13.54" rx="20" height="28" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="NumericWgt" id="GroupWgt1.GroupWgt9.field21">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="20.24" cy="9" step="1" timeSpec="local" alignment="center" x="496" y="116" vert-align="top" text="999" max="23" usingFormat="#" value="999" keypad-type="Numeric" min="0" width="44" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/lightOffHr1" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt1.GroupWgt9.roundrect22" static="true">
+   <wgtStyle width="55" x="575" y="113" fill="rgb(4,231,231)" cx="26.40" cy="13.54" rx="20" height="28" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="NumericWgt" id="GroupWgt1.GroupWgt9.field22">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="20.24" cy="9" step="1" timeSpec="local" alignment="center" x="581" y="116" vert-align="top" text="999" max="59" usingFormat="#" value="999" keypad-type="Numeric" min="0" width="44" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/lightOffMin1" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt1.GroupWgt9.roundrect23" static="true">
+   <wgtStyle width="55" x="490" y="162" fill="rgb(4,231,231)" cx="26.40" cy="13.54" rx="20" height="28" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="NumericWgt" id="GroupWgt1.GroupWgt9.field23">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="20.24" cy="9" step="1" timeSpec="local" alignment="center" x="496" y="165" vert-align="top" text="999" max="23" usingFormat="#" value="999" keypad-type="Numeric" min="0" width="44" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/lightOffHr2" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt1.GroupWgt9.roundrect24" static="true">
+   <wgtStyle width="55" x="575" y="162" fill="rgb(4,231,231)" cx="26.40" cy="13.54" rx="20" height="28" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="NumericWgt" id="GroupWgt1.GroupWgt9.field24">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="20.24" cy="9" step="1" timeSpec="local" alignment="center" x="581" y="165" vert-align="top" text="999" max="59" usingFormat="#" value="999" keypad-type="Numeric" min="0" width="44" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/lightOffMin2" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt1.GroupWgt9.roundrect25" static="true">
+   <wgtStyle width="55" x="490" y="212" fill="rgb(4,231,231)" cx="26.40" cy="13.54" rx="20" height="28" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="NumericWgt" id="GroupWgt1.GroupWgt9.field25">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="20.24" cy="9" step="1" timeSpec="local" alignment="center" x="496" y="215" vert-align="top" text="999" max="23" usingFormat="#" value="999" keypad-type="Numeric" min="0" width="44" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/lightOffHr3" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt1.GroupWgt9.roundrect26" static="true">
+   <wgtStyle width="55" x="575" y="212" fill="rgb(4,231,231)" cx="26.40" cy="13.54" rx="20" height="28" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="NumericWgt" id="GroupWgt1.GroupWgt9.field26">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="20.24" cy="9" step="1" timeSpec="local" alignment="center" x="581" y="215" vert-align="top" text="999" max="59" usingFormat="#" value="999" keypad-type="Numeric" min="0" width="44" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/lightOffMin3" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="GroupSubscribeWgt" id="Lighting@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+ </object>
+</wgtPage>

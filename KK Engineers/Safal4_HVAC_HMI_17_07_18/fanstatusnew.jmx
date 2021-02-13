@@ -1,0 +1,1241 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="FanStatusNew" pageSize="800,480" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" templateFile="templatepage1.jmx" staticFile="opt/fanstatusnew.png" id="FanStatusNew" staticOptEnable="true">
+  <wgtStyle width="800" x="0" y="0" height="480" ver="020000161" color="rgb(255,240,200)" v="02.00.00.161"/>
+  <object class="ShapeWgt" id="rect1" static="true">
+   <wgtStyle width="257" x="5" y="65" fill="rgb(220,220,220)" cx="124.35" cy="80.50" height="161" nodeName="rect" stroke-width="2"/>
+  </object>
+  <object class="GroupWgt" id="BtnStd8" customType="Button">
+   <wgtStyle width="96" x="22" y="162.90" cx="48" cy="26.78" height="53.55"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image13" static="true">
+    <wgtStyle width="96" imagePath="images/frame_rect45bar_chrome.svg" enableCache="false" x="0" y="0" cx="52.64" cy="43.47" height="53.55"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd7">
+    <wgtStyle width="87.74" x="4.13" y="6.31" fill="rgb(50,205,50)" dx="1" cx="48.25" form="standard" cy="32.61" height="39.37" releasePath="images\btn_shiney_rect45bar_1.svg" needlePath="images\btn_shiney_rect45bar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="SetBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="relayManual1" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label8">
+    <wgtStyle width="76.39" font-color="rgb(40,40,40)" x="7.23" forcePaint="1" font-sizepx="16" y="7.87" font-family="Cambria" wrapping="true" cx="42.24" cy="27.43" height="33.08" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="37">
+      <MLFontFamily L1="Cambria"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image14" static="true">
+    <wgtStyle width="27.87" enableCache="false" x="32" y="12.60" cx="15.65" cy="22.29" height="26.78"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd7" customType="Button">
+   <wgtStyle width="96" x="22" forcePaint="9" y="164" cx="48" cy="26" height="52"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="relayManual1" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image11">
+    <wgtStyle width="96" imagePath="images/frame_rect45bar_chrome.svg" enableCache="false" x="0" forcePaint="1" y="0" cx="52.64" cy="42.21" height="52"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd10">
+    <wgtStyle width="87.74" x="4.13" forcePaint="1" y="6.12" fill="rgb(255,173,91)" dx="1" cx="48.25" form="standard" cy="31.67" height="38.23" releasePath="images\btn_shiney_rect45bar_1.svg" needlePath="images\btn_shiney_rect45bar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ResetBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="relayManual1" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label7">
+    <wgtStyle width="76.39" font-color="rgb(40,40,40)" x="7.23" forcePaint="1" font-sizepx="16" y="7.64" font-family="Cambria" wrapping="true" cx="42.24" cy="26.64" height="32.12" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="36">
+      <MLFontFamily L1="Cambria"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image12" static="true">
+    <wgtStyle width="27.87" enableCache="false" x="32" y="12.23" cx="15.65" cy="21.65" height="26"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd6" customType="Button">
+   <wgtStyle width="96" x="143" y="163" cx="48" cy="26" height="52"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image15" static="true">
+    <wgtStyle width="96" imagePath="images/frame_rect45bar_chrome.svg" enableCache="false" x="0" y="0" cx="52.64" cy="42.21" height="52"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd8">
+    <wgtStyle width="87.74" x="4.13" y="6.13" fill="rgb(255,173,91)" dx="1" cx="48.25" form="standard" cy="31.66" height="38.23" releasePath="images\btn_shiney_rect45bar_1.svg" needlePath="images\btn_shiney_rect45bar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="SetBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="relayManualOn1" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label11">
+    <wgtStyle width="76.39" font-color="rgb(40,40,40)" x="7.23" forcePaint="1" font-sizepx="16" y="7.64" font-family="Cambria" wrapping="true" cx="42.24" cy="26.63" height="32.13" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="39">
+      <MLFontFamily L1="Cambria"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image17" static="true">
+    <wgtStyle width="27.87" enableCache="false" x="32" y="12.23" cx="15.65" cy="21.65" height="26"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd9" customType="Button">
+   <wgtStyle width="96" x="143" forcePaint="9" y="163.45" cx="48" cy="26.50" height="53"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="relayManualOn1" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image19">
+    <wgtStyle width="96" imagePath="images/frame_rect45bar_chrome.svg" enableCache="false" x="0" forcePaint="1" y="0" cx="52.64" cy="43.03" height="53"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd9">
+    <wgtStyle width="87.74" x="4.13" forcePaint="1" y="6.24" fill="rgb(50,205,50)" dx="1" cx="48.25" form="standard" cy="32.28" height="38.97" releasePath="images\btn_shiney_rect45bar_1.svg" needlePath="images\btn_shiney_rect45bar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ResetBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="relayManualOn1" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label12">
+    <wgtStyle width="76.39" font-color="rgb(40,40,40)" x="7.23" forcePaint="1" font-sizepx="16" y="7.79" font-family="Cambria" wrapping="true" cx="42.24" cy="27.15" height="32.74" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="38">
+      <MLFontFamily L1="Cambria"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image20" static="true">
+    <wgtStyle width="27.87" enableCache="false" x="32" y="12.47" cx="15.65" cy="22.07" height="26.50"/>
+   </object>
+  </object>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Tahoma"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="" id="150"/>
+    <MLText L1="MANUAL" id="36"/>
+    <MLText L1="AUTO" id="37"/>
+    <MLText L1="MANUAL ON" id="38"/>
+    <MLText L1="MANUAL OFF" id="39"/>
+    <MLText L1="FAN STATUS" id="155"/>
+    <MLText L1="Message" id="156"/>
+    <MLText L1="Message" id="157"/>
+    <MLText L1="Message" id="158"/>
+    <MLText L1="1" id="219"/>
+    <MLText L1="Message" id="220"/>
+    <MLText L1="Message" id="221"/>
+    <MLText L1="Message" id="222"/>
+    <MLText L1="4" id="229"/>
+    <MLText L1="Message" id="230"/>
+    <MLText L1="Message" id="231"/>
+    <MLText L1="Message" id="232"/>
+    <MLText L1="5" id="233"/>
+    <MLText L1="Message" id="234"/>
+    <MLText L1="Message" id="235"/>
+    <MLText L1="Message" id="236"/>
+    <MLText L1="3&#xa;" id="237"/>
+    <MLText L1="Message" id="238"/>
+    <MLText L1="Message" id="239"/>
+    <MLText L1="Message" id="240"/>
+    <MLText L1="2&#xa;" id="241"/>
+    <MLText L1="Message" id="242"/>
+    <MLText L1="Message" id="243"/>
+    <MLText L1="Message" id="244"/>
+    <MLText L1="6" id="245"/>
+    <MLText L1="Message" id="246"/>
+    <MLText L1="Message" id="247"/>
+    <MLText L1="Message" id="248"/>
+    <MLText L1="7" id="249"/>
+    <MLText L1="Message" id="250"/>
+    <MLText L1="Message" id="251"/>
+    <MLText L1="Message" id="252"/>
+    <MLText L1="8&#xa;" id="253"/>
+    <MLText L1="Message" id="254"/>
+    <MLText L1="Message" id="255"/>
+    <MLText L1="Message" id="256"/>
+    <MLText L1="9" id="257"/>
+    <MLText L1="Message" id="258"/>
+    <MLText L1="Message" id="259"/>
+    <MLText L1="Message" id="260"/>
+    <MLText L1="10" id="261"/>
+    <MLText L1="Message" id="262"/>
+    <MLText L1="Message" id="263"/>
+    <MLText L1="Message" id="264"/>
+    <MLText L1="11" id="265"/>
+    <MLText L1="Message" id="266"/>
+    <MLText L1="Message" id="267"/>
+    <MLText L1="Message" id="268"/>
+    <MLText L1="12" id="269"/>
+    <MLText L1="Message" id="270"/>
+    <MLText L1="Message" id="271"/>
+    <MLText L1="Message" id="272"/>
+   </MLTexts>
+  </object>
+  <object class="GroupWgt" id="LightsStd1" customType="Light">
+   <wgtStyle width="56" x="104" y="98" cx="28" cy="30.50" height="61"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image4" static="true">
+    <wgtStyle width="56" imagePath="images/frame_round_wood.svg" enableCache="false" x="0" y="0" fill="rgb(89,45,0)" cx="27.49" cy="29.88" height="61"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:light; type:light" id="light_ind03">
+    <wgtStyle width="40.92" imagePath="images/li_round_shiney1_rev2.svg" x="7.54" y="7.04" cx="26.47" cy="18.68" bkgColor="rgb(120,120,120);rgb(255,0,0)" height="45.75" stroke="rgb(255,251,240)"/>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label2" static="true">
+    <wgtStyle width="36.62" x="9.69" font-sizepx="13" y="10.56" font-family="Tahoma" cx="18.33" cy="19.92" height="41.06" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="150">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="icon2" static="true">
+    <wgtStyle width="16.15" enableCache="true" x="19.38" y="22.29" cx="8.14" cy="8.72" height="17.60"/>
+   </object>
+  </object>
+  <object class="MsgTextWgt" id="msgtext1">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="18" cx="10.81" cy="11.84" alignment="center" x="120" y="68" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(23,30,40)" min="0" width="22" continous="true" height="25" font-size="14">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="219"/>
+     <textid idx="1" val="220"/>
+     <textid idx="2" val="221"/>
+     <textid idx="3" val="222"/>
+    </lang>
+   </links>
+  </object>
+  <object class="ShapeWgt" id="rect2" static="true">
+   <wgtStyle width="257" x="272" y="65" fill="rgb(220,220,220)" cx="124.35" cy="80.50" height="161" nodeName="rect" stroke-width="2"/>
+  </object>
+  <object class="GroupWgt" id="BtnStd10" customType="Button">
+   <wgtStyle width="96" x="292" y="164.90" cx="48" cy="26.77" height="53.55"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image16" static="true">
+    <wgtStyle width="96" imagePath="images/frame_rect45bar_chrome.svg" enableCache="false" x="0" y="0" cx="52.64" cy="43.47" height="53.55"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd6">
+    <wgtStyle width="87.74" x="4.13" y="6.31" fill="rgb(50,205,50)" dx="1" cx="48.25" form="standard" cy="32.61" height="39.37" releasePath="images\btn_shiney_rect45bar_1.svg" needlePath="images\btn_shiney_rect45bar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="SetBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="relayManual2" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label10">
+    <wgtStyle width="76.39" font-color="rgb(40,40,40)" x="7.23" forcePaint="1" font-sizepx="16" y="7.87" font-family="Cambria" wrapping="true" cx="42.24" cy="27.43" height="33.08" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="37">
+      <MLFontFamily L1="Cambria"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image21" static="true">
+    <wgtStyle width="27.87" enableCache="false" x="32" y="12.60" cx="15.65" cy="22.29" height="26.78"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd5" customType="Button">
+   <wgtStyle width="96" x="292" forcePaint="9" y="165" cx="48" cy="26" height="52"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="relayManual2" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image9">
+    <wgtStyle width="96" imagePath="images/frame_rect45bar_chrome.svg" enableCache="false" x="0" forcePaint="1" y="0" cx="52.64" cy="42.21" height="52"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd5">
+    <wgtStyle width="87.74" x="4.13" forcePaint="1" y="6.12" fill="rgb(255,173,91)" dx="1" cx="48.25" form="standard" cy="31.67" height="38.23" releasePath="images\btn_shiney_rect45bar_1.svg" needlePath="images\btn_shiney_rect45bar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ResetBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="relayManual2" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label9">
+    <wgtStyle width="76.39" font-color="rgb(40,40,40)" x="7.23" forcePaint="1" font-sizepx="16" y="7.64" font-family="Cambria" wrapping="true" cx="42.24" cy="26.64" height="32.12" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="36">
+      <MLFontFamily L1="Cambria"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image10" static="true">
+    <wgtStyle width="27.87" enableCache="false" x="32" y="12.23" cx="15.65" cy="21.65" height="26"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="LightsStd2" customType="Light">
+   <wgtStyle width="56" x="313" y="98" cx="28" cy="30.50" height="61"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image1" static="true">
+    <wgtStyle width="56" imagePath="images/frame_round_wood.svg" enableCache="false" x="0" y="0" fill="rgb(89,45,0)" cx="27.49" cy="29.88" height="61"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:light; type:light" id="light_ind1">
+    <wgtStyle width="40.92" imagePath="images/li_round_shiney1_rev2.svg" x="7.54" forcePaint="8" y="7.04" cx="26.47" cy="18.68" bkgColor="rgb(120,120,120);rgb(255,0,0)" height="45.75" stroke="rgb(255,251,240)"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="value" tag="/mFanRelay2" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label1" static="true">
+    <wgtStyle width="36.62" x="9.69" font-sizepx="13" y="10.56" font-family="Tahoma" cx="18.33" cy="19.92" height="41.06" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="150">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="icon1" static="true">
+    <wgtStyle width="16.15" enableCache="true" x="19.38" y="22.29" cx="8.14" cy="8.72" height="17.60"/>
+   </object>
+  </object>
+  <object class="MsgTextWgt" id="msgtext2">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="18" cx="10.81" cy="11.84" alignment="center" x="329" y="68" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(23,30,40)" min="0" width="22" continous="true" lineSeparator="" height="25" font-size="14">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="241"/>
+     <textid idx="1" val="242"/>
+     <textid idx="2" val="243"/>
+     <textid idx="3" val="244"/>
+    </lang>
+   </links>
+  </object>
+  <object class="ShapeWgt" id="rect3" static="true">
+   <wgtStyle width="257" x="538" y="65" fill="rgb(220,220,220)" cx="124.35" cy="80.50" height="161" nodeName="rect" stroke-width="2"/>
+  </object>
+  <object class="GroupWgt" id="LightsStd3" customType="Light">
+   <wgtStyle width="56" x="581" y="98" cx="28" cy="30.50" height="61"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image7" static="true">
+    <wgtStyle width="56" imagePath="images/frame_round_wood.svg" enableCache="false" x="0" y="0" fill="rgb(89,45,0)" cx="27.49" cy="29.88" height="61"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:light; type:light" id="light_ind2">
+    <wgtStyle width="40.92" imagePath="images/li_round_shiney1_rev2.svg" x="7.54" forcePaint="8" y="7.04" cx="26.47" cy="18.68" bkgColor="rgb(120,120,120);rgb(255,0,0)" height="45.75" stroke="rgb(255,251,240)"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="value" tag="fanRelay3" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label5" static="true">
+    <wgtStyle width="36.62" x="9.69" font-sizepx="13" y="10.56" font-family="Tahoma" cx="18.33" cy="19.92" height="41.06" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="150">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="icon3" static="true">
+    <wgtStyle width="16.15" enableCache="true" x="19.38" y="22.29" cx="8.14" cy="8.72" height="17.60"/>
+   </object>
+  </object>
+  <object class="MsgTextWgt" id="msgtext3">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="18" cx="10.81" cy="11.84" alignment="center" x="597" y="69" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(23,30,40)" min="0" width="22" continous="true" lineSeparator="" height="25" font-size="14">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="229"/>
+     <textid idx="1" val="230"/>
+     <textid idx="2" val="231"/>
+     <textid idx="3" val="232"/>
+    </lang>
+   </links>
+  </object>
+  <object class="GroupWgt" id="LightsStd4" customType="Light">
+   <wgtStyle width="56" x="433" y="98" cx="28" cy="30.50" height="61"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image18" static="true">
+    <wgtStyle width="56" imagePath="images/frame_round_wood.svg" enableCache="false" x="0" y="0" fill="rgb(89,45,0)" cx="27.49" cy="29.88" height="61"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:light; type:light" id="light_ind3">
+    <wgtStyle width="40.92" imagePath="images/li_round_shiney1_rev2.svg" x="7.54" forcePaint="8" y="7.04" cx="26.47" cy="18.68" bkgColor="rgb(120,120,120);rgb(255,0,0)" height="45.75" stroke="rgb(255,251,240)"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="value" tag="fanRelay2" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label13" static="true">
+    <wgtStyle width="36.62" x="9.69" font-sizepx="13" y="10.56" font-family="Tahoma" cx="18.33" cy="19.92" height="41.06" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="150">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="icon4" static="true">
+    <wgtStyle width="16.15" enableCache="true" x="19.38" y="22.29" cx="8.14" cy="8.72" height="17.60"/>
+   </object>
+  </object>
+  <object class="MsgTextWgt" id="msgtext4">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="18" cx="10.81" cy="11.84" alignment="center" x="449" y="68" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(23,30,40)" min="0" width="22" continous="true" lineSeparator="" height="25" font-size="14">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="237"/>
+     <textid idx="1" val="238"/>
+     <textid idx="2" val="239"/>
+     <textid idx="3" val="240"/>
+    </lang>
+   </links>
+  </object>
+  <object class="GroupWgt" id="LightsStd5" customType="Light">
+   <wgtStyle width="56" x="700" y="98" cx="28" cy="30.50" height="61"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image23" static="true">
+    <wgtStyle width="56" imagePath="images/frame_round_wood.svg" enableCache="false" x="0" y="0" fill="rgb(89,45,0)" cx="27.49" cy="29.88" height="61"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:light; type:light" id="light_ind4">
+    <wgtStyle width="40.92" imagePath="images/li_round_shiney1_rev2.svg" x="7.54" forcePaint="8" y="7.04" cx="26.47" cy="18.68" bkgColor="rgb(120,120,120);rgb(255,0,0)" height="45.75" stroke="rgb(255,251,240)"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="value" tag="fanRelay3" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label14" static="true">
+    <wgtStyle width="36.62" x="9.69" font-sizepx="13" y="10.56" font-family="Tahoma" cx="18.33" cy="19.92" height="41.06" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="150">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="icon5" static="true">
+    <wgtStyle width="16.15" enableCache="true" x="19.38" y="22.29" cx="8.14" cy="8.72" height="17.60"/>
+   </object>
+  </object>
+  <object class="MsgTextWgt" id="msgtext5">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="18" cx="10.81" cy="11.84" alignment="center" x="716" y="69" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(23,30,40)" min="0" width="22" continous="true" lineSeparator="" height="25" font-size="14">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="233"/>
+     <textid idx="1" val="234"/>
+     <textid idx="2" val="235"/>
+     <textid idx="3" val="236"/>
+    </lang>
+   </links>
+  </object>
+  <object class="ShapeWgt" id="rect4" static="true">
+   <wgtStyle width="257" x="5" y="256" fill="rgb(220,220,220)" cx="124.35" cy="80.50" height="161" nodeName="rect" stroke-width="2"/>
+  </object>
+  <object class="GroupWgt" id="LightsStd6" customType="Light">
+   <wgtStyle width="56" x="48" y="289" cx="28" cy="30.50" height="61"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image24" static="true">
+    <wgtStyle width="56" imagePath="images/frame_round_wood.svg" enableCache="false" x="0" y="0" fill="rgb(89,45,0)" cx="27.49" cy="29.88" height="61"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:light; type:light" id="light_ind5">
+    <wgtStyle width="40.92" imagePath="images/li_round_shiney1_rev2.svg" x="7.54" forcePaint="8" y="7.04" cx="26.47" cy="18.68" bkgColor="rgb(120,120,120);rgb(255,0,0)" height="45.75" stroke="rgb(255,251,240)"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="value" tag="fanRelay4" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label15" static="true">
+    <wgtStyle width="36.62" x="9.69" font-sizepx="13" y="10.56" font-family="Tahoma" cx="18.33" cy="19.92" height="41.06" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="150">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="icon6" static="true">
+    <wgtStyle width="16.15" enableCache="true" x="19.38" y="22.29" cx="8.14" cy="8.72" height="17.60"/>
+   </object>
+  </object>
+  <object class="MsgTextWgt" id="msgtext6">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="18" cx="10.81" cy="11.84" alignment="center" x="64" y="259" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(23,30,40)" min="0" width="22" continous="true" lineSeparator="" height="25" font-size="14">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="245"/>
+     <textid idx="1" val="246"/>
+     <textid idx="2" val="247"/>
+     <textid idx="3" val="248"/>
+    </lang>
+   </links>
+  </object>
+  <object class="ShapeWgt" id="rect5" static="true">
+   <wgtStyle width="257" x="272" y="256" fill="rgb(220,220,220)" cx="124.35" cy="80.50" height="161" nodeName="rect" stroke-width="2"/>
+  </object>
+  <object class="GroupWgt" id="LightsStd7" customType="Light">
+   <wgtStyle width="56" x="312" y="289" cx="28" cy="30.50" height="61"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image29" static="true">
+    <wgtStyle width="56" imagePath="images/frame_round_wood.svg" enableCache="false" x="0" y="0" fill="rgb(89,45,0)" cx="27.49" cy="29.88" height="61"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:light; type:light" id="light_ind6">
+    <wgtStyle width="40.92" imagePath="images/li_round_shiney1_rev2.svg" x="7.54" forcePaint="8" y="7.04" cx="26.47" cy="18.68" bkgColor="rgb(120,120,120);rgb(255,0,0)" height="45.75" stroke="rgb(255,251,240)"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="value" tag="fanRelay5" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label18" static="true">
+    <wgtStyle width="36.62" x="9.69" font-sizepx="13" y="10.56" font-family="Tahoma" cx="18.33" cy="19.92" height="41.06" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="150">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="icon7" static="true">
+    <wgtStyle width="16.15" enableCache="true" x="19.38" y="22.29" cx="8.14" cy="8.72" height="17.60"/>
+   </object>
+  </object>
+  <object class="MsgTextWgt" id="msgtext7">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="18" cx="10.81" cy="11.84" alignment="center" x="328" y="259" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(23,30,40)" min="0" width="22" continous="true" lineSeparator="" height="25" font-size="14">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="253"/>
+     <textid idx="1" val="254"/>
+     <textid idx="2" val="255"/>
+     <textid idx="3" val="256"/>
+    </lang>
+   </links>
+  </object>
+  <object class="ShapeWgt" id="rect6" static="true">
+   <wgtStyle width="257" x="538" y="256" fill="rgb(220,220,220)" cx="124.35" cy="80.50" height="161" nodeName="rect" stroke-width="2"/>
+  </object>
+  <object class="GroupWgt" id="LightsStd8" customType="Light">
+   <wgtStyle width="56" x="557" y="289" cx="28" cy="30.50" height="61"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image34" static="true">
+    <wgtStyle width="56" imagePath="images/frame_round_wood.svg" enableCache="false" x="0" y="0" fill="rgb(89,45,0)" cx="27.49" cy="29.88" height="61"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:light; type:light" id="light_ind7">
+    <wgtStyle width="40.92" imagePath="images/li_round_shiney1_rev2.svg" x="7.54" forcePaint="8" y="7.04" cx="26.47" cy="18.68" bkgColor="rgb(120,120,120);rgb(255,0,0)" height="45.75" stroke="rgb(255,251,240)"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="value" tag="fanRelay6" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label21" static="true">
+    <wgtStyle width="36.62" x="9.69" font-sizepx="13" y="10.56" font-family="Tahoma" cx="18.33" cy="19.92" height="41.06" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="150">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="icon8" static="true">
+    <wgtStyle width="16.15" enableCache="true" x="19.38" y="22.29" cx="8.14" cy="8.72" height="17.60"/>
+   </object>
+  </object>
+  <object class="MsgTextWgt" id="msgtext8">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="18" cx="10.81" cy="11.84" alignment="center" x="573" y="260" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(23,30,40)" min="0" width="22" continous="true" lineSeparator="" height="25" font-size="14">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="261"/>
+     <textid idx="1" val="262"/>
+     <textid idx="2" val="263"/>
+     <textid idx="3" val="264"/>
+    </lang>
+   </links>
+  </object>
+  <object class="GroupWgt" id="LightsStd9" customType="Light">
+   <wgtStyle width="56" x="431" y="289" cx="28" cy="30.50" height="61"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image39" static="true">
+    <wgtStyle width="56" imagePath="images/frame_round_wood.svg" enableCache="false" x="0" y="0" fill="rgb(89,45,0)" cx="27.49" cy="29.88" height="61"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:light; type:light" id="light_ind8">
+    <wgtStyle width="40.92" imagePath="images/li_round_shiney1_rev2.svg" x="7.54" forcePaint="8" y="7.04" cx="26.47" cy="18.68" bkgColor="rgb(120,120,120);rgb(255,0,0)" height="45.75" stroke="rgb(255,251,240)"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="value" tag="fanRelay5" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label24" static="true">
+    <wgtStyle width="36.62" x="9.69" font-sizepx="13" y="10.56" font-family="Tahoma" cx="18.33" cy="19.92" height="41.06" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="150">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="icon9" static="true">
+    <wgtStyle width="16.15" enableCache="true" x="19.38" y="22.29" cx="8.14" cy="8.72" height="17.60"/>
+   </object>
+  </object>
+  <object class="MsgTextWgt" id="msgtext9">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="18" cx="10.81" cy="11.84" alignment="center" x="447" y="259" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(23,30,40)" min="0" width="22" continous="true" lineSeparator="" height="25" font-size="14">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="257"/>
+     <textid idx="1" val="258"/>
+     <textid idx="2" val="259"/>
+     <textid idx="3" val="260"/>
+    </lang>
+   </links>
+  </object>
+  <object class="GroupWgt" id="LightsStd10" customType="Light">
+   <wgtStyle width="56" x="722" y="289" cx="28" cy="30.50" height="61"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image40" static="true">
+    <wgtStyle width="56" imagePath="images/frame_round_wood.svg" enableCache="false" x="0" y="0" fill="rgb(89,45,0)" cx="27.49" cy="29.88" height="61"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:light; type:light" id="light_ind9">
+    <wgtStyle width="40.92" imagePath="images/li_round_shiney1_rev2.svg" x="7.54" forcePaint="8" y="7.04" cx="26.47" cy="18.68" bkgColor="rgb(120,120,120);rgb(255,0,0)" height="45.75" stroke="rgb(255,251,240)"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="value" tag="fanRelay6" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label25" static="true">
+    <wgtStyle width="36.62" x="9.69" font-sizepx="13" y="10.56" font-family="Tahoma" cx="18.33" cy="19.92" height="41.06" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="150">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="icon10" static="true">
+    <wgtStyle width="16.15" enableCache="true" x="19.38" y="22.29" cx="8.14" cy="8.72" height="17.60"/>
+   </object>
+  </object>
+  <object class="MsgTextWgt" id="msgtext10">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="18" cx="10.81" cy="11.84" alignment="center" x="738" y="260" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(23,30,40)" min="0" width="22" continous="true" lineSeparator="" height="25" font-size="14">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="269"/>
+     <textid idx="1" val="270"/>
+     <textid idx="2" val="271"/>
+     <textid idx="3" val="272"/>
+    </lang>
+   </links>
+  </object>
+  <object class="GroupWgt" id="LightsStd11" customType="Light">
+   <wgtStyle width="56" x="167" y="289" cx="28" cy="30.50" height="61"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image41" static="true">
+    <wgtStyle width="56" imagePath="images/frame_round_wood.svg" enableCache="false" x="0" y="0" fill="rgb(89,45,0)" cx="27.49" cy="29.88" height="61"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:light; type:light" id="light_ind10">
+    <wgtStyle width="40.92" imagePath="images/li_round_shiney1_rev2.svg" x="7.54" forcePaint="8" y="7.04" cx="26.47" cy="18.68" bkgColor="rgb(120,120,120);rgb(255,0,0)" height="45.75" stroke="rgb(255,251,240)"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="value" tag="fanRelay4" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label26" static="true">
+    <wgtStyle width="36.62" x="9.69" font-sizepx="13" y="10.56" font-family="Tahoma" cx="18.33" cy="19.92" height="41.06" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="150">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="icon11" static="true">
+    <wgtStyle width="16.15" enableCache="true" x="19.38" y="22.29" cx="8.14" cy="8.72" height="17.60"/>
+   </object>
+  </object>
+  <object class="MsgTextWgt" id="msgtext11">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="18" cx="10.81" cy="11.84" alignment="center" x="183" y="259" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(23,30,40)" min="0" width="22" continous="true" lineSeparator="" height="25" font-size="14">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="249"/>
+     <textid idx="1" val="250"/>
+     <textid idx="2" val="251"/>
+     <textid idx="3" val="252"/>
+    </lang>
+   </links>
+  </object>
+  <object class="GroupWgt" id="LightsStd12" customType="Light">
+   <wgtStyle width="56" x="641" y="289" cx="28" cy="30.50" height="61"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image42" static="true">
+    <wgtStyle width="56" imagePath="images/frame_round_wood.svg" enableCache="false" x="0" y="0" fill="rgb(89,45,0)" cx="27.49" cy="29.88" height="61"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:light; type:light" id="light_ind11">
+    <wgtStyle width="40.92" imagePath="images/li_round_shiney1_rev2.svg" x="7.54" forcePaint="8" y="7.04" cx="26.47" cy="18.68" bkgColor="rgb(120,120,120);rgb(255,0,0)" height="45.75" stroke="rgb(255,251,240)"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="value" tag="fanRelay6" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label27" static="true">
+    <wgtStyle width="36.62" x="9.69" font-sizepx="13" y="10.56" font-family="Tahoma" cx="18.33" cy="19.92" height="41.06" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="150">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="icon12" static="true">
+    <wgtStyle width="16.15" enableCache="true" x="19.38" y="22.29" cx="8.14" cy="8.72" height="17.60"/>
+   </object>
+  </object>
+  <object class="MsgTextWgt" id="msgtext12">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="18" cx="10.81" cy="11.84" alignment="center" x="657" y="260" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(23,30,40)" min="0" width="22" continous="true" lineSeparator="" height="25" font-size="14">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="265"/>
+     <textid idx="1" val="266"/>
+     <textid idx="2" val="267"/>
+     <textid idx="3" val="268"/>
+    </lang>
+   </links>
+  </object>
+  <object class="GroupWgt" id="GroupWgt1">
+   <wgtStyle width="294" x="253" y="2" cx="147" cy="25.50" height="51"/>
+   <object class="ShapeWgt" id="GroupWgt1.roundrect11" static="true">
+    <wgtStyle width="294" x="0" y="6" fill="rgb(210,180,140)" cx="142.55" cy="19.35" rx="20" height="40" nodeName="rect" ry="20"/>
+   </object>
+   <object class="MsgTextWgt" id="GroupWgt1.msgtext1">
+    <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="42" cx="114.52" cy="24.16" x="30.60" y="0" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(23,30,40)" min="0" width="233" continous="true" lineSeparator="" height="51" font-size="32">
+     <msgtxt>
+      <msg index="0"/>
+      <msg index="1"/>
+      <msg index="2"/>
+      <msg index="3"/>
+     </msgtxt>
+    </wgtStyle>
+    <links>
+     <lang class="MLMsgLink">
+      <MLFontFamily L1="Cambria"/>
+      <textid idx="0" val="155"/>
+      <textid idx="1" val="156"/>
+      <textid idx="2" val="157"/>
+      <textid idx="3" val="158"/>
+     </lang>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd11" customType="Button">
+   <wgtStyle width="96" x="413" y="165" cx="48" cy="26" height="52"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image22" static="true">
+    <wgtStyle width="96" imagePath="images/frame_rect45bar_chrome.svg" enableCache="false" x="0" y="0" cx="52.64" cy="42.21" height="52"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd11">
+    <wgtStyle width="87.74" x="4.13" y="6.13" fill="rgb(255,173,91)" dx="1" cx="48.25" form="standard" cy="31.66" height="38.23" releasePath="images\btn_shiney_rect45bar_1.svg" needlePath="images\btn_shiney_rect45bar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="SetBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="relayManualOn2" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label16">
+    <wgtStyle width="76.39" font-color="rgb(40,40,40)" x="7.23" forcePaint="1" font-sizepx="16" y="7.64" font-family="Cambria" wrapping="true" cx="42.24" cy="26.63" height="32.13" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="39">
+      <MLFontFamily L1="Cambria"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image25" static="true">
+    <wgtStyle width="27.87" enableCache="false" x="32" y="12.23" cx="15.65" cy="21.65" height="26"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd12" customType="Button">
+   <wgtStyle width="96" x="413" forcePaint="9" y="165.45" cx="48" cy="26.50" height="53"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="relayManualOn2" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image26">
+    <wgtStyle width="96" imagePath="images/frame_rect45bar_chrome.svg" enableCache="false" x="0" forcePaint="1" y="0" cx="52.64" cy="43.03" height="53"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd12">
+    <wgtStyle width="87.74" x="4.13" forcePaint="1" y="6.24" fill="rgb(50,205,50)" dx="1" cx="48.25" form="standard" cy="32.28" height="38.97" releasePath="images\btn_shiney_rect45bar_1.svg" needlePath="images\btn_shiney_rect45bar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ResetBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="relayManualOn2" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label17">
+    <wgtStyle width="76.39" font-color="rgb(40,40,40)" x="7.23" forcePaint="1" font-sizepx="16" y="7.79" font-family="Cambria" wrapping="true" cx="42.24" cy="27.15" height="32.74" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="38">
+      <MLFontFamily L1="Cambria"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image27" static="true">
+    <wgtStyle width="27.87" enableCache="false" x="32" y="12.47" cx="15.65" cy="22.07" height="26.50"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd14" customType="Button">
+   <wgtStyle width="96" x="560" y="163.90" cx="48" cy="26.77" height="53.55"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image31" static="true">
+    <wgtStyle width="96" imagePath="images/frame_rect45bar_chrome.svg" enableCache="false" x="0" y="0" cx="52.64" cy="43.47" height="53.55"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd14">
+    <wgtStyle width="87.74" x="4.13" y="6.31" fill="rgb(50,205,50)" dx="1" cx="48.25" form="standard" cy="32.61" height="39.37" releasePath="images\btn_shiney_rect45bar_1.svg" needlePath="images\btn_shiney_rect45bar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="SetBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="relayManual3" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label20">
+    <wgtStyle width="76.39" font-color="rgb(40,40,40)" x="7.23" forcePaint="1" font-sizepx="16" y="7.87" font-family="Cambria" wrapping="true" cx="42.24" cy="27.43" height="33.08" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="37">
+      <MLFontFamily L1="Cambria"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image32" static="true">
+    <wgtStyle width="27.87" enableCache="false" x="32" y="12.60" cx="15.65" cy="22.29" height="26.78"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd13" customType="Button">
+   <wgtStyle width="96" x="560" forcePaint="9" y="164" cx="48" cy="26" height="52"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="relayManual3" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image28">
+    <wgtStyle width="96" imagePath="images/frame_rect45bar_chrome.svg" enableCache="false" x="0" forcePaint="1" y="0" cx="52.64" cy="42.21" height="52"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd13">
+    <wgtStyle width="87.74" x="4.13" forcePaint="1" y="6.12" fill="rgb(255,173,91)" dx="1" cx="48.25" form="standard" cy="31.67" height="38.23" releasePath="images\btn_shiney_rect45bar_1.svg" needlePath="images\btn_shiney_rect45bar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ResetBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="relayManual3" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label19">
+    <wgtStyle width="76.39" font-color="rgb(40,40,40)" x="7.23" forcePaint="1" font-sizepx="16" y="7.64" font-family="Cambria" wrapping="true" cx="42.24" cy="26.64" height="32.12" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="36">
+      <MLFontFamily L1="Cambria"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image30" static="true">
+    <wgtStyle width="27.87" enableCache="false" x="32" y="12.23" cx="15.65" cy="21.65" height="26"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd15" customType="Button">
+   <wgtStyle width="96" x="681" y="164" cx="48" cy="26" height="52"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image33" static="true">
+    <wgtStyle width="96" imagePath="images/frame_rect45bar_chrome.svg" enableCache="false" x="0" y="0" cx="52.64" cy="42.21" height="52"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd15">
+    <wgtStyle width="87.74" x="4.13" y="6.13" fill="rgb(255,173,91)" dx="1" cx="48.25" form="standard" cy="31.66" height="38.23" releasePath="images\btn_shiney_rect45bar_1.svg" needlePath="images\btn_shiney_rect45bar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="SetBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="relayManualOn3" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label22">
+    <wgtStyle width="76.39" font-color="rgb(40,40,40)" x="7.23" forcePaint="1" font-sizepx="16" y="7.64" font-family="Cambria" wrapping="true" cx="42.24" cy="26.63" height="32.13" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="39">
+      <MLFontFamily L1="Cambria"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image35" static="true">
+    <wgtStyle width="27.87" enableCache="false" x="32" y="12.23" cx="15.65" cy="21.65" height="26"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd16" customType="Button">
+   <wgtStyle width="96" x="681" forcePaint="9" y="164.45" cx="48" cy="26.50" height="53"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="relayManualOn3" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image36">
+    <wgtStyle width="96" imagePath="images/frame_rect45bar_chrome.svg" enableCache="false" x="0" forcePaint="1" y="0" cx="52.64" cy="43.03" height="53"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd16">
+    <wgtStyle width="87.74" x="4.13" forcePaint="1" y="6.24" fill="rgb(50,205,50)" dx="1" cx="48.25" form="standard" cy="32.28" height="38.97" releasePath="images\btn_shiney_rect45bar_1.svg" needlePath="images\btn_shiney_rect45bar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ResetBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="relayManualOn3" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label23">
+    <wgtStyle width="76.39" font-color="rgb(40,40,40)" x="7.23" forcePaint="1" font-sizepx="16" y="7.79" font-family="Cambria" wrapping="true" cx="42.24" cy="27.15" height="32.74" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="38">
+      <MLFontFamily L1="Cambria"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image37" static="true">
+    <wgtStyle width="27.87" enableCache="false" x="32" y="12.47" cx="15.65" cy="22.07" height="26.50"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd18" customType="Button">
+   <wgtStyle width="96" x="26" y="353.90" cx="48" cy="26.77" height="53.55"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image44" static="true">
+    <wgtStyle width="96" imagePath="images/frame_rect45bar_chrome.svg" enableCache="false" x="0" y="0" cx="52.64" cy="43.47" height="53.55"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd18">
+    <wgtStyle width="87.74" x="4.13" y="6.31" fill="rgb(50,205,50)" dx="1" cx="48.25" form="standard" cy="32.61" height="39.37" releasePath="images\btn_shiney_rect45bar_1.svg" needlePath="images\btn_shiney_rect45bar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="SetBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="relayManual4" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label29">
+    <wgtStyle width="76.39" font-color="rgb(40,40,40)" x="7.23" forcePaint="1" font-sizepx="16" y="7.87" font-family="Cambria" wrapping="true" cx="42.24" cy="27.43" height="33.08" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="37">
+      <MLFontFamily L1="Cambria"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image45" static="true">
+    <wgtStyle width="27.87" enableCache="false" x="32" y="12.60" cx="15.65" cy="22.29" height="26.78"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd17" customType="Button">
+   <wgtStyle width="96" x="26" forcePaint="9" y="354" cx="48" cy="26" height="52"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="relayManual4" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image38">
+    <wgtStyle width="96" imagePath="images/frame_rect45bar_chrome.svg" enableCache="false" x="0" forcePaint="1" y="0" cx="52.64" cy="42.21" height="52"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd17">
+    <wgtStyle width="87.74" x="4.13" forcePaint="1" y="6.12" fill="rgb(255,173,91)" dx="1" cx="48.25" form="standard" cy="31.67" height="38.23" releasePath="images\btn_shiney_rect45bar_1.svg" needlePath="images\btn_shiney_rect45bar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ResetBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="relayManual4" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label28">
+    <wgtStyle width="76.39" font-color="rgb(40,40,40)" x="7.23" forcePaint="1" font-sizepx="16" y="7.64" font-family="Cambria" wrapping="true" cx="42.24" cy="26.64" height="32.12" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="36">
+      <MLFontFamily L1="Cambria"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image43" static="true">
+    <wgtStyle width="27.87" enableCache="false" x="32" y="12.23" cx="15.65" cy="21.65" height="26"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd19" customType="Button">
+   <wgtStyle width="96" x="147" y="354" cx="48" cy="26" height="52"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image46" static="true">
+    <wgtStyle width="96" imagePath="images/frame_rect45bar_chrome.svg" enableCache="false" x="0" y="0" cx="52.64" cy="42.21" height="52"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd19">
+    <wgtStyle width="87.74" x="4.13" y="6.13" fill="rgb(255,173,91)" dx="1" cx="48.25" form="standard" cy="31.66" height="38.23" releasePath="images\btn_shiney_rect45bar_1.svg" needlePath="images\btn_shiney_rect45bar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="SetBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="relayManualOn4" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label30">
+    <wgtStyle width="76.39" font-color="rgb(40,40,40)" x="7.23" forcePaint="1" font-sizepx="16" y="7.64" font-family="Cambria" wrapping="true" cx="42.24" cy="26.63" height="32.13" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="39">
+      <MLFontFamily L1="Cambria"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image47" static="true">
+    <wgtStyle width="27.87" enableCache="false" x="32" y="12.23" cx="15.65" cy="21.65" height="26"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd20" customType="Button">
+   <wgtStyle width="96" x="147" forcePaint="9" y="354.45" cx="48" cy="26.50" height="53"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="relayManualOn4" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image48">
+    <wgtStyle width="96" imagePath="images/frame_rect45bar_chrome.svg" enableCache="false" x="0" forcePaint="1" y="0" cx="52.64" cy="43.03" height="53"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd20">
+    <wgtStyle width="87.74" x="4.13" forcePaint="1" y="6.24" fill="rgb(50,205,50)" dx="1" cx="48.25" form="standard" cy="32.28" height="38.97" releasePath="images\btn_shiney_rect45bar_1.svg" needlePath="images\btn_shiney_rect45bar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ResetBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="relayManualOn4" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label31">
+    <wgtStyle width="76.39" font-color="rgb(40,40,40)" x="7.23" forcePaint="1" font-sizepx="16" y="7.79" font-family="Cambria" wrapping="true" cx="42.24" cy="27.15" height="32.74" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="38">
+      <MLFontFamily L1="Cambria"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image49" static="true">
+    <wgtStyle width="27.87" enableCache="false" x="32" y="12.47" cx="15.65" cy="22.07" height="26.50"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd22" customType="Button">
+   <wgtStyle width="96" x="291" y="353.90" cx="48" cy="26.77" height="53.55"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image52" static="true">
+    <wgtStyle width="96" imagePath="images/frame_rect45bar_chrome.svg" enableCache="false" x="0" y="0" cx="52.64" cy="43.47" height="53.55"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd22">
+    <wgtStyle width="87.74" x="4.13" y="6.31" fill="rgb(50,205,50)" dx="1" cx="48.25" form="standard" cy="32.61" height="39.37" releasePath="images\btn_shiney_rect45bar_1.svg" needlePath="images\btn_shiney_rect45bar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="SetBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="relayManual5" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label33">
+    <wgtStyle width="76.39" font-color="rgb(40,40,40)" x="7.23" forcePaint="1" font-sizepx="16" y="7.87" font-family="Cambria" wrapping="true" cx="42.24" cy="27.43" height="33.08" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="37">
+      <MLFontFamily L1="Cambria"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image53" static="true">
+    <wgtStyle width="27.87" enableCache="false" x="32" y="12.60" cx="15.65" cy="22.29" height="26.78"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd21" customType="Button">
+   <wgtStyle width="96" x="291" forcePaint="9" y="354" cx="48" cy="26" height="52"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="relayManual5" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image50">
+    <wgtStyle width="96" imagePath="images/frame_rect45bar_chrome.svg" enableCache="false" x="0" forcePaint="1" y="0" cx="52.64" cy="42.21" height="52"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd21">
+    <wgtStyle width="87.74" x="4.13" forcePaint="1" y="6.12" fill="rgb(255,173,91)" dx="1" cx="48.25" form="standard" cy="31.67" height="38.23" releasePath="images\btn_shiney_rect45bar_1.svg" needlePath="images\btn_shiney_rect45bar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ResetBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="relayManual5" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label32">
+    <wgtStyle width="76.39" font-color="rgb(40,40,40)" x="7.23" forcePaint="1" font-sizepx="16" y="7.64" font-family="Cambria" wrapping="true" cx="42.24" cy="26.64" height="32.12" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="36">
+      <MLFontFamily L1="Cambria"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image51" static="true">
+    <wgtStyle width="27.87" enableCache="false" x="32" y="12.23" cx="15.65" cy="21.65" height="26"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd23" customType="Button">
+   <wgtStyle width="96" x="412" y="354" cx="48" cy="26" height="52"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image54" static="true">
+    <wgtStyle width="96" imagePath="images/frame_rect45bar_chrome.svg" enableCache="false" x="0" y="0" cx="52.64" cy="42.21" height="52"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd23">
+    <wgtStyle width="87.74" x="4.13" y="6.13" fill="rgb(255,173,91)" dx="1" cx="48.25" form="standard" cy="31.66" height="38.23" releasePath="images\btn_shiney_rect45bar_1.svg" needlePath="images\btn_shiney_rect45bar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="SetBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="relayManualOn5" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label34">
+    <wgtStyle width="76.39" font-color="rgb(40,40,40)" x="7.23" forcePaint="1" font-sizepx="16" y="7.64" font-family="Cambria" wrapping="true" cx="42.24" cy="26.63" height="32.13" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="39">
+      <MLFontFamily L1="Cambria"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image55" static="true">
+    <wgtStyle width="27.87" enableCache="false" x="32" y="12.23" cx="15.65" cy="21.65" height="26"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd24" customType="Button">
+   <wgtStyle width="96" x="412" forcePaint="9" y="354.45" cx="48" cy="26.50" height="53"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="relayManualOn5" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image56">
+    <wgtStyle width="96" imagePath="images/frame_rect45bar_chrome.svg" enableCache="false" x="0" forcePaint="1" y="0" cx="52.64" cy="43.03" height="53"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd24">
+    <wgtStyle width="87.74" x="4.13" forcePaint="1" y="6.24" fill="rgb(50,205,50)" dx="1" cx="48.25" form="standard" cy="32.28" height="38.97" releasePath="images\btn_shiney_rect45bar_1.svg" needlePath="images\btn_shiney_rect45bar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ResetBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="relayManualOn5" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label35">
+    <wgtStyle width="76.39" font-color="rgb(40,40,40)" x="7.23" forcePaint="1" font-sizepx="16" y="7.79" font-family="Cambria" wrapping="true" cx="42.24" cy="27.15" height="32.74" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="38">
+      <MLFontFamily L1="Cambria"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image57" static="true">
+    <wgtStyle width="27.87" enableCache="false" x="32" y="12.47" cx="15.65" cy="22.07" height="26.50"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd26" customType="Button">
+   <wgtStyle width="96" x="560" y="354.90" cx="48" cy="26.77" height="53.55"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image60" static="true">
+    <wgtStyle width="96" imagePath="images/frame_rect45bar_chrome.svg" enableCache="false" x="0" y="0" cx="52.64" cy="43.47" height="53.55"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd26">
+    <wgtStyle width="87.74" x="4.13" y="6.31" fill="rgb(50,205,50)" dx="1" cx="48.25" form="standard" cy="32.61" height="39.37" releasePath="images\btn_shiney_rect45bar_1.svg" needlePath="images\btn_shiney_rect45bar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="SetBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="relayManual6" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label37">
+    <wgtStyle width="76.39" font-color="rgb(40,40,40)" x="7.23" forcePaint="1" font-sizepx="16" y="7.87" font-family="Cambria" wrapping="true" cx="42.24" cy="27.43" height="33.08" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="37">
+      <MLFontFamily L1="Cambria"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image61" static="true">
+    <wgtStyle width="27.87" enableCache="false" x="32" y="12.60" cx="15.65" cy="22.29" height="26.78"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd25" customType="Button">
+   <wgtStyle width="96" x="560" forcePaint="9" y="355" cx="48" cy="26" height="52"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="relayManual6" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image58">
+    <wgtStyle width="96" imagePath="images/frame_rect45bar_chrome.svg" enableCache="false" x="0" forcePaint="1" y="0" cx="52.64" cy="42.21" height="52"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd25">
+    <wgtStyle width="87.74" x="4.13" forcePaint="1" y="6.12" fill="rgb(255,173,91)" dx="1" cx="48.25" form="standard" cy="31.67" height="38.23" releasePath="images\btn_shiney_rect45bar_1.svg" needlePath="images\btn_shiney_rect45bar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ResetBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="relayManual6" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label36">
+    <wgtStyle width="76.39" font-color="rgb(40,40,40)" x="7.23" forcePaint="1" font-sizepx="16" y="7.64" font-family="Cambria" wrapping="true" cx="42.24" cy="26.64" height="32.12" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="36">
+      <MLFontFamily L1="Cambria"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image59" static="true">
+    <wgtStyle width="27.87" enableCache="false" x="32" y="12.23" cx="15.65" cy="21.65" height="26"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd27" customType="Button">
+   <wgtStyle width="96" x="681" y="355" cx="48" cy="26" height="52"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image62" static="true">
+    <wgtStyle width="96" imagePath="images/frame_rect45bar_chrome.svg" enableCache="false" x="0" y="0" cx="52.64" cy="42.21" height="52"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd27">
+    <wgtStyle width="87.74" x="4.13" y="6.13" fill="rgb(255,173,91)" dx="1" cx="48.25" form="standard" cy="31.66" height="38.23" releasePath="images\btn_shiney_rect45bar_1.svg" needlePath="images\btn_shiney_rect45bar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="SetBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="relayManualOn6" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label38">
+    <wgtStyle width="76.39" font-color="rgb(40,40,40)" x="7.23" forcePaint="1" font-sizepx="16" y="7.64" font-family="Cambria" wrapping="true" cx="42.24" cy="26.63" height="32.13" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="39">
+      <MLFontFamily L1="Cambria"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image63" static="true">
+    <wgtStyle width="27.87" enableCache="false" x="32" y="12.23" cx="15.65" cy="21.65" height="26"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd28" customType="Button">
+   <wgtStyle width="96" x="681" forcePaint="9" y="355.45" cx="48" cy="26.50" height="53"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="relayManualOn6" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect45bar; hmi-type:bkgd" id="image64">
+    <wgtStyle width="96" imagePath="images/frame_rect45bar_chrome.svg" enableCache="false" x="0" forcePaint="1" y="0" cx="52.64" cy="43.03" height="53"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect45bar; hmi-type:btn; type:btn" id="buttonStd28">
+    <wgtStyle width="87.74" x="4.13" forcePaint="1" y="6.24" fill="rgb(50,205,50)" dx="1" cx="48.25" form="standard" cy="32.28" height="38.97" releasePath="images\btn_shiney_rect45bar_1.svg" needlePath="images\btn_shiney_rect45bar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ResetBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="relayManualOn6" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label39">
+    <wgtStyle width="76.39" font-color="rgb(40,40,40)" x="7.23" forcePaint="1" font-sizepx="16" y="7.79" font-family="Cambria" wrapping="true" cx="42.24" cy="27.15" height="32.74" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="38">
+      <MLFontFamily L1="Cambria"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image65" static="true">
+    <wgtStyle width="27.87" enableCache="false" x="32" y="12.47" cx="15.65" cy="22.07" height="26.50"/>
+   </object>
+  </object>
+  <object class="GroupSubscribeWgt" id="FanStatusNew@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+ </object>
+</wgtPage>

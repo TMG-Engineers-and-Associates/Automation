@@ -1,0 +1,16 @@
+<groups>
+ <group Type="Auto">
+  <name>Page1@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>/currDate1</tag>
+  <tag>/currHour</tag>
+  <tag>/currMinute</tag>
+  <tag>/currMonth</tag>
+  <tag>/currSeconds1</tag>
+  <tag>/currYear</tag>
+  <tag>/cycleDayNum</tag>
+  <tag>/iFanMCBTrip</tag>
+  <tag>/iPowerFailure</tag>
+  <tag>/iwTemp1</tag>
+ </group>
+</groups>

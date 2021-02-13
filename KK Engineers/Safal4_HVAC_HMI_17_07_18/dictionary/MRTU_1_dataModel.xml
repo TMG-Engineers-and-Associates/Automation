@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data_tree name="root" nodeIDField="0" protocolName="MRTU" type="container">
+    <config dict_name="F:\Work\Projects\KK Engineers\Unnat Karnal Hatchery\Poultry HMI Exor\Poultary\dictionary\MRTU_1_dataModel.xml"/>
+    <property_alias>
+        <property display="Tag name" name="tagName" showEmpty="true"/>
+        <property display="Group" name="info50" showEmpty="true"/>
+        <property display="ProtocolName" name="info0" showEmpty="true"/>
+        <property display="Node id" name="nodeID" showEmpty="true"/>
+        <property display="Memory type" name="info1" showEmpty="true"/>
+        <property display="Offset" name="info2" showEmpty="true"/>
+        <property display="Subindex" name="info3" showEmpty="true"/>
+        <property display="Data type" name="icomType" showEmpty="true"/>
+        <property display="Arraysize" name="info4" showEmpty="true"/>
+        <property display="Conversion" name="info5" showEmpty="true"/>
+        <property display="Encoding" name="info51" showEmpty="true"/>
+        <property display="RefreshTime" name="info52" showEmpty="true"/>
+        <property display="AccessMode" name="rw" showEmpty="true"/>
+        <property display="Active" name="info53" showEmpty="true"/>
+        <property display="Comment" name="comment" showEmpty="true"/>
+        <property display="DataSimulator" name="info54" showEmpty="true"/>
+        <property display="Amplitude" name="info55" showEmpty="true"/>
+        <property display="Simulator Offset" name="info56" showEmpty="true"/>
+        <property display="Period" name="info57" showEmpty="true"/>
+        <property display="EnableScaling" name="info58" showEmpty="true"/>
+        <property display="S1" name="info61" showEmpty="true"/>
+        <property display="S2" name="info62" showEmpty="true"/>
+        <property display="S3" name="info63" showEmpty="true"/>
+        <property display="EnableLimits" name="info60" showEmpty="true"/>
+        <property display="Eumin" name="info64" showEmpty="true"/>
+        <property display="Eumax" name="info65" showEmpty="true"/>
+        <property display="ScalingType" name="info59" showEmpty="true"/>
+        <property display="Elmin" name="info66" showEmpty="true"/>
+        <property display="Elmax" name="info67" showEmpty="true"/>
+        <property display="TAGLOCATOR" name="info6" showEmpty="true"/>
+        <property display="Default" name="defaultValue" showEmpty="true"/>
+        <property display="Min" name="minValue" showEmpty="true"/>
+        <property display="Max" name="maxValue" showEmpty="true"/>
+        <property display="StatesText" name="states" showEmpty="true"/>
+        <property display="Tag URI" name="tagURI" showEmpty="true"/>
+    </property_alias>
+    <data_type name="totalCount" typeName="float" tagName="totalCount" nodeID="1" info0="MRTU" info1="HREG" info2="400027" info10="1?HREG?400027?float" info52="500" info53="false" info54="Variables" info58="false" info59="byFormula" info60="false" info61="1" info62="1" info63="0" info64="0" info65="100" icomType="float" tagURI="1?HREG?400027?float" type="basic" rw="R/W"/>
+    <data_type name="houseRH" typeName="float" tagName="houseRH" nodeID="1" info0="MRTU" info1="HREG" info2="400019" info10="1?HREG?400019?float" info52="500" info53="false" info54="Variables" info58="false" info59="byFormula" info60="false" info61="1" info62="1" info63="0" info64="0" info65="100" icomType="float" tagURI="1?HREG?400019?float" type="basic" rw="R/W"/>
+    <data_type name="outRH" typeName="float" tagName="outRH" nodeID="1" info0="MRTU" info1="HREG" info2="400021" info10="1?HREG?400021?float" info52="500" info53="false" info54="Variables" info58="false" info59="byFormula" info60="false" info61="1" info62="1" info63="0" info64="0" info65="100" icomType="float" tagURI="1?HREG?400021?float" type="basic" rw="R/W"/>
+    <data_type name="houseTemp" typeName="float" tagName="houseTemp" nodeID="1" info0="MRTU" info1="HREG" info2="400023" info10="1?HREG?400023?float" info52="500" info53="false" info54="Variables" info58="false" info59="byFormula" info60="false" info61="1" info62="1" info63="0" info64="0" info65="100" icomType="float" tagURI="1?HREG?400023?float" type="basic" rw="R/W"/>
+    <data_type name="mortalityPC" typeName="float" tagName="mortalityPC" nodeID="1" info0="MRTU" info1="HREG" info2="400029" info10="1?HREG?400029?float" info52="500" info53="false" info54="Variables" info58="false" info59="byFormula" info60="false" info61="1" info62="1" info63="0" info64="0" info65="100" icomType="float" tagURI="1?HREG?400029?float" type="basic" rw="R/W"/>
+    <data_type name="outTemp" typeName="float" tagName="outTemp" nodeID="1" info0="MRTU" info1="HREG" info2="400017" info10="1?HREG?400017?float" info52="500" info53="false" info54="Variables" info58="false" info59="byFormula" info60="false" info61="1" info62="1" info63="0" info64="0" info65="100" icomType="float" tagURI="1?HREG?400017?float" type="basic" rw="R/W"/>
+    <data_type name="setTemp" typeName="float" tagName="setTemp" nodeID="1" info0="MRTU" info1="HREG" info2="400031" info10="1?HREG?400031?float" info52="500" info53="false" info54="Variables" info58="false" info59="byFormula" info60="false" info61="1" info62="1" info63="0" info64="0" info65="100" icomType="float" tagURI="1?HREG?400031?float" type="basic" rw="R/W"/>
+</data_tree>

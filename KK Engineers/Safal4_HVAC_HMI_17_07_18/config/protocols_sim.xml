@@ -1,0 +1,58 @@
+<protocols>
+ <protocol>
+  <id>prot1</id>
+  <name>MRTU</name>
+  <file>MRTU</file>
+  <configuration>CfgVer=1 defNodeId=1 timeout=2000 delay=0 repeat=2 maxOptLen=250 maxBitOptLen=2000 presetFunction=16 forceFunction=15 txMode=RTU uart=com1 baudrate=19200 parity=none bits=8 stopbits=1 mode=RS-485 model=1 </configuration>
+  <autoImport></autoImport>
+  <enableOptimization>true</enableOptimization>
+  <enableDatagram>false</enableDatagram>
+  <offline_ort>3000</offline_ort>
+  <offline_opt>true</offline_opt>
+  <offline_rpt>3</offline_rpt>
+  <dictionaryname autoSync="false">MRTU_7</dictionaryname>
+  <enableSimProtocol>true</enableSimProtocol>
+  <simFlags>0</simFlags>
+  <displayName>Modbus RTU</displayName>
+ </protocol>
+ <protocol>
+  <id>prot2</id>
+  <name>ABCE</name>
+  <file>ABCE</file>
+  <configuration>CfgVer=1 ip_Address=192.168.0.10 Port=1201 BlockSize=128 Timeout=10000. protType=Tcp/Ip SrcAdr=0. DestAdr=0. model=Motorola RoutingLevels=0. CouplerLV1=Line0 ChannelLV1=0. CouplerLV2=Line0 ChannelLV2=0. </configuration>
+  <autoImport></autoImport>
+  <enableOptimization>true</enableOptimization>
+  <enableDatagram>true</enableDatagram>
+  <offline_ort>3000</offline_ort>
+  <offline_opt>true</offline_opt>
+  <offline_rpt>3</offline_rpt>
+  <dictionaryname autoSync="false">[ABB CoDeSys ETH prot2] Application</dictionaryname>
+  <enableSimProtocol>true</enableSimProtocol>
+  <simFlags>0</simFlags>
+  <displayName>ABB CoDeSys ETH</displayName>
+ </protocol>
+ <protocol>
+  <id>prot3</id>
+  <name>VRBL</name>
+  <file></file>
+  <configuration>CfgVer=1 timeout=100</configuration>
+  <enableOptimization>true</enableOptimization>
+  <enableDatagram>true</enableDatagram>
+ </protocol>
+ <protocol>
+  <id>prot4</id>
+  <name>DEMO</name>
+  <file>DEMO</file>
+  <configuration>CfgVer=1 offset=10 intervalMs=50 timeout=100</configuration>
+  <enableOptimization>true</enableOptimization>
+  <enableDatagram>true</enableDatagram>
+ </protocol>
+ <protocol>
+  <id>prot5</id>
+  <name>DTGN</name>
+  <file>DTGN</file>
+  <configuration>CfgVer=1 timeout=100</configuration>
+  <enableOptimization>true</enableOptimization>
+  <enableDatagram>true</enableDatagram>
+ </protocol>
+</protocols>

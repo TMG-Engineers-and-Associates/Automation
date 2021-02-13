@@ -1,0 +1,117 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="Page1" pageSize="800,480" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" staticFile="opt/page1.png" id="Page1" staticOptEnable="true">
+  <wgtStyle width="800" x="0" y="0" height="480" ver="020000161" v="02.00.00.161"/>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Tahoma"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="" id="1"/>
+   </MLTexts>
+  </object>
+  <object class="NumericWgt" id="field1">
+   <wgtStyle forcePaint="8" font-family="Tahoma" font-sizepx="16" cx="67.16" cy="22.05" step="1" timeSpec="local" alignment="right" x="46.86" y="55" vert-align="top" text="99999" max="32767" usingFormat="#" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-32768" width="146" height="49" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="short" attribute="value" tag="/currYear" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="GroupSubscribeWgt" id="Page1@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="NumericWgt" id="field2">
+   <wgtStyle forcePaint="8" font-family="Tahoma" font-sizepx="16" cx="67.16" cy="22.05" step="1" timeSpec="local" alignment="right" x="271" y="54.29" vert-align="top" text="99999" max="32767" usingFormat="#" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-32768" width="146" readWrite="true" height="49" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/currDate1" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="field3">
+   <wgtStyle forcePaint="8" font-family="Tahoma" font-sizepx="16" cx="67.16" cy="22.05" step="1" timeSpec="local" alignment="right" x="524.43" y="54.29" vert-align="top" text="99999" max="32767" usingFormat="#" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-32768" width="146" readWrite="true" height="49" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/currMonth" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="field4">
+   <wgtStyle forcePaint="73" font-family="Tahoma" font-sizepx="16" cx="67.16" cy="22.05" step="1" timeSpec="local" alignment="right" x="48.29" y="94.86" vert-align="top" text="99999" max="32767" usingFormat="#" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-32768" width="146" readWrite="true" height="49" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/currHour" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="field5">
+   <wgtStyle forcePaint="73" font-family="Tahoma" font-sizepx="16" cx="67.16" cy="22.05" step="1" timeSpec="local" alignment="right" x="272.43" y="94.86" vert-align="top" text="99999" max="32767" usingFormat="#" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-32768" width="146" readWrite="true" height="49" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/currMinute" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="field6">
+   <wgtStyle forcePaint="73" font-family="Tahoma" font-sizepx="16" cx="67.16" cy="22.05" step="1" timeSpec="local" alignment="right" x="525.86" y="94.86" vert-align="top" text="99999" max="32767" usingFormat="#" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-32768" width="146" readWrite="true" height="49" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/currSeconds1" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="GroupWgt" id="LightsStd1" customType="Light">
+   <wgtStyle width="52" x="117.14" y="377.86" cx="26" cy="26" height="52"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image4" static="true">
+    <wgtStyle width="52" imagePath="images/frame_round_chrome.svg" enableCache="false" x="0" y="0" cx="25.53" cy="25.47" height="52"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:light; type:light" id="light_ind03">
+    <wgtStyle width="38" imagePath="images/li_round_shiney1_rev2.svg" x="7" forcePaint="8" y="6" cx="24.58" cy="15.92" bkgColor="rgb(120,120,120);rgb(255,0,0)" height="39" stroke="rgb(255,251,240)"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="value" tag="/iFanMCBTrip" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label2" static="true">
+    <wgtStyle width="34" x="9" font-sizepx="13" y="9" font-family="Tahoma" cx="17.02" cy="16.98" height="35" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="1">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="icon2" static="true">
+    <wgtStyle width="15" enableCache="true" x="18" y="19" cx="7.56" cy="7.43" height="15"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="LightsStd2" customType="Light">
+   <wgtStyle width="52" x="272.86" y="377.86" cx="26" cy="26" height="52"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image1" static="true">
+    <wgtStyle width="52" imagePath="images/frame_round_chrome.svg" enableCache="false" x="0" y="0" cx="25.53" cy="25.47" height="52"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:light; type:light" id="light_ind1">
+    <wgtStyle width="38" imagePath="images/li_round_shiney1_rev2.svg" x="7" forcePaint="8" y="6" cx="24.58" cy="15.92" bkgColor="rgb(120,120,120);rgb(255,0,0)" height="39" stroke="rgb(255,251,240)"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="value" tag="/iPowerFailure" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label1" static="true">
+    <wgtStyle width="34" x="9" font-sizepx="13" y="9" font-family="Tahoma" cx="17.02" cy="16.98" height="35" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="1">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="icon1" static="true">
+    <wgtStyle width="15" enableCache="true" x="18" y="19" cx="7.56" cy="7.43" height="15"/>
+   </object>
+  </object>
+  <object class="NumericWgt" id="field7">
+   <wgtStyle forcePaint="8" font-family="Tahoma" font-sizepx="16" cx="67.16" cy="22.05" step="1" timeSpec="local" alignment="right" x="48.29" y="169" vert-align="top" text="99999" max="32767" usingFormat="#" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-32768" width="146" readWrite="true" height="49" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/iwTemp1" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="field8">
+   <wgtStyle forcePaint="8" font-family="Tahoma" font-sizepx="16" cx="67.16" cy="22.05" step="1" timeSpec="local" alignment="right" x="524.43" y="169" vert-align="top" text="99999" max="32767" usingFormat="#" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-32768" width="146" readWrite="true" height="49" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/cycleDayNum" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+ </object>
+</wgtPage>

@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tags>
+    <tag>
+        <name>/currDate1</name>
+        <resourceLocator>prot1://0?/currDate?M?208?short</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///currDate?short</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/currDate</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/currHour</name>
+        <resourceLocator>prot1://0?/currHour?M?210?short</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///currHour?short</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/currHour</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/currMinute</name>
+        <resourceLocator>prot1://0?/currMinute?M?212?short</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///currMinute?short</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/currMinute</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/currMonth</name>
+        <resourceLocator>prot1://0?/currMonth?M?206?short</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///currMonth?short</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/currMonth</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/currSeconds1</name>
+        <resourceLocator>prot1://0?/currSeconds?M?214?short</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///currSeconds?short</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/currSeconds</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/currVentilationPC</name>
+        <resourceLocator>prot1://0?/currVentilationPC?M?202?short</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///currVentilationPC?short</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/currVentilationPC</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/currYear</name>
+        <resourceLocator>prot1://0?/currYear?M?204?short</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///currYear?short</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/currYear</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/cycleDayNum</name>
+        <resourceLocator>prot1://0?/cycleDayNum?M?356?short</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///cycleDayNum?short</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/cycleDayNum</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/cycleDayNumUserSet</name>
+        <resourceLocator>prot1://0?/cycleDayNumUserSet?M?358?short</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///cycleDayNumUserSet?short</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/cycleDayNumUserSet</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/cycleStartDay</name>
+        <resourceLocator>prot1://0?/cycleStartDay?M?350?short</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///cycleStartDay?short</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/cycleStartDay</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/cycleStartMonth</name>
+        <resourceLocator>prot1://0?/cycleStartMonth?M?352?short</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///cycleStartMonth?short</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/cycleStartMonth</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/cycleStartYear</name>
+        <resourceLocator>prot1://0?/cycleStartYear?M?354?short</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///cycleStartYear?short</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/cycleStartYear</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/iAugerTrip</name>
+        <resourceLocator>prot1://0?/iAugerTrip?IB?32009?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///iAugerTrip?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/iAugerTrip</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/iControlTrip</name>
+        <resourceLocator>prot1://0?/iControlTrip?5?5029?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///iControlTrip?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/iControlTrip</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/iFanMCBTrip</name>
+        <resourceLocator>prot1://0?/iFanMCBTrip?MB?5159?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///iFanMCBTrip?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/iFanMCBTrip</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/iFanTrip</name>
+        <resourceLocator>prot1://0?/iFanTrip?IB?32008?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///iFanTrip?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/iFanTrip</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/iFeed1Trip</name>
+        <resourceLocator>prot1://0?/iFeed1Trip?5?5025?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///iFeed1Trip?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/iFeed1Trip</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/iFeed2Trip</name>
+        <resourceLocator>prot1://0?/iFeed2Trip?5?5026?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///iFeed2Trip?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/iFeed2Trip</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/iFeed3Trip</name>
+        <resourceLocator>prot1://0?/iFeed3Trip?5?5027?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///iFeed3Trip?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/iFeed3Trip</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/iFeed4Trip</name>
+        <resourceLocator>prot1://0?/iFeed4Trip?5?5028?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///iFeed4Trip?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/iFeed4Trip</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/iFeedTrip</name>
+        <resourceLocator>prot1://0?/iFeedTrip?MB?7802?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///iFeedTrip?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/iFeedTrip</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/iInletMCBTrip</name>
+        <resourceLocator>prot1://0?/iInletMCBTrip?MB?7800?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///iInletMCBTrip?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/iInletMCBTrip</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/iInletTrip</name>
+        <resourceLocator>prot1://0?/iInletTrip?IB?32013?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///iInletTrip?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/iInletTrip</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/initAnimalNum</name>
+        <resourceLocator>prot1://0?/initAnimalNum?M?68?int</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///initAnimalNum?int</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/initAnimalNum</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/initHrs</name>
+        <resourceLocator>prot1://0?/initHrs?3?0?short</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///initHrs?short</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/initHrs</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/inletCalibrationTime</name>
+        <resourceLocator>prot1://0?/inletCalibrationTime?M?1212?short</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///inletCalibrationTime?short</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/inletCalibrationTime</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/inletManualOn</name>
+        <resourceLocator>prot1://0?/inletManualOn?MB?5160?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///inletManualOn?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/inletManualOn</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/inletManualPC</name>
+        <resourceLocator>prot1://0?/inletManualPC?M?1088?short</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///inletManualPC?short</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/inletManualPC</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/inletMaxInput</name>
+        <resourceLocator>prot1://0?/inletMaxInput?3?8?int</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///inletMaxInput?int</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/inletMaxInput</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/inletOpenMax</name>
+        <resourceLocator>prot1://0?/inletOpenMax?5?5157?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///inletOpenMax?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/inletOpenMax</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/inletPercent</name>
+        <resourceLocator>prot1://0?/inletPercent?M?216?short</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///inletPercent?short</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/inletPercent</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/InletPositionPC</name>
+        <resourceLocator>prot1://0?/InletPositionPC?M?998?short</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///InletPositionPC?short</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/InletPositionPC</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/iPowerFailure</name>
+        <resourceLocator>prot1://0?/iPowerFailure?MB?5177?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///iPowerFailure?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/iPowerFailure</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/iRecirculationFanTrip</name>
+        <resourceLocator>prot1://0?/iRecirculationFanTrip?MB?7801?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///iRecirculationFanTrip?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/iRecirculationFanTrip</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/iSupplyAugerTrip</name>
+        <resourceLocator>prot1://0?/iSupplyAugerTrip?MB?5158?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///iSupplyAugerTrip?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/iSupplyAugerTrip</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/iTunnelMPCBTrip</name>
+        <resourceLocator>prot1://0?/iTunnelMPCBTrip?MB?5176?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///iTunnelMPCBTrip?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/iTunnelMPCBTrip</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/iTunnelTrip</name>
+        <resourceLocator>prot1://0?/iTunnelTrip?IB?32014?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///iTunnelTrip?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/iTunnelTrip</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/iwHouseRH</name>
+        <resourceLocator>prot1://0?/iwHouseRH?I?2?short</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///iwHouseRH?short</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/iwHouseRH</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/iwOutsideRH</name>
+        <resourceLocator>prot1://0?/iwOutsideRH?I?4?short</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///iwOutsideRH?short</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/iwOutsideRH</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/iwOutsideTemp</name>
+        <resourceLocator>prot1://0?/iwOutsideTemp?I?16?short</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///iwOutsideTemp?short</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/iwOutsideTemp</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/iwTemp1</name>
+        <resourceLocator>prot1://0?/iwTemp1?I?10?short</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///iwTemp1?short</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/iwTemp1</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/iwTemp2</name>
+        <resourceLocator>prot1://0?/iwTemp2?I?12?short</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///iwTemp2?short</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/iwTemp2</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/iwTemp3</name>
+        <resourceLocator>prot1://0?/iwTemp3?I?14?short</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///iwTemp3?short</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/iwTemp3</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/lightOffHr1</name>
+        <resourceLocator>prot1://0?/lightOffHr1?M?1094?short</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///lightOffHr1?short</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/lightOffHr1</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/lightOffHr2</name>
+        <resourceLocator>prot1://0?/lightOffHr2?M?1096?short</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///lightOffHr2?short</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/lightOffHr2</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/lightOffHr3</name>
+        <resourceLocator>prot1://0?/lightOffHr3?M?1098?short</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///lightOffHr3?short</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/lightOffHr3</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/lightOffMin1</name>
+        <resourceLocator>prot1://0?/lightOffMin1?M?1134?short</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///lightOffMin1?short</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/lightOffMin1</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/lightOffMin2</name>
+        <resourceLocator>prot1://0?/lightOffMin2?M?1136?short</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///lightOffMin2?short</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/lightOffMin2</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/lightOffMin3</name>
+        <resourceLocator>prot1://0?/lightOffMin3?M?1138?short</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///lightOffMin3?short</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/lightOffMin3</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/lightOnHr1</name>
+        <resourceLocator>prot1://0?/lightOnHr1?M?1014?short</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///lightOnHr1?short</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/lightOnHr1</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/lightOnHr2</name>
+        <resourceLocator>prot1://0?/lightOnHr2?M?1016?short</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///lightOnHr2?short</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/lightOnHr2</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/lightOnHr3</name>
+        <resourceLocator>prot1://0?/lightOnHr3?M?1018?short</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///lightOnHr3?short</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/lightOnHr3</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/lightOnMin1</name>
+        <resourceLocator>prot1://0?/lightOnMin1?M?1054?short</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///lightOnMin1?short</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/lightOnMin1</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/lightOnMin2</name>
+        <resourceLocator>prot1://0?/lightOnMin2?M?1056?short</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///lightOnMin2?short</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/lightOnMin2</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+    <tag>
+        <name>/lightOnMin3</name>
+        <resourceLocator>prot1://0?/lightOnMin3?M?1058?short</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL:///lightOnMin3?short</simulator>
+        <enableScaling>false</enableScaling>
+        <TAGLOCATOR>ABB CoDeSys ETH:prot1:uid0:/lightOnMin3</TAGLOCATOR>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+    </tag>
+</tags>

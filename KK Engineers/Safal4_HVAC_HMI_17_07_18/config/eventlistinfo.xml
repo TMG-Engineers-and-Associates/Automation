@@ -1,0 +1,10 @@
+<events>
+ <event trigger="valueAlarm" description="[2@Alarm]POWER FAILURE" group="Alarm1" id="1" name="Alarm1"/>
+ <event trigger="valueAlarm" description="[3@Alarm]FAN TRIP" group="Alarm2" id="2" name="Alarm2"/>
+ <event trigger="valueAlarm" description="[5@Alarm]TEMPERATURE HIGH" group="Alarm3" id="3" name="Alarm3"/>
+ <event trigger="valueAlarm" description="[7@Alarm]TEMPERATURE DIFFERENCE HIGH" group="Alarm4" id="4" name="Alarm4"/>
+ <event trigger="valueAlarm" description="[8@Alarm]INLET TUNNEL TRIP" group="Alarm5" id="5" name="Alarm5"/>
+ <event trigger="valueAlarm" description="[9@Alarm]RECIRCULATION FAN TRIP" group="Alarm6" id="6" name="Alarm6"/>
+ <event trigger="valueAlarm" description="[10@Alarm]FEED MOTOR TRIP" group="Alarm7" id="7" name="Alarm7"/>
+ <event trigger="valueAlarm" description="[14@Alarm]AUGER MOTOR TRIP" group="Alarm9" id="9" name="Alarm9"/>
+</events>

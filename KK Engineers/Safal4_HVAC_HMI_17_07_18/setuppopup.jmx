@@ -1,0 +1,158 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="SetupPopup" pageSize="800,480" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" templateFile="templatepage1.jmx" staticFile="opt/setuppopup.png" id="SetupPopup" staticOptEnable="true">
+  <wgtStyle width="800" x="0" y="0" height="480" ver="020000161" color="rgb(255,240,200)" v="02.00.00.161"/>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Tahoma"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="SETUP" id="63"/>
+    <MLText L1="Message" id="64"/>
+    <MLText L1="Message" id="65"/>
+    <MLText L1="Message" id="66"/>
+    <MLText L1="NO. OF ANIMALS" id="71"/>
+    <MLText L1="Message" id="72"/>
+    <MLText L1="Message" id="73"/>
+    <MLText L1="Message" id="74"/>
+    <MLText L1="DATE" id="80"/>
+    <MLText L1="Message" id="81"/>
+    <MLText L1="Message" id="82"/>
+    <MLText L1="Message" id="83"/>
+    <MLText L1="OK" id="126"/>
+    <MLText L1="CANCEL" id="128"/>
+   </MLTexts>
+  </object>
+  <object class="GroupWgt" id="GroupWgt1">
+   <wgtStyle width="193" x="303.50" y="14" cx="96.50" cy="25.50" height="51"/>
+   <object class="ShapeWgt" id="GroupWgt1.roundrect11" static="true">
+    <wgtStyle width="193" x="0" y="7" fill="rgb(210,180,140)" cx="93.58" cy="18.87" rx="20" height="39" nodeName="rect" ry="20"/>
+   </object>
+   <object class="MsgTextWgt" id="GroupWgt1.msgtext1">
+    <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="42" cx="64.88" cy="24.16" x="33" y="0" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(23,30,40)" min="0" width="132" continous="true" lineSeparator="" height="51" font-size="32">
+     <msgtxt>
+      <msg index="0"/>
+      <msg index="1"/>
+      <msg index="2"/>
+      <msg index="3"/>
+     </msgtxt>
+    </wgtStyle>
+    <links>
+     <lang class="MLMsgLink">
+      <MLFontFamily L1="Cambria"/>
+      <textid idx="0" val="63"/>
+      <textid idx="1" val="64"/>
+      <textid idx="2" val="65"/>
+      <textid idx="3" val="66"/>
+     </lang>
+    </links>
+   </object>
+  </object>
+  <object class="MsgTextWgt" id="msgtext1">
+   <wgtStyle marker="true" font-family="Cambria" font-sizepx="24" cx="97.81" cy="14.21" alignment="center" x="177" y="138" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(72,0,72)" min="0" width="199" continous="true" height="30" font-size="18">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="71"/>
+     <textid idx="1" val="72"/>
+     <textid idx="2" val="73"/>
+     <textid idx="3" val="74"/>
+    </lang>
+   </links>
+  </object>
+  <object class="MsgTextWgt" id="msgtext2">
+   <wgtStyle marker="true" font-family="Cambria" font-sizepx="24" cx="39.81" cy="15.63" alignment="center" x="236" y="243" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(72,0,72)" min="0" width="81" continous="true" lineSeparator="" height="33" font-size="18">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="80"/>
+     <textid idx="1" val="81"/>
+     <textid idx="2" val="82"/>
+     <textid idx="3" val="83"/>
+    </lang>
+   </links>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt9.roundrect5" static="true">
+   <wgtStyle width="100" x="502" y="136" fill="rgb(4,231,231)" cx="48" cy="19.35" rx="20" height="40" nodeName="rect" ry="20" stroke="rgb(26,26,26)" stroke-width="2"/>
+  </object>
+  <object class="NumericWgt" id="GroupWgt9.field5">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="21" cx="39.55" cy="10.35" step="1" timeSpec="local" alignment="center" x="509" y="144" vert-align="top" text="0" max="2147483647" usingFormat="#" value="0" keypad-type="Numeric" min="-2147483648" width="86" readWrite="true" height="23" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="/initAnimalNum" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="GroupWgt" id="BtnStd11" customType="Button">
+   <wgtStyle width="130" x="135.50" y="349" cx="64.30" cy="19.43" height="40"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:roundbar; hmi-type:bkgd" id="image11" static="true">
+    <wgtStyle width="130" imagePath="images/frame_roundbar_chrome.svg" enableCache="false" x="0" y="0" cx="63.20" cy="19.46" height="40"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:roundbar; hmi-type:btn; type:btn" id="buttonStd11">
+    <wgtStyle width="118.82" x="5.59" y="5.71" fill="rgb(255,170,255)" cx="55.48" form="standard" cy="13.12" height="28.57" releasePath="images\btn_shiney_roundbar_1.svg" needlePath="images\btn_shiney_roundbar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action class="LastVisitedPageAction" attribute="onMouseRelease" event="onMouseUp" actionID="2" actionWgt="_PageMgr"/>
+     <action DataSource="Project:_TagMgr" class="WriteTagAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagValue="1" TagName="/setupDayCountStart" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label6">
+    <wgtStyle width="102.04" font-color="rgb(40,40,40)" x="12.58" forcePaint="1" font-sizepx="24" y="5.71" font-family="Cambria" font-bold="true" wrapping="true" cx="68.61" cy="16.22" height="26.29" alignment="center" vert-align="middle" keypad-type="None" font-size="18"/>
+    <links>
+     <lang class="MLTextLink" textid="126">
+      <MLFontFamily L1="Cambria"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image14" static="true">
+    <wgtStyle width="39.14" enableCache="false" x="43.33" y="9.14" cx="19.86" cy="8.65" height="19.43"/>
+   </object>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt9.roundrect2" static="true">
+   <wgtStyle width="150" x="482" y="236" fill="rgb(4,231,231)" cx="72" cy="19.35" rx="20" height="40" nodeName="rect" ry="20" stroke="rgb(26,26,26)" stroke-width="2"/>
+  </object>
+  <object class="GroupWgt" id="BtnStd1" customType="Button">
+   <wgtStyle width="130" x="542" y="349" cx="64.30" cy="19.43" height="40"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:roundbar; hmi-type:bkgd" id="image1" static="true">
+    <wgtStyle width="130" imagePath="images/frame_roundbar_chrome.svg" enableCache="false" x="0" y="0" cx="63.20" cy="19.46" height="40"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:roundbar; hmi-type:btn; type:btn" id="buttonStd1">
+    <wgtStyle width="118.82" x="5.59" y="5.71" fill="rgb(255,170,255)" cx="55.48" form="standard" cy="13.12" height="28.57" releasePath="images\btn_shiney_roundbar_1.svg" needlePath="images\btn_shiney_roundbar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action class="LastVisitedPageAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label1">
+    <wgtStyle width="102.04" font-color="rgb(40,40,40)" x="12.58" forcePaint="1" font-sizepx="24" y="5.71" font-family="Cambria" font-bold="true" wrapping="true" cx="68.61" cy="16.22" height="26.29" alignment="center" vert-align="middle" keypad-type="None" font-size="18"/>
+    <links>
+     <lang class="MLTextLink" textid="128">
+      <MLFontFamily L1="Cambria"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image2" static="true">
+    <wgtStyle width="39.14" enableCache="false" x="43.33" y="9.14" cx="19.87" cy="8.65" height="19.43"/>
+   </object>
+  </object>
+  <object class="GroupSubscribeWgt" id="SetupPopup@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="NumericWgt" id="timedate3">
+   <wgtStyle font-bold="true" forcePaint="8" font-family="Cambria" font-sizepx="18" cx="51.39" cy="16" step="1" timeSpec="local" alignment="center" x="502" y="240" vert-align="middle" text="-1" max="4096" usingFormat="DD/MM/YYYY" value="-1" keypad-type="None" min="0" width="110" height="32" form="date-time" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="long" attribute="value" tag="System Time" class="SysPropMgrWgt" widgetType="Project" sourceType="System" dataSource="_SysPropMgr"/>
+   </dataLinks>
+  </object>
+ </object>
+</wgtPage>

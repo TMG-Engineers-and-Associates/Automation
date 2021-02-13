@@ -1,0 +1,129 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="Trends" pageSize="800,480" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" templateFile="templatepage1.jmx" staticFile="opt/trends.png" id="Trends" staticOptEnable="true">
+  <wgtStyle width="800" x="0" y="0" height="480" ver="020000161" v="02.00.00.161"/>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Tahoma"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="" id="0"/>
+   </MLTexts>
+  </object>
+  <object class="GroupWgt" id="TrendWgt2" customType="Trend">
+   <wgtStyle width="880" x="-71" forcePaint="97" y="-19" cx="440" cy="242" height="484" staticFile="opt/TrendsTrendWgt2.png"/>
+   <links>
+    <attr attrName="gridX" alias="GridWgt.gridX;LabelsWgt2.labelFreq"/>
+    <attr attrName="gridY" alias="GridWgt.gridY;LabelsWgt1.labelFreq;TicksWgt1.labelFreq"/>
+    <attr attrName="labelFreq" alias="LabelsWgt1.labelFreq;TicksWgt1.labelFreq"/>
+   </links>
+   <object class="LabelWgt" id="label5" static="true">
+    <wgtStyle width="640.28" font-color="rgb(40,40,40)" x="191.17" font-sizepx="16" y="0" font-family="Tahoma" cx="315.59" cy="20.94" height="44.21" alignment="center" vert-align="top" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="0">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="TicksWgt" id="YTicks2" static="true">
+    <wgtStyle cx="48.55" startAngle="-10" cy="186.15" endAngle="200" reverseScale="true" tickSize2="15" x="136.55" y="48.87" max="100" stroke-width="2" width="57.66" stroke-linecap="butt" tickSize="7" tickFreq="4" height="374.63" labelFreq="6" stroke="rgb(40,40,40)" form="vertical"/>
+   </object>
+   <object class="LabelsWgt" id="labels3" static="true">
+    <wgtStyle font-family="Tahoma" font-sizepx="13" cx="60.69" startAngle="-20" cy="204.77" timeSpec="local" reverseScale="true" dataFormat="#.#" endAngle="185" x="0" useTextAlign="true" y="32.58" rotated="true" vert-align="top" max="100" align="1" font-color="rgb(40,40,40)" width="127.45" labelNames="" tickFreq="5" height="411.87" labelFreq="6" form="vertical" font-size="10"/>
+   </object>
+   <object class="LabelsWgt" id="labels4">
+    <wgtStyle forcePaint="8" font-family="Tahoma" font-sizepx="13" cx="370.21" startAngle="-20" cy="23.27" timeSpec="local" dataFormat="hh:mm:ss" endAngle="185" x="136.55" y="437.46" rotated="true" vert-align="top" max="100" font-color="rgb(40,40,40)" width="743.45" labelNames="" tickFreq="5" height="46.54" labelFreq="4" form="horizontal" dataType="Time" font-size="10"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="min" tag="min" sourceType="Data" dataSource="TrendWindow2"/>
+     <dataLink readWrite="R" attribute="max" tag="max" sourceType="Data" dataSource="TrendWindow2"/>
+    </dataLinks>
+   </object>
+   <object class="TrendWindowWgt" id="TrendWindow2">
+    <wgtStyle width="643.31" x="194.21" stopTime="1250241907000" y="51.19" numCurves="5" fill="rgb(255,255,224)" startPoint="2" height="372.31" frame="300" stroke="rgb(40,40,40)" pageDuration="86400" startTime="1250241607000" updateInterval="1000"/>
+   </object>
+   <object class="ImageWgt" id="BgImage2" static="true">
+    <wgtStyle width="640.28" imagePath="images/glass.svg" enableCache="false" x="194.21" y="51.19" cx="343.44" cy="102.08" height="186.15"/>
+   </object>
+   <object class="GridWgt" id="Grid2">
+    <wgtStyle width="646.34" x="191.17" forcePaint="8" y="48.87" grid="4" colorX="rgb(40,40,40)" height="374.63" colorY="rgb(40,40,40)" max="40" gridY="6" cursor-width="2" cursor-show="true"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="min" tag="min" sourceType="Data" dataSource="TrendWindow2"/>
+     <dataLink readWrite="R" attribute="max" tag="max" sourceType="Data" dataSource="TrendWindow2"/>
+    </dataLinks>
+   </object>
+   <object class="TrendCurveWgt" id="TrendCurve2">
+    <wgtStyle width="643.31" x="194.21" forcePaint="8" drawType="0" y="51.19" cx="318.62" cy="184.99" height="372.31" frame="300" stroke="rgb(0,0,255)" type="line" max="40" y1="100" stroke-width="2"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="Value" sourceType="Data" dataSource="TrendBufferWgt2"/>
+     <dataLink readWrite="R" attribute="min" tag="min" sourceType="Data" dataSource="TrendWindow2"/>
+     <dataLink readWrite="R" attribute="max" tag="max" sourceType="Data" dataSource="TrendWindow2"/>
+    </dataLinks>
+   </object>
+   <object PageDuration="300" StartTime="1249895711000" BufferType="0" class="TrendBufferWgt" StopTime="1249896011000" ReqSamples="1000" UpdateInterval="1000" samplingtime="1" UpdateType="0" id="TrendBufferWgt2" ThreadEnable="true">
+    <wgtStyle width="97" x="728" forcePaint="9" y="346" cx="48" cy="37" height="74"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="Value" tag="Trend1.houseTemp" sourceType="Widget" dataSource="PanelTrend1"/>
+    </dataLinks>
+   </object>
+   <object class="IdalTrendWgt" maxPoints="2000" id="PanelTrend1">
+    <wgtStyle width="97" x="615" forcePaint="1" y="344" height="74"/>
+   </object>
+   <object PageDuration="300" StartTime="0" BufferType="0" class="TrendBufferWgt" StopTime="0" ReqSamples="1000" UpdateInterval="1000" samplingtime="1" UpdateType="0" id="TrendBufferWgt1" ThreadEnable="true">
+    <wgtStyle width="97" x="728" forcePaint="9" y="346" cx="48" cy="37" height="74"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="Value" tag="Trend1.houseRH" sourceType="Widget" dataSource="PanelTrend1"/>
+    </dataLinks>
+   </object>
+   <object class="TrendCurveWgt" id="TrendCurveWgt1">
+    <wgtStyle width="643.31" x="194.21" forcePaint="8" drawType="0" y="51.19" cx="318.62" cy="184.99" height="372.31" frame="300" stroke="rgb(31,0,190)" type="line" max="40" y1="100" stroke-width="2"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="Value" sourceType="Data" dataSource="TrendBufferWgt1"/>
+     <dataLink readWrite="R" attribute="min" tag="min" sourceType="Data" dataSource="TrendWindow2"/>
+     <dataLink readWrite="R" attribute="max" tag="max" sourceType="Data" dataSource="TrendWindow2"/>
+    </dataLinks>
+   </object>
+   <object PageDuration="300" StartTime="0" BufferType="0" class="TrendBufferWgt" StopTime="0" ReqSamples="1000" UpdateInterval="1000" samplingtime="1" UpdateType="0" id="TrendBufferWgt3" ThreadEnable="false">
+    <wgtStyle width="97" x="728" forcePaint="9" y="346" cx="48" cy="37" height="74"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="Value" tag="Trend1.setTemp" sourceType="Widget" dataSource="PanelTrend1"/>
+    </dataLinks>
+   </object>
+   <object class="TrendCurveWgt" id="TrendCurveWgt2">
+    <wgtStyle width="643.31" x="194.21" forcePaint="8" drawType="0" y="51.19" cx="318.62" cy="184.99" height="372.31" frame="300" stroke="rgb(0,69,190)" type="line" max="40" y1="100" stroke-width="2"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="Value" sourceType="Data" dataSource="TrendBufferWgt3"/>
+     <dataLink readWrite="R" attribute="min" tag="min" sourceType="Data" dataSource="TrendWindow2"/>
+     <dataLink readWrite="R" attribute="max" tag="max" sourceType="Data" dataSource="TrendWindow2"/>
+    </dataLinks>
+   </object>
+   <object PageDuration="300" StartTime="0" BufferType="0" class="TrendBufferWgt" StopTime="0" ReqSamples="1000" UpdateInterval="1000" samplingtime="1" UpdateType="0" id="TrendBufferWgt4" ThreadEnable="false">
+    <wgtStyle width="97" x="728" forcePaint="9" y="346" cx="48" cy="37" height="74"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="Value" tag="Trend1.frontCool" sourceType="Widget" dataSource="PanelTrend1"/>
+    </dataLinks>
+   </object>
+   <object class="TrendCurveWgt" id="TrendCurveWgt3">
+    <wgtStyle width="643.31" x="194.21" forcePaint="8" drawType="0" y="51.19" cx="318.62" cy="184.99" height="372.31" frame="300" stroke="rgb(0,190,136)" type="line" max="40" y1="100" stroke-width="2"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="Value" sourceType="Data" dataSource="TrendBufferWgt4"/>
+     <dataLink readWrite="R" attribute="min" tag="min" sourceType="Data" dataSource="TrendWindow2"/>
+     <dataLink readWrite="R" attribute="max" tag="max" sourceType="Data" dataSource="TrendWindow2"/>
+    </dataLinks>
+   </object>
+   <object PageDuration="300" StartTime="0" BufferType="0" class="TrendBufferWgt" StopTime="0" ReqSamples="1000" UpdateInterval="1000" samplingtime="1" UpdateType="0" id="TrendBufferWgt5" ThreadEnable="true">
+    <wgtStyle width="97" x="728" forcePaint="9" y="346" cx="48" cy="37" height="74"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="Value" tag="Trend1.sideCool" sourceType="Widget" dataSource="PanelTrend1"/>
+    </dataLinks>
+   </object>
+   <object class="TrendCurveWgt" id="TrendCurveWgt4">
+    <wgtStyle width="643.31" x="194.21" forcePaint="8" drawType="0" y="51.19" cx="318.62" cy="184.99" height="372.31" frame="300" stroke="rgb(190,76,0)" type="line" max="40" y1="100" stroke-width="2"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="Value" sourceType="Data" dataSource="TrendBufferWgt5"/>
+     <dataLink readWrite="R" attribute="min" tag="min" sourceType="Data" dataSource="TrendWindow2"/>
+     <dataLink readWrite="R" attribute="max" tag="max" sourceType="Data" dataSource="TrendWindow2"/>
+    </dataLinks>
+   </object>
+  </object>
+ </object>
+</wgtPage>

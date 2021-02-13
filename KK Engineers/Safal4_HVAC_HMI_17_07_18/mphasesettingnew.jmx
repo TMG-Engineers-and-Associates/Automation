@@ -1,0 +1,1952 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="MPhaseSettingNew" pageSize="800,480" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" templateFile="templatepage1.jmx" staticFile="opt/mphasesettingnew.png" id="MPhaseSettingNew" staticOptEnable="true">
+  <wgtStyle width="800" x="0" y="0" height="480" ver="020000161" color="rgb(255,240,200)" v="02.00.00.161"/>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Tahoma"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="" id="8"/>
+    <MLText L1="M%" id="0"/>
+    <MLText L1="Message" id="1"/>
+    <MLText L1="Message" id="2"/>
+    <MLText L1="Message" id="3"/>
+    <MLText L1="RELAYS" id="4"/>
+    <MLText L1="Message" id="5"/>
+    <MLText L1="Message" id="6"/>
+    <MLText L1="Message" id="7"/>
+    <MLText L1="INLETS" id="73"/>
+    <MLText L1="Message" id="74"/>
+    <MLText L1="Message" id="75"/>
+    <MLText L1="Message" id="76"/>
+    <MLText L1="CHIMNEY" id="77"/>
+    <MLText L1="Message" id="78"/>
+    <MLText L1="Message" id="79"/>
+    <MLText L1="Message" id="80"/>
+    <MLText L1="TUNNEL" id="81"/>
+    <MLText L1="Message" id="82"/>
+    <MLText L1="Message" id="83"/>
+    <MLText L1="Message" id="84"/>
+    <MLText L1="1." id="129"/>
+    <MLText L1="Message" id="130"/>
+    <MLText L1="Message" id="131"/>
+    <MLText L1="Message" id="132"/>
+    <MLText L1="15." id="133"/>
+    <MLText L1="Message" id="134"/>
+    <MLText L1="Message" id="135"/>
+    <MLText L1="Message" id="136"/>
+    <MLText L1="16." id="137"/>
+    <MLText L1="Message" id="138"/>
+    <MLText L1="Message" id="139"/>
+    <MLText L1="Message" id="140"/>
+    <MLText L1="21." id="141"/>
+    <MLText L1="Message" id="142"/>
+    <MLText L1="Message" id="143"/>
+    <MLText L1="Message" id="144"/>
+    <MLText L1="22." id="145"/>
+    <MLText L1="Message" id="146"/>
+    <MLText L1="Message" id="147"/>
+    <MLText L1="Message" id="148"/>
+    <MLText L1="28." id="149"/>
+    <MLText L1="Message" id="150"/>
+    <MLText L1="Message" id="151"/>
+    <MLText L1="Message" id="152"/>
+    <MLText L1="29." id="153"/>
+    <MLText L1="Message" id="154"/>
+    <MLText L1="Message" id="155"/>
+    <MLText L1="Message" id="156"/>
+    <MLText L1="36." id="157"/>
+    <MLText L1="Message" id="158"/>
+    <MLText L1="Message" id="159"/>
+    <MLText L1="Message" id="160"/>
+    <MLText L1="37." id="161"/>
+    <MLText L1="Message" id="162"/>
+    <MLText L1="Message" id="163"/>
+    <MLText L1="Message" id="164"/>
+    <MLText L1="42." id="165"/>
+    <MLText L1="Message" id="166"/>
+    <MLText L1="Message" id="167"/>
+    <MLText L1="Message" id="168"/>
+   </MLTexts>
+  </object>
+  <object class="MsgTextWgt" id="msgtext2">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="24" cx="29" cy="17" alignment="center" x="30" y="13" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(72,0,72)" min="0" width="59" continous="true" lineSeparator="" font-underline="true" height="32" font-size="18">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="0"/>
+     <textid idx="1" val="1"/>
+     <textid idx="2" val="2"/>
+     <textid idx="3" val="3"/>
+    </lang>
+   </links>
+  </object>
+  <object class="MsgTextWgt" id="msgtext1">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="24" cx="51" cy="17" alignment="center" x="202" y="13" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(72,0,72)" min="0" width="102" continous="true" lineSeparator="" font-underline="true" height="34" font-size="18">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="4"/>
+     <textid idx="1" val="5"/>
+     <textid idx="2" val="6"/>
+     <textid idx="3" val="7"/>
+    </lang>
+   </links>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt9.roundrect1" static="true">
+   <wgtStyle width="55" x="483" y="63" fill="rgb(4,231,231)" cx="26.40" cy="13.54" rx="20" height="28" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="NumericWgt" id="GroupWgt9.field1">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="20.24" cy="9" step="1" timeSpec="local" alignment="center" x="489" y="66" vert-align="top" text="0" max="100" usingFormat="#" value="0" keypad-type="Numeric" min="0" width="44" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/m1Inlet" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt9.roundrect3" static="true">
+   <wgtStyle width="55" x="590" y="63" fill="rgb(4,231,231)" cx="26.40" cy="13.54" rx="20" height="28" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="NumericWgt" id="GroupWgt9.field3">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="20.24" cy="9" step="1" timeSpec="local" alignment="center" x="596" y="66" vert-align="top" text="0" max="100" usingFormat="#" value="0" keypad-type="Numeric" min="0" width="44" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/m1ExhaustSpeed" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt9.roundrect4" static="true">
+   <wgtStyle width="55" x="699" y="63" fill="rgb(4,231,231)" cx="26.40" cy="13.54" rx="20" height="28" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="NumericWgt" id="GroupWgt9.field4">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="20.24" cy="9" step="1" timeSpec="local" alignment="center" x="705" y="66" vert-align="top" text="0" max="100" usingFormat="#" value="0" keypad-type="Numeric" min="0" width="44" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/m1Tunnel" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt9.roundrect5" static="true">
+   <wgtStyle width="55" x="483" y="96" fill="rgb(4,231,231)" cx="26.40" cy="13.54" rx="20" height="28" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="NumericWgt" id="GroupWgt9.field5">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="20.24" cy="9" step="1" timeSpec="local" alignment="center" x="489" y="99" vert-align="top" text="0" max="100" usingFormat="#" value="0" keypad-type="Numeric" min="0" width="44" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/m15Inlet" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt9.roundrect6" static="true">
+   <wgtStyle width="55" x="590" y="96" fill="rgb(4,231,231)" cx="26.40" cy="13.54" rx="20" height="28" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="NumericWgt" id="GroupWgt9.field6">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="20.24" cy="9" step="1" timeSpec="local" alignment="center" x="596" y="99" vert-align="top" text="0" max="100" usingFormat="#" value="0" keypad-type="Numeric" min="0" width="44" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/m15ExhaustSpeed" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt9.roundrect7" static="true">
+   <wgtStyle width="55" x="699" y="96" fill="rgb(4,231,231)" cx="26.40" cy="13.54" rx="20" height="28" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="NumericWgt" id="GroupWgt9.field7">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="20.24" cy="9" step="1" timeSpec="local" alignment="center" x="705" y="99" vert-align="top" text="0" max="100" usingFormat="#" value="0" keypad-type="Numeric" min="0" width="44" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/m15Tunnel" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt9.roundrect8" static="true">
+   <wgtStyle width="55" x="483" y="133" fill="rgb(4,231,231)" cx="26.40" cy="13.54" rx="20" height="28" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="NumericWgt" id="GroupWgt9.field8">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="20.24" cy="9" step="1" timeSpec="local" alignment="center" x="489" y="136" vert-align="top" text="0" max="100" usingFormat="#" value="0" keypad-type="Numeric" min="0" width="44" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/m16Inlet" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt9.roundrect9" static="true">
+   <wgtStyle width="55" x="590" y="133" fill="rgb(4,231,231)" cx="26.40" cy="13.54" rx="20" height="28" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt9.roundrect10" static="true">
+   <wgtStyle width="55" x="699" y="133" fill="rgb(4,231,231)" cx="26.40" cy="13.54" rx="20" height="28" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt9.roundrect11" static="true">
+   <wgtStyle width="55" x="483" y="166" fill="rgb(4,231,231)" cx="26.40" cy="13.54" rx="20" height="28" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt9.roundrect12" static="true">
+   <wgtStyle width="55" x="590" y="166" fill="rgb(4,231,231)" cx="26.40" cy="13.54" rx="20" height="28" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt9.roundrect13" static="true">
+   <wgtStyle width="55" x="699" y="166" fill="rgb(4,231,231)" cx="26.40" cy="13.54" rx="20" height="28" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt9.roundrect14" static="true">
+   <wgtStyle width="55" x="483" y="204" fill="rgb(4,231,231)" cx="26.40" cy="13.54" rx="20" height="28" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt9.roundrect15" static="true">
+   <wgtStyle width="55" x="590" y="204" fill="rgb(4,231,231)" cx="26.40" cy="13.54" rx="20" height="28" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt9.roundrect16" static="true">
+   <wgtStyle width="55" x="699" y="204" fill="rgb(4,231,231)" cx="26.40" cy="13.54" rx="20" height="28" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt9.roundrect17" static="true">
+   <wgtStyle width="55" x="484" y="237" fill="rgb(4,231,231)" cx="26.40" cy="13.54" rx="20" height="28" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt9.roundrect18" static="true">
+   <wgtStyle width="55" x="591" y="237" fill="rgb(4,231,231)" cx="26.40" cy="13.54" rx="20" height="28" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt9.roundrect19" static="true">
+   <wgtStyle width="55" x="700" y="237" fill="rgb(4,231,231)" cx="26.40" cy="13.54" rx="20" height="28" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt9.roundrect20" static="true">
+   <wgtStyle width="55" x="484" y="274" fill="rgb(4,231,231)" cx="26.40" cy="13.54" rx="20" height="28" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt9.roundrect21" static="true">
+   <wgtStyle width="55" x="591" y="274" fill="rgb(4,231,231)" cx="26.40" cy="13.54" rx="20" height="28" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt9.roundrect22" static="true">
+   <wgtStyle width="55" x="700" y="274" fill="rgb(4,231,231)" cx="26.40" cy="13.54" rx="20" height="28" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt9.roundrect23" static="true">
+   <wgtStyle width="55" x="484" y="307" fill="rgb(4,231,231)" cx="26.40" cy="13.54" rx="20" height="28" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt9.roundrect24" static="true">
+   <wgtStyle width="55" x="591" y="307" fill="rgb(4,231,231)" cx="26.40" cy="13.54" rx="20" height="28" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt9.roundrect170" static="true">
+   <wgtStyle width="55" x="700" y="307" fill="rgb(4,231,231)" cx="26.40" cy="13.54" rx="20" height="28" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt9.roundrect171" static="true">
+   <wgtStyle width="55" x="484" y="346" fill="rgb(4,231,231)" cx="26.40" cy="13.54" rx="20" height="28" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt9.roundrect172" static="true">
+   <wgtStyle width="55" x="591" y="346" fill="rgb(4,231,231)" cx="26.40" cy="13.54" rx="20" height="28" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt9.roundrect173" static="true">
+   <wgtStyle width="55" x="700" y="346" fill="rgb(4,231,231)" cx="26.40" cy="13.54" rx="20" height="28" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt9.roundrect174" static="true">
+   <wgtStyle width="55" x="484" y="379" fill="rgb(4,231,231)" cx="26.40" cy="13.54" rx="20" height="28" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt9.roundrect175" static="true">
+   <wgtStyle width="55" x="591" y="379" fill="rgb(4,231,231)" cx="26.40" cy="13.54" rx="20" height="28" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt9.roundrect176" static="true">
+   <wgtStyle width="55" x="700" y="379" fill="rgb(4,231,231)" cx="26.40" cy="13.54" rx="20" height="28" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="MsgTextWgt" id="msgtext6">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="18" cx="17.70" cy="11.50" alignment="center" x="38" y="65" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(72,0,72)" min="0" width="37" continous="true" lineSeparator="" height="23" font-size="14">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="129"/>
+     <textid idx="1" val="130"/>
+     <textid idx="2" val="131"/>
+     <textid idx="3" val="132"/>
+    </lang>
+   </links>
+  </object>
+  <object class="MsgTextWgt" id="msgtext7">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="18" cx="17.70" cy="11.50" alignment="center" x="38" y="94" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(72,0,72)" min="0" width="37" continous="true" lineSeparator="" height="23" font-size="14">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="133"/>
+     <textid idx="1" val="134"/>
+     <textid idx="2" val="135"/>
+     <textid idx="3" val="136"/>
+    </lang>
+   </links>
+  </object>
+  <object class="MsgTextWgt" id="msgtext8">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="18" cx="17.70" cy="11.50" alignment="center" x="38" y="136" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(72,0,72)" min="0" width="37" continous="true" lineSeparator="" height="23" font-size="14">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="137"/>
+     <textid idx="1" val="138"/>
+     <textid idx="2" val="139"/>
+     <textid idx="3" val="140"/>
+    </lang>
+   </links>
+  </object>
+  <object class="MsgTextWgt" id="msgtext9">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="18" cx="17.70" cy="11.50" alignment="center" x="38" y="166" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(72,0,72)" min="0" width="37" continous="true" lineSeparator="" height="23" font-size="14">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="141"/>
+     <textid idx="1" val="142"/>
+     <textid idx="2" val="143"/>
+     <textid idx="3" val="144"/>
+    </lang>
+   </links>
+  </object>
+  <object class="MsgTextWgt" id="msgtext10">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="18" cx="17.70" cy="11.50" alignment="center" x="38" y="209" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(72,0,72)" min="0" width="37" continous="true" lineSeparator="" height="23" font-size="14">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="145"/>
+     <textid idx="1" val="146"/>
+     <textid idx="2" val="147"/>
+     <textid idx="3" val="148"/>
+    </lang>
+   </links>
+  </object>
+  <object class="MsgTextWgt" id="msgtext11">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="18" cx="17.70" cy="11.50" alignment="center" x="38" y="240" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(72,0,72)" min="0" width="37" continous="true" lineSeparator="" height="23" font-size="14">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="149"/>
+     <textid idx="1" val="150"/>
+     <textid idx="2" val="151"/>
+     <textid idx="3" val="152"/>
+    </lang>
+   </links>
+  </object>
+  <object class="MsgTextWgt" id="msgtext12">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="18" cx="17.70" cy="11.50" alignment="center" x="38" y="279" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(72,0,72)" min="0" width="37" continous="true" lineSeparator="" height="23" font-size="14">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="153"/>
+     <textid idx="1" val="154"/>
+     <textid idx="2" val="155"/>
+     <textid idx="3" val="156"/>
+    </lang>
+   </links>
+  </object>
+  <object class="MsgTextWgt" id="msgtext13">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="18" cx="17.70" cy="11.50" alignment="center" x="38" y="309" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(72,0,72)" min="0" width="37" continous="true" lineSeparator="" height="23" font-size="14">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="157"/>
+     <textid idx="1" val="158"/>
+     <textid idx="2" val="159"/>
+     <textid idx="3" val="160"/>
+    </lang>
+   </links>
+  </object>
+  <object class="MsgTextWgt" id="msgtext14">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="18" cx="17.70" cy="11.50" alignment="center" x="38" y="347" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(72,0,72)" min="0" width="37" continous="true" lineSeparator="" height="23" font-size="14">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="161"/>
+     <textid idx="1" val="162"/>
+     <textid idx="2" val="163"/>
+     <textid idx="3" val="164"/>
+    </lang>
+   </links>
+  </object>
+  <object class="MsgTextWgt" id="msgtext15">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="18" cx="17.70" cy="11.50" alignment="center" x="38" y="378" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(72,0,72)" min="0" width="37" continous="true" lineSeparator="" height="23" font-size="14">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="165"/>
+     <textid idx="1" val="166"/>
+     <textid idx="2" val="167"/>
+     <textid idx="3" val="168"/>
+    </lang>
+   </links>
+  </object>
+  <object class="MsgTextWgt" id="msgtext3">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="24" cx="51" cy="17" alignment="center" x="459" y="8" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(72,0,72)" min="0" width="102" continous="true" lineSeparator="" font-underline="true" height="34" font-size="18">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="73"/>
+     <textid idx="1" val="74"/>
+     <textid idx="2" val="75"/>
+     <textid idx="3" val="76"/>
+    </lang>
+   </links>
+  </object>
+  <object class="MsgTextWgt" id="msgtext4">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="24" cx="51" cy="17" alignment="center" x="568" y="8" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(72,0,72)" min="0" width="102" continous="true" lineSeparator="" font-underline="true" height="34" font-size="18">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="77"/>
+     <textid idx="1" val="78"/>
+     <textid idx="2" val="79"/>
+     <textid idx="3" val="80"/>
+    </lang>
+   </links>
+  </object>
+  <object class="MsgTextWgt" id="msgtext5">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="24" cx="51" cy="17" alignment="center" x="679" y="8" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(72,0,72)" min="0" width="102" continous="true" lineSeparator="" font-underline="true" height="34" font-size="18">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="81"/>
+     <textid idx="1" val="82"/>
+     <textid idx="2" val="83"/>
+     <textid idx="3" val="84"/>
+    </lang>
+   </links>
+  </object>
+  <object class="GroupWgt" id="BtnStd2" customType="Button">
+   <wgtStyle width="30" x="92" y="69" cx="15" cy="15.50" height="31"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image16" static="true">
+    <wgtStyle width="30" imagePath="images/frame_rect_chrome.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(127,127,127)" cx="24.09" cy="27.08" bdrSize="0.17,0.14,0.16,0.16" height="31" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd2">
+    <wgtStyle width="21.92" x="4.04" forcePaint="136" y="4.17" bdrImageSize="38.00,37.00" fill="rgb(0,255,0)" cx="18.37" form="standard" cy="20.34" bdrSize="0.11,0.11,0.08,0.09" height="22.65" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="fill" tag="/m1To15R1" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#ff0000;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ToggleBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="/m1To15R1" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label9" static="true">
+    <wgtStyle width="18.46" font-color="rgb(40,40,40)" x="5.19" font-sizepx="13" y="5.96" font-family="Tahoma" wrapping="true" cx="17.88" cy="17.49" height="18.48" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="8">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image18" static="true">
+    <wgtStyle width="11.54" enableCache="false" x="8.65" y="10.13" cx="7.71" cy="6.25" height="10.13"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd3" customType="Button">
+   <wgtStyle width="30" x="140" y="69" cx="15" cy="15.50" height="31"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image3" static="true">
+    <wgtStyle width="30" imagePath="images/frame_rect_chrome.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(127,127,127)" cx="24.09" cy="27.08" bdrSize="0.17,0.14,0.16,0.16" height="31" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd3">
+    <wgtStyle width="21.92" x="4.04" forcePaint="136" y="4.17" bdrImageSize="38.00,37.00" fill="rgb(0,255,0)" cx="18.37" form="standard" cy="20.34" bdrSize="0.11,0.11,0.08,0.09" height="22.65" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="fill" tag="/m1To15R2" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#ff0000;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ToggleBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="/m1To15R2" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label2" static="true">
+    <wgtStyle width="18.46" font-color="rgb(40,40,40)" x="5.19" font-sizepx="13" y="5.96" font-family="Tahoma" wrapping="true" cx="17.88" cy="17.49" height="18.48" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="8">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image4" static="true">
+    <wgtStyle width="11.54" enableCache="false" x="8.65" y="10.13" cx="7.71" cy="6.25" height="10.13"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd4" customType="Button">
+   <wgtStyle width="30" x="188" y="69" cx="15" cy="15.50" height="31"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image5" static="true">
+    <wgtStyle width="30" imagePath="images/frame_rect_chrome.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(127,127,127)" cx="24.09" cy="27.08" bdrSize="0.17,0.14,0.16,0.16" height="31" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd4">
+    <wgtStyle width="21.92" x="4.04" forcePaint="136" y="4.17" bdrImageSize="38.00,37.00" fill="rgb(0,255,0)" cx="18.37" form="standard" cy="20.34" bdrSize="0.11,0.11,0.08,0.09" height="22.65" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="fill" tag="/m1To15R3" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#ff0000;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ToggleBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="/m1To15R3" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label3" static="true">
+    <wgtStyle width="18.46" font-color="rgb(40,40,40)" x="5.19" font-sizepx="13" y="5.96" font-family="Tahoma" wrapping="true" cx="17.88" cy="17.49" height="18.48" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="8">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image6" static="true">
+    <wgtStyle width="11.54" enableCache="false" x="8.65" y="10.13" cx="7.71" cy="6.25" height="10.13"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd5" customType="Button">
+   <wgtStyle width="30" x="236" y="69" cx="15" cy="15.50" height="31"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image7" static="true">
+    <wgtStyle width="30" imagePath="images/frame_rect_chrome.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(127,127,127)" cx="24.09" cy="27.08" bdrSize="0.17,0.14,0.16,0.16" height="31" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd5">
+    <wgtStyle width="21.92" x="4.04" forcePaint="136" y="4.17" bdrImageSize="38.00,37.00" fill="rgb(0,255,0)" cx="18.37" form="standard" cy="20.34" bdrSize="0.11,0.11,0.08,0.09" height="22.65" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="fill" tag="/m1To15R4" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#ff0000;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ToggleBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="/m1To15R4" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label4" static="true">
+    <wgtStyle width="18.46" font-color="rgb(40,40,40)" x="5.19" font-sizepx="13" y="5.96" font-family="Tahoma" wrapping="true" cx="17.88" cy="17.49" height="18.48" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="8">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image8" static="true">
+    <wgtStyle width="11.54" enableCache="false" x="8.65" y="10.13" cx="7.71" cy="6.25" height="10.13"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd6" customType="Button">
+   <wgtStyle width="30" x="285" y="69" cx="15" cy="15.50" height="31"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image9" static="true">
+    <wgtStyle width="30" imagePath="images/frame_rect_chrome.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(127,127,127)" cx="24.09" cy="27.08" bdrSize="0.17,0.14,0.16,0.16" height="31" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd6">
+    <wgtStyle width="21.92" x="4.04" forcePaint="136" y="4.17" bdrImageSize="38.00,37.00" fill="rgb(0,255,0)" cx="18.37" form="standard" cy="20.34" bdrSize="0.11,0.11,0.08,0.09" height="22.65" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="fill" tag="/m1To15R5" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#ff0000;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ToggleBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="/m1To15R5" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label5" static="true">
+    <wgtStyle width="18.46" font-color="rgb(40,40,40)" x="5.19" font-sizepx="13" y="5.96" font-family="Tahoma" wrapping="true" cx="17.88" cy="17.49" height="18.48" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="8">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image10" static="true">
+    <wgtStyle width="11.54" enableCache="false" x="8.65" y="10.13" cx="7.71" cy="6.25" height="10.13"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd9" customType="Button">
+   <wgtStyle width="30" x="333" y="69" cx="15" cy="15.50" height="31"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image19" static="true">
+    <wgtStyle width="30" imagePath="images/frame_rect_chrome.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(127,127,127)" cx="24.09" cy="27.08" bdrSize="0.17,0.14,0.16,0.16" height="31" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd9">
+    <wgtStyle width="21.92" x="4.04" forcePaint="136" y="4.17" bdrImageSize="38.00,37.00" fill="rgb(0,255,0)" cx="18.37" form="standard" cy="20.34" bdrSize="0.11,0.11,0.08,0.09" height="22.65" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="fill" tag="/m1To15R6" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#ff0000;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ToggleBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="/m1To15R6" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label10" static="true">
+    <wgtStyle width="18.46" font-color="rgb(40,40,40)" x="5.19" font-sizepx="13" y="5.96" font-family="Tahoma" wrapping="true" cx="17.88" cy="17.49" height="18.48" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="8">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image20" static="true">
+    <wgtStyle width="11.54" enableCache="false" x="8.65" y="10.13" cx="7.71" cy="6.25" height="10.13"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd17" customType="Button">
+   <wgtStyle width="30" x="92" y="146" cx="15" cy="15.50" height="31"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image33" static="true">
+    <wgtStyle width="30" imagePath="images/frame_rect_chrome.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(127,127,127)" cx="24.09" cy="27.08" bdrSize="0.17,0.14,0.16,0.16" height="31" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd17">
+    <wgtStyle width="21.92" x="4.04" forcePaint="136" y="4.17" bdrImageSize="38.00,37.00" fill="rgb(0,255,0)" cx="18.37" form="standard" cy="20.34" bdrSize="0.11,0.11,0.08,0.09" height="22.65" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="fill" tag="/m16To21R1" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#ff0000;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ToggleBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="/m16To21R1" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label17" static="true">
+    <wgtStyle width="18.46" font-color="rgb(40,40,40)" x="5.19" font-sizepx="13" y="5.96" font-family="Tahoma" wrapping="true" cx="17.88" cy="17.49" height="18.48" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="8">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image34" static="true">
+    <wgtStyle width="11.54" enableCache="false" x="8.65" y="10.13" cx="7.71" cy="6.25" height="10.13"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd18" customType="Button">
+   <wgtStyle width="30" x="140" y="146" cx="15" cy="15.50" height="31"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image35" static="true">
+    <wgtStyle width="30" imagePath="images/frame_rect_chrome.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(127,127,127)" cx="24.09" cy="27.08" bdrSize="0.17,0.14,0.16,0.16" height="31" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd18">
+    <wgtStyle width="21.92" x="4.04" forcePaint="136" y="4.17" bdrImageSize="38.00,37.00" fill="rgb(0,255,0)" cx="18.37" form="standard" cy="20.34" bdrSize="0.11,0.11,0.08,0.09" height="22.65" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="fill" tag="/m16To21R2" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#ff0000;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ToggleBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="/m16To21R2" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label18" static="true">
+    <wgtStyle width="18.46" font-color="rgb(40,40,40)" x="5.19" font-sizepx="13" y="5.96" font-family="Tahoma" wrapping="true" cx="17.88" cy="17.49" height="18.48" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="8">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image36" static="true">
+    <wgtStyle width="11.54" enableCache="false" x="8.65" y="10.13" cx="7.71" cy="6.25" height="10.13"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd19" customType="Button">
+   <wgtStyle width="30" x="188" y="146" cx="15" cy="15.50" height="31"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image37" static="true">
+    <wgtStyle width="30" imagePath="images/frame_rect_chrome.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(127,127,127)" cx="24.09" cy="27.08" bdrSize="0.17,0.14,0.16,0.16" height="31" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd19">
+    <wgtStyle width="21.92" x="4.04" forcePaint="136" y="4.17" bdrImageSize="38.00,37.00" fill="rgb(0,255,0)" cx="18.37" form="standard" cy="20.34" bdrSize="0.11,0.11,0.08,0.09" height="22.65" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="fill" tag="/m16To21R3" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#ff0000;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ToggleBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="/m16To21R3" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label19" static="true">
+    <wgtStyle width="18.46" font-color="rgb(40,40,40)" x="5.19" font-sizepx="13" y="5.96" font-family="Tahoma" wrapping="true" cx="17.88" cy="17.49" height="18.48" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="8">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image38" static="true">
+    <wgtStyle width="11.54" enableCache="false" x="8.65" y="10.13" cx="7.71" cy="6.25" height="10.13"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd20" customType="Button">
+   <wgtStyle width="30" x="236" y="146" cx="15" cy="15.50" height="31"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image39" static="true">
+    <wgtStyle width="30" imagePath="images/frame_rect_chrome.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(127,127,127)" cx="24.09" cy="27.08" bdrSize="0.17,0.14,0.16,0.16" height="31" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd20">
+    <wgtStyle width="21.92" x="4.04" forcePaint="136" y="4.17" bdrImageSize="38.00,37.00" fill="rgb(0,255,0)" cx="18.37" form="standard" cy="20.34" bdrSize="0.11,0.11,0.08,0.09" height="22.65" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="fill" tag="/m16To21R4" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#ff0000;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ToggleBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="/m16To21R4" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label20" static="true">
+    <wgtStyle width="18.46" font-color="rgb(40,40,40)" x="5.19" font-sizepx="13" y="5.96" font-family="Tahoma" wrapping="true" cx="17.88" cy="17.49" height="18.48" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="8">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image40" static="true">
+    <wgtStyle width="11.54" enableCache="false" x="8.65" y="10.13" cx="7.71" cy="6.25" height="10.13"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd21" customType="Button">
+   <wgtStyle width="30" x="285" y="146" cx="15" cy="15.50" height="31"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image41" static="true">
+    <wgtStyle width="30" imagePath="images/frame_rect_chrome.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(127,127,127)" cx="24.09" cy="27.08" bdrSize="0.17,0.14,0.16,0.16" height="31" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd21">
+    <wgtStyle width="21.92" x="4.04" forcePaint="136" y="4.17" bdrImageSize="38.00,37.00" fill="rgb(0,255,0)" cx="18.37" form="standard" cy="20.34" bdrSize="0.11,0.11,0.08,0.09" height="22.65" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="fill" tag="/m16To21R5" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#ff0000;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ToggleBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="/m16To21R5" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label21" static="true">
+    <wgtStyle width="18.46" font-color="rgb(40,40,40)" x="5.19" font-sizepx="13" y="5.96" font-family="Tahoma" wrapping="true" cx="17.88" cy="17.49" height="18.48" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="8">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image42" static="true">
+    <wgtStyle width="11.54" enableCache="false" x="8.65" y="10.13" cx="7.71" cy="6.25" height="10.13"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd22" customType="Button">
+   <wgtStyle width="30" x="333" y="146" cx="15" cy="15.50" height="31"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image43" static="true">
+    <wgtStyle width="30" imagePath="images/frame_rect_chrome.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(127,127,127)" cx="24.09" cy="27.08" bdrSize="0.17,0.14,0.16,0.16" height="31" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd22">
+    <wgtStyle width="21.92" x="4.04" forcePaint="136" y="4.17" bdrImageSize="38.00,37.00" fill="rgb(0,255,0)" cx="18.37" form="standard" cy="20.34" bdrSize="0.11,0.11,0.08,0.09" height="22.65" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="fill" tag="/m16To21R6" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#ff0000;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ToggleBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="/m16To21R6" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label22" static="true">
+    <wgtStyle width="18.46" font-color="rgb(40,40,40)" x="5.19" font-sizepx="13" y="5.96" font-family="Tahoma" wrapping="true" cx="17.88" cy="17.49" height="18.48" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="8">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image44" static="true">
+    <wgtStyle width="11.54" enableCache="false" x="8.65" y="10.13" cx="7.71" cy="6.25" height="10.13"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd23" customType="Button">
+   <wgtStyle width="30" x="92" y="219" cx="15" cy="15.50" height="31"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image45" static="true">
+    <wgtStyle width="30" imagePath="images/frame_rect_chrome.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(127,127,127)" cx="24.09" cy="27.08" bdrSize="0.17,0.14,0.16,0.16" height="31" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd23">
+    <wgtStyle width="21.92" x="4.04" forcePaint="136" y="4.17" bdrImageSize="38.00,37.00" fill="rgb(0,255,0)" cx="18.37" form="standard" cy="20.34" bdrSize="0.11,0.11,0.08,0.09" height="22.65" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="fill" tag="/m22To28R1" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#ff0000;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ToggleBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="/m22To28R1" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label23" static="true">
+    <wgtStyle width="18.46" font-color="rgb(40,40,40)" x="5.19" font-sizepx="13" y="5.96" font-family="Tahoma" wrapping="true" cx="17.88" cy="17.49" height="18.48" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="8">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image46" static="true">
+    <wgtStyle width="11.54" enableCache="false" x="8.65" y="10.13" cx="7.71" cy="6.25" height="10.13"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd24" customType="Button">
+   <wgtStyle width="30" x="140" y="219" cx="15" cy="15.50" height="31"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image47" static="true">
+    <wgtStyle width="30" imagePath="images/frame_rect_chrome.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(127,127,127)" cx="24.09" cy="27.08" bdrSize="0.17,0.14,0.16,0.16" height="31" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd24">
+    <wgtStyle width="21.92" x="4.04" forcePaint="136" y="4.17" bdrImageSize="38.00,37.00" fill="rgb(0,255,0)" cx="18.37" form="standard" cy="20.34" bdrSize="0.11,0.11,0.08,0.09" height="22.65" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="fill" tag="/m22To28R2" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#ff0000;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ToggleBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="/m22To28R2" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label24" static="true">
+    <wgtStyle width="18.46" font-color="rgb(40,40,40)" x="5.19" font-sizepx="13" y="5.96" font-family="Tahoma" wrapping="true" cx="17.88" cy="17.49" height="18.48" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="8">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image48" static="true">
+    <wgtStyle width="11.54" enableCache="false" x="8.65" y="10.13" cx="7.71" cy="6.25" height="10.13"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd25" customType="Button">
+   <wgtStyle width="30" x="188" y="219" cx="15" cy="15.50" height="31"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image49" static="true">
+    <wgtStyle width="30" imagePath="images/frame_rect_chrome.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(127,127,127)" cx="24.09" cy="27.08" bdrSize="0.17,0.14,0.16,0.16" height="31" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd25">
+    <wgtStyle width="21.92" x="4.04" forcePaint="136" y="4.17" bdrImageSize="38.00,37.00" fill="rgb(0,255,0)" cx="18.37" form="standard" cy="20.34" bdrSize="0.11,0.11,0.08,0.09" height="22.65" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="fill" tag="/m22To28R3" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#ff0000;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ToggleBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="/m22To28R3" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label25" static="true">
+    <wgtStyle width="18.46" font-color="rgb(40,40,40)" x="5.19" font-sizepx="13" y="5.96" font-family="Tahoma" wrapping="true" cx="17.88" cy="17.49" height="18.48" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="8">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image50" static="true">
+    <wgtStyle width="11.54" enableCache="false" x="8.65" y="10.13" cx="7.71" cy="6.25" height="10.13"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd26" customType="Button">
+   <wgtStyle width="30" x="236" y="219" cx="15" cy="15.50" height="31"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image51" static="true">
+    <wgtStyle width="30" imagePath="images/frame_rect_chrome.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(127,127,127)" cx="24.09" cy="27.08" bdrSize="0.17,0.14,0.16,0.16" height="31" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd26">
+    <wgtStyle width="21.92" x="4.04" forcePaint="136" y="4.17" bdrImageSize="38.00,37.00" fill="rgb(0,255,0)" cx="18.37" form="standard" cy="20.34" bdrSize="0.11,0.11,0.08,0.09" height="22.65" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="fill" tag="/m22To28R4" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#ff0000;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ToggleBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="/m22To28R4" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label26" static="true">
+    <wgtStyle width="18.46" font-color="rgb(40,40,40)" x="5.19" font-sizepx="13" y="5.96" font-family="Tahoma" wrapping="true" cx="17.88" cy="17.49" height="18.48" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="8">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image52" static="true">
+    <wgtStyle width="11.54" enableCache="false" x="8.65" y="10.13" cx="7.71" cy="6.25" height="10.13"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd27" customType="Button">
+   <wgtStyle width="30" x="285" y="219" cx="15" cy="15.50" height="31"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image53" static="true">
+    <wgtStyle width="30" imagePath="images/frame_rect_chrome.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(127,127,127)" cx="24.09" cy="27.08" bdrSize="0.17,0.14,0.16,0.16" height="31" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd27">
+    <wgtStyle width="21.92" x="4.04" forcePaint="136" y="4.17" bdrImageSize="38.00,37.00" fill="rgb(0,255,0)" cx="18.37" form="standard" cy="20.34" bdrSize="0.11,0.11,0.08,0.09" height="22.65" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="fill" tag="/m22To28R5" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#ff0000;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ToggleBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="/m22To28R5" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label27" static="true">
+    <wgtStyle width="18.46" font-color="rgb(40,40,40)" x="5.19" font-sizepx="13" y="5.96" font-family="Tahoma" wrapping="true" cx="17.88" cy="17.49" height="18.48" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="8">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image54" static="true">
+    <wgtStyle width="11.54" enableCache="false" x="8.65" y="10.13" cx="7.71" cy="6.25" height="10.13"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd28" customType="Button">
+   <wgtStyle width="30" x="333" y="219" cx="15" cy="15.50" height="31"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image55" static="true">
+    <wgtStyle width="30" imagePath="images/frame_rect_chrome.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(127,127,127)" cx="24.09" cy="27.08" bdrSize="0.17,0.14,0.16,0.16" height="31" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd28">
+    <wgtStyle width="21.92" x="4.04" forcePaint="136" y="4.17" bdrImageSize="38.00,37.00" fill="rgb(0,255,0)" cx="18.37" form="standard" cy="20.34" bdrSize="0.11,0.11,0.08,0.09" height="22.65" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="fill" tag="/m22To28R6" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#ff0000;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ToggleBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="/m22To28R6" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label28" static="true">
+    <wgtStyle width="18.46" font-color="rgb(40,40,40)" x="5.19" font-sizepx="13" y="5.96" font-family="Tahoma" wrapping="true" cx="17.88" cy="17.49" height="18.48" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="8">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image56" static="true">
+    <wgtStyle width="11.54" enableCache="false" x="8.65" y="10.13" cx="7.71" cy="6.25" height="10.13"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd35" customType="Button">
+   <wgtStyle width="30" x="92" y="293" cx="15" cy="15.50" height="31"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image69" static="true">
+    <wgtStyle width="30" imagePath="images/frame_rect_chrome.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(127,127,127)" cx="24.09" cy="27.08" bdrSize="0.17,0.14,0.16,0.16" height="31" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd35">
+    <wgtStyle width="21.92" x="4.04" forcePaint="136" y="4.17" bdrImageSize="38.00,37.00" fill="rgb(0,255,0)" cx="18.37" form="standard" cy="20.34" bdrSize="0.11,0.11,0.08,0.09" height="22.65" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="fill" tag="/m29To36R1" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#ff0000;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ToggleBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="/m29To36R1" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label35" static="true">
+    <wgtStyle width="18.46" font-color="rgb(40,40,40)" x="5.19" font-sizepx="13" y="5.96" font-family="Tahoma" wrapping="true" cx="17.88" cy="17.49" height="18.48" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="8">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image70" static="true">
+    <wgtStyle width="11.54" enableCache="false" x="8.65" y="10.13" cx="7.71" cy="6.25" height="10.13"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd36" customType="Button">
+   <wgtStyle width="30" x="140" y="293" cx="15" cy="15.50" height="31"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image71" static="true">
+    <wgtStyle width="30" imagePath="images/frame_rect_chrome.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(127,127,127)" cx="24.09" cy="27.08" bdrSize="0.17,0.14,0.16,0.16" height="31" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd36">
+    <wgtStyle width="21.92" x="4.04" forcePaint="136" y="4.17" bdrImageSize="38.00,37.00" fill="rgb(0,255,0)" cx="18.37" form="standard" cy="20.34" bdrSize="0.11,0.11,0.08,0.09" height="22.65" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="fill" tag="/m29To36R2" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#ff0000;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ToggleBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="/m29To36R2" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label36" static="true">
+    <wgtStyle width="18.46" font-color="rgb(40,40,40)" x="5.19" font-sizepx="13" y="5.96" font-family="Tahoma" wrapping="true" cx="17.88" cy="17.49" height="18.48" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="8">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image72" static="true">
+    <wgtStyle width="11.54" enableCache="false" x="8.65" y="10.13" cx="7.71" cy="6.25" height="10.13"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd37" customType="Button">
+   <wgtStyle width="30" x="188" y="293" cx="15" cy="15.50" height="31"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image73" static="true">
+    <wgtStyle width="30" imagePath="images/frame_rect_chrome.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(127,127,127)" cx="24.09" cy="27.08" bdrSize="0.17,0.14,0.16,0.16" height="31" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd37">
+    <wgtStyle width="21.92" x="4.04" forcePaint="136" y="4.17" bdrImageSize="38.00,37.00" fill="rgb(0,255,0)" cx="18.37" form="standard" cy="20.34" bdrSize="0.11,0.11,0.08,0.09" height="22.65" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="fill" tag="/m29To36R3" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#ff0000;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ToggleBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="/m29To36R3" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label37" static="true">
+    <wgtStyle width="18.46" font-color="rgb(40,40,40)" x="5.19" font-sizepx="13" y="5.96" font-family="Tahoma" wrapping="true" cx="17.88" cy="17.49" height="18.48" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="8">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image74" static="true">
+    <wgtStyle width="11.54" enableCache="false" x="8.65" y="10.13" cx="7.71" cy="6.25" height="10.13"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd38" customType="Button">
+   <wgtStyle width="30" x="236" y="293" cx="15" cy="15.50" height="31"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image75" static="true">
+    <wgtStyle width="30" imagePath="images/frame_rect_chrome.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(127,127,127)" cx="24.09" cy="27.08" bdrSize="0.17,0.14,0.16,0.16" height="31" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd38">
+    <wgtStyle width="21.92" x="4.04" forcePaint="136" y="4.17" bdrImageSize="38.00,37.00" fill="rgb(0,255,0)" cx="18.37" form="standard" cy="20.34" bdrSize="0.11,0.11,0.08,0.09" height="22.65" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="fill" tag="/m29To36R4" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#ff0000;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ToggleBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="/m29To36R4" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label38" static="true">
+    <wgtStyle width="18.46" font-color="rgb(40,40,40)" x="5.19" font-sizepx="13" y="5.96" font-family="Tahoma" wrapping="true" cx="17.88" cy="17.49" height="18.48" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="8">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image76" static="true">
+    <wgtStyle width="11.54" enableCache="false" x="8.65" y="10.13" cx="7.71" cy="6.25" height="10.13"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd39" customType="Button">
+   <wgtStyle width="30" x="285" y="293" cx="15" cy="15.50" height="31"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image77" static="true">
+    <wgtStyle width="30" imagePath="images/frame_rect_chrome.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(127,127,127)" cx="24.09" cy="27.08" bdrSize="0.17,0.14,0.16,0.16" height="31" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd39">
+    <wgtStyle width="21.92" x="4.04" forcePaint="136" y="4.17" bdrImageSize="38.00,37.00" fill="rgb(0,255,0)" cx="18.37" form="standard" cy="20.34" bdrSize="0.11,0.11,0.08,0.09" height="22.65" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="fill" tag="/m29To36R5" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#ff0000;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ToggleBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="/m29To36R5" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label39" static="true">
+    <wgtStyle width="18.46" font-color="rgb(40,40,40)" x="5.19" font-sizepx="13" y="5.96" font-family="Tahoma" wrapping="true" cx="17.88" cy="17.49" height="18.48" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="8">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image78" static="true">
+    <wgtStyle width="11.54" enableCache="false" x="8.65" y="10.13" cx="7.71" cy="6.25" height="10.13"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd40" customType="Button">
+   <wgtStyle width="30" x="333" y="293" cx="15" cy="15.50" height="31"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image79" static="true">
+    <wgtStyle width="30" imagePath="images/frame_rect_chrome.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(127,127,127)" cx="24.09" cy="27.08" bdrSize="0.17,0.14,0.16,0.16" height="31" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd40">
+    <wgtStyle width="21.92" x="4.04" forcePaint="136" y="4.17" bdrImageSize="38.00,37.00" fill="rgb(0,255,0)" cx="18.37" form="standard" cy="20.34" bdrSize="0.11,0.11,0.08,0.09" height="22.65" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="fill" tag="/m29To36R6" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#ff0000;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ToggleBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="/m29To36R6" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label40" static="true">
+    <wgtStyle width="18.46" font-color="rgb(40,40,40)" x="5.19" font-sizepx="13" y="5.96" font-family="Tahoma" wrapping="true" cx="17.88" cy="17.49" height="18.48" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="8">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image80" static="true">
+    <wgtStyle width="11.54" enableCache="false" x="8.65" y="10.13" cx="7.71" cy="6.25" height="10.13"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd41" customType="Button">
+   <wgtStyle width="30" x="92" y="361" cx="15" cy="15.50" height="31"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image81" static="true">
+    <wgtStyle width="30" imagePath="images/frame_rect_chrome.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(127,127,127)" cx="24.09" cy="27.08" bdrSize="0.17,0.14,0.16,0.16" height="31" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd41">
+    <wgtStyle width="21.92" x="4.04" forcePaint="136" y="4.17" bdrImageSize="38.00,37.00" fill="rgb(0,255,0)" cx="18.37" form="standard" cy="20.34" bdrSize="0.11,0.11,0.08,0.09" height="22.65" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="fill" tag="/m37To42R1" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#ff0000;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ToggleBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="/m37To42R1" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label41" static="true">
+    <wgtStyle width="18.46" font-color="rgb(40,40,40)" x="5.19" font-sizepx="13" y="5.96" font-family="Tahoma" wrapping="true" cx="17.88" cy="17.49" height="18.48" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="8">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image82" static="true">
+    <wgtStyle width="11.54" enableCache="false" x="8.65" y="10.13" cx="7.71" cy="6.25" height="10.13"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd42" customType="Button">
+   <wgtStyle width="30" x="140" y="361" cx="15" cy="15.50" height="31"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image83" static="true">
+    <wgtStyle width="30" imagePath="images/frame_rect_chrome.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(127,127,127)" cx="24.09" cy="27.08" bdrSize="0.17,0.14,0.16,0.16" height="31" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd42">
+    <wgtStyle width="21.92" x="4.04" forcePaint="136" y="4.17" bdrImageSize="38.00,37.00" fill="rgb(0,255,0)" cx="18.37" form="standard" cy="20.34" bdrSize="0.11,0.11,0.08,0.09" height="22.65" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="fill" tag="/m37To42R2" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#ff0000;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ToggleBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="/m37To42R2" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label42" static="true">
+    <wgtStyle width="18.46" font-color="rgb(40,40,40)" x="5.19" font-sizepx="13" y="5.96" font-family="Tahoma" wrapping="true" cx="17.88" cy="17.49" height="18.48" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="8">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image84" static="true">
+    <wgtStyle width="11.54" enableCache="false" x="8.65" y="10.13" cx="7.71" cy="6.25" height="10.13"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd43" customType="Button">
+   <wgtStyle width="30" x="188" y="361" cx="15" cy="15.50" height="31"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image85" static="true">
+    <wgtStyle width="30" imagePath="images/frame_rect_chrome.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(127,127,127)" cx="24.09" cy="27.08" bdrSize="0.17,0.14,0.16,0.16" height="31" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd43">
+    <wgtStyle width="21.92" x="4.04" forcePaint="136" y="4.17" bdrImageSize="38.00,37.00" fill="rgb(0,255,0)" cx="18.37" form="standard" cy="20.34" bdrSize="0.11,0.11,0.08,0.09" height="22.65" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="fill" tag="/m37To42R3" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#ff0000;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ToggleBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="/m37To42R3" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label43" static="true">
+    <wgtStyle width="18.46" font-color="rgb(40,40,40)" x="5.19" font-sizepx="13" y="5.96" font-family="Tahoma" wrapping="true" cx="17.88" cy="17.49" height="18.48" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="8">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image86" static="true">
+    <wgtStyle width="11.54" enableCache="false" x="8.65" y="10.13" cx="7.71" cy="6.25" height="10.13"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd44" customType="Button">
+   <wgtStyle width="30" x="236" y="361" cx="15" cy="15.50" height="31"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image87" static="true">
+    <wgtStyle width="30" imagePath="images/frame_rect_chrome.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(127,127,127)" cx="24.09" cy="27.08" bdrSize="0.17,0.14,0.16,0.16" height="31" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd44">
+    <wgtStyle width="21.92" x="4.04" forcePaint="136" y="4.17" bdrImageSize="38.00,37.00" fill="rgb(0,255,0)" cx="18.37" form="standard" cy="20.34" bdrSize="0.11,0.11,0.08,0.09" height="22.65" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="fill" tag="/m37To42R4" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#ff0000;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ToggleBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="/m37To42R4" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label44" static="true">
+    <wgtStyle width="18.46" font-color="rgb(40,40,40)" x="5.19" font-sizepx="13" y="5.96" font-family="Tahoma" wrapping="true" cx="17.88" cy="17.49" height="18.48" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="8">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image88" static="true">
+    <wgtStyle width="11.54" enableCache="false" x="8.65" y="10.13" cx="7.71" cy="6.25" height="10.13"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd45" customType="Button">
+   <wgtStyle width="30" x="285" y="361" cx="15" cy="15.50" height="31"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image89" static="true">
+    <wgtStyle width="30" imagePath="images/frame_rect_chrome.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(127,127,127)" cx="24.09" cy="27.08" bdrSize="0.17,0.14,0.16,0.16" height="31" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd45">
+    <wgtStyle width="21.92" x="4.04" forcePaint="136" y="4.17" bdrImageSize="38.00,37.00" fill="rgb(0,255,0)" cx="18.37" form="standard" cy="20.34" bdrSize="0.11,0.11,0.08,0.09" height="22.65" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="fill" tag="/m37To42R5" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#ff0000;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ToggleBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="/m37To42R5" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label45" static="true">
+    <wgtStyle width="18.46" font-color="rgb(40,40,40)" x="5.19" font-sizepx="13" y="5.96" font-family="Tahoma" wrapping="true" cx="17.88" cy="17.49" height="18.48" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="8">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image90" static="true">
+    <wgtStyle width="11.54" enableCache="false" x="8.65" y="10.13" cx="7.71" cy="6.25" height="10.13"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd46" customType="Button">
+   <wgtStyle width="30" x="333" y="361" cx="15" cy="15.50" height="31"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image91" static="true">
+    <wgtStyle width="30" imagePath="images/frame_rect_chrome.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(127,127,127)" cx="24.09" cy="27.08" bdrSize="0.17,0.14,0.16,0.16" height="31" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd46">
+    <wgtStyle width="21.92" x="4.04" forcePaint="136" y="4.17" bdrImageSize="38.00,37.00" fill="rgb(0,255,0)" cx="18.37" form="standard" cy="20.34" bdrSize="0.11,0.11,0.08,0.09" height="22.65" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="fill" tag="/m37To42R6" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#ff0000;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ToggleBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="/m37To42R6" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label46" static="true">
+    <wgtStyle width="18.46" font-color="rgb(40,40,40)" x="5.19" font-sizepx="13" y="5.96" font-family="Tahoma" wrapping="true" cx="17.88" cy="17.49" height="18.48" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="8">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image92" static="true">
+    <wgtStyle width="11.54" enableCache="false" x="8.65" y="10.13" cx="7.71" cy="6.25" height="10.13"/>
+   </object>
+  </object>
+  <object class="NumericWgt" id="GroupWgt9.field2">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="20.24" cy="9" step="1" timeSpec="local" alignment="center" x="706" y="136" vert-align="top" text="0" max="100" usingFormat="#" value="0" keypad-type="Numeric" min="0" width="44" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/m16Tunnel" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt9.field9">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="20.24" cy="9" step="1" timeSpec="local" alignment="center" x="595.50" y="137.50" vert-align="top" text="0" max="100" usingFormat="#" value="0" keypad-type="Numeric" min="0" width="44" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/m16ExhaustSpeed" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt9.field10">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="20.24" cy="9" step="1" timeSpec="local" alignment="center" x="489" y="168" vert-align="top" text="0" max="100" usingFormat="#" value="0" keypad-type="Numeric" min="0" width="44" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/m21Inlet" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt9.field11">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="20.24" cy="9" step="1" timeSpec="local" alignment="center" x="706" y="168" vert-align="top" text="0" max="100" usingFormat="#" value="0" keypad-type="Numeric" min="0" width="44" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/m21Tunnel" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt9.field12">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="20.24" cy="9" step="1" timeSpec="local" alignment="center" x="595.50" y="170" vert-align="top" text="0" max="100" usingFormat="#" value="0" keypad-type="Numeric" min="0" width="44" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/m21ExhaustSpeed" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt9.field13">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="20.24" cy="9" step="1" timeSpec="local" alignment="center" x="489" y="206" vert-align="top" text="0" max="100" usingFormat="#" value="0" keypad-type="Numeric" min="0" width="44" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/m22Inlet" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt9.field14">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="20.24" cy="9" step="1" timeSpec="local" alignment="center" x="706" y="206" vert-align="top" text="0" max="100" usingFormat="#" value="0" keypad-type="Numeric" min="0" width="44" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/m22Tunnel" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt9.field15">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="20.24" cy="9" step="1" timeSpec="local" alignment="center" x="595.50" y="208" vert-align="top" text="0" max="100" usingFormat="#" value="0" keypad-type="Numeric" min="0" width="44" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/m22ExhaustSpeed" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt9.field16">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="20.24" cy="9" step="1" timeSpec="local" alignment="center" x="489" y="240" vert-align="top" text="0" max="100" usingFormat="#" value="0" keypad-type="Numeric" min="0" width="44" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/m28Inlet" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt9.field17">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="20.24" cy="9" step="1" timeSpec="local" alignment="center" x="706" y="240" vert-align="top" text="0" max="100" usingFormat="#" value="0" keypad-type="Numeric" min="0" width="44" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/m28Tunnel" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt9.field18">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="20.24" cy="9" step="1" timeSpec="local" alignment="center" x="595.50" y="242" vert-align="top" text="0" max="100" usingFormat="#" value="0" keypad-type="Numeric" min="0" width="44" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/m28ExhaustSpeed" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt9.field19">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="20.24" cy="9" step="1" timeSpec="local" alignment="center" x="489" y="277" vert-align="top" text="0" max="100" usingFormat="#" value="0" keypad-type="Numeric" min="0" width="44" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/m29Inlet" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt9.field20">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="20.24" cy="9" step="1" timeSpec="local" alignment="center" x="706" y="277" vert-align="top" text="0" max="100" usingFormat="#" value="0" keypad-type="Numeric" min="0" width="44" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/m29Tunnel" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt9.field21">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="20.24" cy="9" step="1" timeSpec="local" alignment="center" x="595.50" y="278" vert-align="top" text="0" max="100" usingFormat="#" value="0" keypad-type="Numeric" min="0" width="44" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/m29ExhaustSpeed" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt9.field22">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="20.24" cy="9" step="1" timeSpec="local" alignment="center" x="489" y="310" vert-align="top" text="0" max="100" usingFormat="#" value="0" keypad-type="Numeric" min="0" width="44" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/m36Inlet" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt9.field23">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="20.24" cy="9" step="1" timeSpec="local" alignment="center" x="706" y="310" vert-align="top" text="0" max="100" usingFormat="#" value="0" keypad-type="Numeric" min="0" width="44" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/m36Tunnel" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt9.field24">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="20.24" cy="9" step="1" timeSpec="local" alignment="center" x="595.50" y="311" vert-align="top" text="0" max="100" usingFormat="#" value="0" keypad-type="Numeric" min="0" width="44" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/m36ExhaustSpeed" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt9.field25">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="20.24" cy="9" step="1" timeSpec="local" alignment="center" x="489" y="350" vert-align="top" text="0" max="100" usingFormat="#" value="0" keypad-type="Numeric" min="0" width="44" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/m37Inlet" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt9.field26">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="20.24" cy="9" step="1" timeSpec="local" alignment="center" x="706" y="349" vert-align="top" text="0" max="100" usingFormat="#" value="0" keypad-type="Numeric" min="0" width="44" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/m37Tunnel" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt9.field27">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="20.24" cy="9" step="1" timeSpec="local" alignment="center" x="595.50" y="350" vert-align="top" text="0" max="100" usingFormat="#" value="0" keypad-type="Numeric" min="0" width="44" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/m37ExhaustSpeed" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt9.field28">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="20.24" cy="9" step="1" timeSpec="local" alignment="center" x="489" y="383" vert-align="top" text="0" max="100" usingFormat="#" value="0" keypad-type="Numeric" min="0" width="44" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/m42Inlet" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt9.field29">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="20.24" cy="9" step="1" timeSpec="local" alignment="center" x="706" y="383" vert-align="top" text="0" max="100" usingFormat="#" value="0" keypad-type="Numeric" min="0" width="44" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/m42Tunnel" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt9.field30">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="20.24" cy="9" step="1" timeSpec="local" alignment="center" x="595.50" y="383" vert-align="top" text="0" max="100" usingFormat="#" value="0" keypad-type="Numeric" min="0" width="44" readWrite="true" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/m42ExhaustSpeed" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="GroupSubscribeWgt" id="MPhaseSettingNew@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="GroupWgt" id="BtnStd7" customType="Button">
+   <wgtStyle width="30" x="383" y="69" cx="15" cy="15.50" height="31"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image11" static="true">
+    <wgtStyle width="30" imagePath="images/frame_rect_chrome.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(127,127,127)" cx="24.09" cy="27.08" bdrSize="0.17,0.14,0.16,0.16" height="31" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd7">
+    <wgtStyle width="21.92" x="4.04" forcePaint="136" y="4.17" bdrImageSize="38.00,37.00" fill="rgb(0,255,0)" cx="18.37" form="standard" cy="20.34" bdrSize="0.11,0.11,0.08,0.09" height="22.65" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="fill" tag="/m1To15R7" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#ff0000;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ToggleBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="/m1To15R7" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label7" static="true">
+    <wgtStyle width="18.46" font-color="rgb(40,40,40)" x="5.19" font-sizepx="13" y="5.96" font-family="Tahoma" wrapping="true" cx="17.88" cy="17.49" height="18.48" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="8">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image12" static="true">
+    <wgtStyle width="11.54" enableCache="false" x="8.65" y="10.13" cx="7.71" cy="6.25" height="10.13"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd8" customType="Button">
+   <wgtStyle width="30" x="431" y="69" cx="15" cy="15.50" height="31"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image13" static="true">
+    <wgtStyle width="30" imagePath="images/frame_rect_chrome.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(127,127,127)" cx="24.09" cy="27.08" bdrSize="0.17,0.14,0.16,0.16" height="31" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd8">
+    <wgtStyle width="21.92" x="4.04" forcePaint="136" y="4.17" bdrImageSize="38.00,37.00" fill="rgb(0,255,0)" cx="18.37" form="standard" cy="20.34" bdrSize="0.11,0.11,0.08,0.09" height="22.65" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="fill" tag="/m1To15R8" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#ff0000;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ToggleBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="/m1To15R8" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label8" static="true">
+    <wgtStyle width="18.46" font-color="rgb(40,40,40)" x="5.19" font-sizepx="13" y="5.96" font-family="Tahoma" wrapping="true" cx="17.88" cy="17.49" height="18.48" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="8">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image14" static="true">
+    <wgtStyle width="11.54" enableCache="false" x="8.65" y="10.13" cx="7.71" cy="6.25" height="10.13"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd10" customType="Button">
+   <wgtStyle width="30" x="383" y="146" cx="15" cy="15.50" height="31"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image15" static="true">
+    <wgtStyle width="30" imagePath="images/frame_rect_chrome.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(127,127,127)" cx="24.09" cy="27.08" bdrSize="0.17,0.14,0.16,0.16" height="31" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd10">
+    <wgtStyle width="21.92" x="4.04" forcePaint="136" y="4.17" bdrImageSize="38.00,37.00" fill="rgb(0,255,0)" cx="18.37" form="standard" cy="20.34" bdrSize="0.11,0.11,0.08,0.09" height="22.65" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="fill" tag="/m16To21R7" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#ff0000;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ToggleBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="/m16To21R7" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label11" static="true">
+    <wgtStyle width="18.46" font-color="rgb(40,40,40)" x="5.19" font-sizepx="13" y="5.96" font-family="Tahoma" wrapping="true" cx="17.88" cy="17.49" height="18.48" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="8">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image17" static="true">
+    <wgtStyle width="11.54" enableCache="false" x="8.65" y="10.13" cx="7.71" cy="6.25" height="10.13"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd11" customType="Button">
+   <wgtStyle width="30" x="431" y="146" cx="15" cy="15.50" height="31"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image21" static="true">
+    <wgtStyle width="30" imagePath="images/frame_rect_chrome.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(127,127,127)" cx="24.09" cy="27.08" bdrSize="0.17,0.14,0.16,0.16" height="31" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd11">
+    <wgtStyle width="21.92" x="4.04" forcePaint="136" y="4.17" bdrImageSize="38.00,37.00" fill="rgb(0,255,0)" cx="18.37" form="standard" cy="20.34" bdrSize="0.11,0.11,0.08,0.09" height="22.65" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="fill" tag="/m16To21R8" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#ff0000;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ToggleBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="/m16To21R8" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label12" static="true">
+    <wgtStyle width="18.46" font-color="rgb(40,40,40)" x="5.19" font-sizepx="13" y="5.96" font-family="Tahoma" wrapping="true" cx="17.88" cy="17.49" height="18.48" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="8">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image22" static="true">
+    <wgtStyle width="11.54" enableCache="false" x="8.65" y="10.13" cx="7.71" cy="6.25" height="10.13"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd12" customType="Button">
+   <wgtStyle width="30" x="383" y="219" cx="15" cy="15.50" height="31"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image23" static="true">
+    <wgtStyle width="30" imagePath="images/frame_rect_chrome.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(127,127,127)" cx="24.09" cy="27.08" bdrSize="0.17,0.14,0.16,0.16" height="31" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd12">
+    <wgtStyle width="21.92" x="4.04" forcePaint="136" y="4.17" bdrImageSize="38.00,37.00" fill="rgb(0,255,0)" cx="18.37" form="standard" cy="20.34" bdrSize="0.11,0.11,0.08,0.09" height="22.65" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="fill" tag="/m22To28R7" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#ff0000;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ToggleBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="/m22To28R7" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label13" static="true">
+    <wgtStyle width="18.46" font-color="rgb(40,40,40)" x="5.19" font-sizepx="13" y="5.96" font-family="Tahoma" wrapping="true" cx="17.88" cy="17.49" height="18.48" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="8">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image24" static="true">
+    <wgtStyle width="11.54" enableCache="false" x="8.65" y="10.13" cx="7.71" cy="6.25" height="10.13"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd13" customType="Button">
+   <wgtStyle width="30" x="431" y="219" cx="15" cy="15.50" height="31"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image25" static="true">
+    <wgtStyle width="30" imagePath="images/frame_rect_chrome.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(127,127,127)" cx="24.09" cy="27.08" bdrSize="0.17,0.14,0.16,0.16" height="31" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd13">
+    <wgtStyle width="21.92" x="4.04" forcePaint="136" y="4.17" bdrImageSize="38.00,37.00" fill="rgb(0,255,0)" cx="18.37" form="standard" cy="20.34" bdrSize="0.11,0.11,0.08,0.09" height="22.65" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="fill" tag="/m22To28R8" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#ff0000;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ToggleBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="/m22To28R8" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label14" static="true">
+    <wgtStyle width="18.46" font-color="rgb(40,40,40)" x="5.19" font-sizepx="13" y="5.96" font-family="Tahoma" wrapping="true" cx="17.88" cy="17.49" height="18.48" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="8">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image26" static="true">
+    <wgtStyle width="11.54" enableCache="false" x="8.65" y="10.13" cx="7.71" cy="6.25" height="10.13"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd14" customType="Button">
+   <wgtStyle width="30" x="383" y="293" cx="15" cy="15.50" height="31"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image27" static="true">
+    <wgtStyle width="30" imagePath="images/frame_rect_chrome.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(127,127,127)" cx="24.09" cy="27.08" bdrSize="0.17,0.14,0.16,0.16" height="31" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd14">
+    <wgtStyle width="21.92" x="4.04" forcePaint="136" y="4.17" bdrImageSize="38.00,37.00" fill="rgb(0,255,0)" cx="18.37" form="standard" cy="20.34" bdrSize="0.11,0.11,0.08,0.09" height="22.65" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="fill" tag="/m29To36R7" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#ff0000;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ToggleBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="/m29To36R7" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label15" static="true">
+    <wgtStyle width="18.46" font-color="rgb(40,40,40)" x="5.19" font-sizepx="13" y="5.96" font-family="Tahoma" wrapping="true" cx="17.88" cy="17.49" height="18.48" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="8">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image28" static="true">
+    <wgtStyle width="11.54" enableCache="false" x="8.65" y="10.13" cx="7.71" cy="6.25" height="10.13"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd15" customType="Button">
+   <wgtStyle width="30" x="431" y="293" cx="15" cy="15.50" height="31"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image29" static="true">
+    <wgtStyle width="30" imagePath="images/frame_rect_chrome.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(127,127,127)" cx="24.09" cy="27.08" bdrSize="0.17,0.14,0.16,0.16" height="31" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd15">
+    <wgtStyle width="21.92" x="4.04" forcePaint="136" y="4.17" bdrImageSize="38.00,37.00" fill="rgb(0,255,0)" cx="18.37" form="standard" cy="20.34" bdrSize="0.11,0.11,0.08,0.09" height="22.65" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="fill" tag="/m29To36R8" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#ff0000;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ToggleBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="/m29To36R8" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label16" static="true">
+    <wgtStyle width="18.46" font-color="rgb(40,40,40)" x="5.19" font-sizepx="13" y="5.96" font-family="Tahoma" wrapping="true" cx="17.88" cy="17.49" height="18.48" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="8">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image30" static="true">
+    <wgtStyle width="11.54" enableCache="false" x="8.65" y="10.13" cx="7.71" cy="6.25" height="10.13"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd16" customType="Button">
+   <wgtStyle width="30" x="383" y="361" cx="15" cy="15.50" height="31"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image31" static="true">
+    <wgtStyle width="30" imagePath="images/frame_rect_chrome.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(127,127,127)" cx="24.09" cy="27.08" bdrSize="0.17,0.14,0.16,0.16" height="31" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd16">
+    <wgtStyle width="21.92" x="4.04" forcePaint="136" y="4.17" bdrImageSize="38.00,37.00" fill="rgb(0,255,0)" cx="18.37" form="standard" cy="20.34" bdrSize="0.11,0.11,0.08,0.09" height="22.65" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="fill" tag="/m37To42R7" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#ff0000;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ToggleBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="/m37To42R7" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label29" static="true">
+    <wgtStyle width="18.46" font-color="rgb(40,40,40)" x="5.19" font-sizepx="13" y="5.96" font-family="Tahoma" wrapping="true" cx="17.88" cy="17.49" height="18.48" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="8">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image32" static="true">
+    <wgtStyle width="11.54" enableCache="false" x="8.65" y="10.13" cx="7.71" cy="6.25" height="10.13"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd29" customType="Button">
+   <wgtStyle width="30" x="431" y="361" cx="15" cy="15.50" height="31"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="image57" static="true">
+    <wgtStyle width="30" imagePath="images/frame_rect_chrome.svg" enableCache="false" x="0" y="0" bdrImageSize="52.00,50.00" fill="rgb(127,127,127)" cx="24.09" cy="27.08" bdrSize="0.17,0.14,0.16,0.16" height="31" bdrEdges="0.14,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="buttonStd29">
+    <wgtStyle width="21.92" x="4.04" forcePaint="136" y="4.17" bdrImageSize="38.00,37.00" fill="rgb(0,255,0)" cx="18.37" form="standard" cy="20.34" bdrSize="0.11,0.11,0.08,0.09" height="22.65" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="fill" tag="/m37To42R8" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="#ff0000;#00ff00" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+    <links>
+     <action BitIndex="0" DataSource="Project:_TagMgr" class="ToggleBitAction" attribute="onMouseClick" event="onMouseClick" SrcType="Tag" actionID="1" TagName="/m37To42R8" actionWgt="_TagMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label30" static="true">
+    <wgtStyle width="18.46" font-color="rgb(40,40,40)" x="5.19" font-sizepx="13" y="5.96" font-family="Tahoma" wrapping="true" cx="17.88" cy="17.49" height="18.48" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="8">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="image58" static="true">
+    <wgtStyle width="11.54" enableCache="false" x="8.65" y="10.13" cx="7.71" cy="6.25" height="10.13"/>
+   </object>
+  </object>
+ </object>
+</wgtPage>

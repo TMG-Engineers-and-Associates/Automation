@@ -1,0 +1,29 @@
+<scheduledActions>
+ <multiLangs>
+  <langs defLangId="L1" curLangId="L1">
+   <lang removable="false" langCode="" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Tahoma"/>
+  </langs>
+  <MLTexts/>
+ </multiLangs>
+ <timedAction>
+  <id>Schedule1</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition></condition>
+  <mode>Time</mode>
+  <timezone place="" longitude="" utc="" latitude=""/>
+  <second>00</second>
+  <minute>00</minute>
+  <hour>01</hour>
+  <dayOfMonth>*</dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>*</dayOfWeek>
+  <priority>1</priority>
+  <schType>Every</schType>
+  <actions enable="1" id="1">
+   <macroAction actionFunction="dumpTrend" parameters="\USBMemory;Trend1;2;True;0" actionID="0"/>
+  </actions>
+ </timedAction>
+</scheduledActions>

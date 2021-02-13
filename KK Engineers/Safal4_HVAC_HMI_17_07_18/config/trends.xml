@@ -1,0 +1,27 @@
+<trends>
+ <trend type="1">
+  <name>Trend1</name>
+  <source></source>
+  <samplingTime attachTo="">60000</samplingTime>
+  <active>true</active>
+  <compressed>false</compressed>
+  <size>40000</size>
+  <trigger></trigger>
+  <deviation>
+   <lowLimit>0</lowLimit>
+   <highLimit>0</highLimit>
+  </deviation>
+  <autodumptrend>true</autodumptrend>
+  <dataStorageLoc>USBMemory/</dataStorageLoc>
+  <storageDevice>1</storageDevice>
+  <sources>
+   <dl comment="" name="houseTemp">/hFinalTemp</dl>
+   <dl comment="" name="houseRH">/hRH</dl>
+   <dl comment="" name="frontCool">/frontCoolRunTime</dl>
+   <dl comment="" name="sideCool">/sideCoolRunTime</dl>
+   <dl comment="" name="setTemp">/setTemp</dl>
+   <dl comment="" name="MPhasePC">/mPhasePCINT</dl>
+   <dl comment="" name="TPhaseNum">/tphaseNumSelected</dl>
+  </sources>
+ </trend>
+</trends>

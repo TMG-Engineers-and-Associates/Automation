@@ -1,0 +1,5 @@
+<printdetails ramquota="16000000" maxpixmapsize="16000000" spoolMediaType="0" spoolFolder="c:/users/tarun/onedrive/projects/kk engineers/hvac_abb_hmi/safal4_hvac_hmi_17_07_18/reportspool" diskquota="-1">
+ <printerPorts>
+  <port>File</port>
+ </printerPorts>
+</printdetails>

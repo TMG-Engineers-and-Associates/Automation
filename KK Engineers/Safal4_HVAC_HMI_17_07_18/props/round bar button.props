@@ -1,0 +1,19 @@
+﻿<defs>
+ <translationInfo>
+	<trAttribute>display</trAttribute>
+ </translationInfo>
+ <g id="custom_properties" showChildNodes="0" inherit="widget_properties" attributeName="Round Bar Button">
+  <text display="Knob Value" attributeType="float" layer="" alias="NeedleWgt1.value;BargraphWgt1.value" attachTag="1" adv="0" attributeName="NeedleWgt1.value">Knob value</text>
+  <text display="Button Value" attributeType="integer" layer="" alias="" attachTag="1" adv="0" attributeName="ButtonWgt1.value">Button value</text>
+  <text display="OnMousePress Action" attributeType="event" layer="Events" alias="" attachTag="0" adv="0" attributeName="ButtonWgt1.onMousePress" eventName="onMouseDown" childPropName="action" childAttrName="onMousePress.action">Action for Mouse Press Event</text>
+  <text display="OnMouseRelease Action" attributeType="event" layer="Events" alias="" attachTag="0" adv="0" attributeName="ButtonWgt1.onMouseRelease" eventName="onMouseUp" childPropName="action" childAttrName="onMouseRelease.action">Action for Mouse Release Event</text>
+  <text display="Button Fill Color" attributeType="color" layer="Display" alias="" attachTag="1" adv="0" attributeName="ButtonWgt1.fill">Sets the button fill color</text>
+  <text display="Needle Fill Color" attributeType="color" layer="Display" alias="" attachTag="1" adv="0" attributeName="NeedleWgt1.fill">Sets the needle fill color</text>
+  <text display="Needle Stroke Color" attributeType="color" layer="Display" alias="" attachTag="1" adv="0" attributeName="NeedleWgt1.stroke">Sets  the needle stroke color</text>
+  <text display="Needle Stroke Width" attributeType="float" layer="Display" alias="" attachTag="1" adv="1" attributeName="NeedleWgt1.stroke-width">Sets the knob stroke width</text>
+  <text display="Needle Opacity" attributeType="float" layer="Display" alias="" attachTag="1" adv="1" attributeName="NeedleWgt1.fill-opacity">Knob opacity level in decimal value (e.g. 0.5 = 50%)</text>
+  <text display="Bar Color" attributeType="color" layer="Display" alias="" attachTag="1" adv="0" attributeName="BargraphWgt1.fill">Bar color</text>
+  <text display="Min" attributeType="float" layer="Configure" alias="NeedleWgt1.min;BargraphWgt1.min" attachTag="1" adv="0" attributeName="NeedleWgt1.min">Knob min value</text>
+  <text display="Max" attributeType="float" layer="Configure" alias="NeedleWgt1.max;BargraphWgt1.max" attachTag="1" adv="0" attributeName="NeedleWgt1.max">Knob max value</text>
+ </g>
+</defs>

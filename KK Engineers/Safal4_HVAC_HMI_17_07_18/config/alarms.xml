@@ -1,0 +1,186 @@
+<alarms>
+ <multiLangs>
+  <langs defLangId="L1" curLangId="L1">
+   <lang removable="false" langCode="" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Tahoma"/>
+  </langs>
+  <MLTexts>
+   <MLText L1="POWER FAILURE" id="2"/>
+   <MLText L1="FAN TRIP" id="3"/>
+   <MLText L1="TEMPERATURE HIGH" id="5"/>
+   <MLText L1="TEMPERATURE DIFFERENCE HIGH" id="7"/>
+   <MLText L1="INLET TUNNEL TRIP" id="8"/>
+   <MLText L1="RECIRCULATION FAN TRIP" id="9"/>
+   <MLText L1="FEED MOTOR TRIP" id="10"/>
+   <MLText L1="AUGER MOTOR TRIP" id="14"/>
+  </MLTexts>
+ </multiLangs>
+ <defaultColors notTriggeredNotAckedBgColor="#ffffff" ackBgColor="#ffff00" triggeredNotAckedBgColor="#ffffff" ackTxtColor="#ff0000" notTriggeredTxtColor="#000000" triggeredBgColor="#ffffff" triggeredTxtColor="#000000" triggeredNotAckedTxtColor="#000000" notTriggeredAckedTxtColor="#000000" triggeredAckedBgColor="#ffffff" disabledBgColor="#ffffff" notTriggeredNotAckedTxtColor="#000000" triggeredAckedTxtColor="#000000" notTriggeredBgColor="#ffffff" disabledTxtColor="#000000" notTriggeredAckedBgColor="#ffffff"/>
+ <valueAlarm eventBuffer="AlarmBuffer1" logToEventArchive="true" alarmId="1" eventType="14" subType="1" storeAlarmInfo="true">
+  <name>Alarm1</name>
+  <source>/iPowerFailure</source>
+  <remoteAck></remoteAck>
+  <ackNotify></ackNotify>
+  <enabled>true</enabled>
+  <active>true</active>
+  <requireAck>false</requireAck>
+  <blinkTxt>false</blinkTxt>
+  <requireReset>false</requireReset>
+  <actions/>
+  <description>[2@Alarm]POWER FAILURE</description>
+  <severity>1</severity>
+  <priority>3</priority>
+  <value>0</value>
+  <logMask>120</logMask>
+  <notifyMask>120</notifyMask>
+  <actionMask>1</actionMask>
+  <printMask>1</printMask>
+  <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+ </valueAlarm>
+ <valueAlarm eventBuffer="AlarmBuffer1" logToEventArchive="true" alarmId="2" eventType="14" subType="1" storeAlarmInfo="true">
+  <name>Alarm2</name>
+  <source>/iFanMCBTrip</source>
+  <remoteAck></remoteAck>
+  <ackNotify></ackNotify>
+  <enabled>true</enabled>
+  <active>true</active>
+  <requireAck>false</requireAck>
+  <blinkTxt>false</blinkTxt>
+  <requireReset>false</requireReset>
+  <actions/>
+  <description>[3@Alarm]FAN TRIP</description>
+  <severity>1</severity>
+  <priority>3</priority>
+  <value>1</value>
+  <logMask>120</logMask>
+  <notifyMask>120</notifyMask>
+  <actionMask>1</actionMask>
+  <printMask>1</printMask>
+  <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+ </valueAlarm>
+ <valueAlarm eventBuffer="AlarmBuffer1" logToEventArchive="true" alarmId="3" eventType="14" subType="1" storeAlarmInfo="true">
+  <name>Alarm3</name>
+  <source>/maxTempAlarm</source>
+  <remoteAck></remoteAck>
+  <ackNotify></ackNotify>
+  <enabled>true</enabled>
+  <active>true</active>
+  <requireAck>false</requireAck>
+  <blinkTxt>false</blinkTxt>
+  <requireReset>false</requireReset>
+  <actions/>
+  <description>[5@Alarm]TEMPERATURE HIGH</description>
+  <severity>1</severity>
+  <priority>3</priority>
+  <value>1</value>
+  <logMask>120</logMask>
+  <notifyMask>120</notifyMask>
+  <actionMask>1</actionMask>
+  <printMask>1</printMask>
+  <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+ </valueAlarm>
+ <valueAlarm eventBuffer="AlarmBuffer1" logToEventArchive="true" alarmId="4" eventType="14" subType="1" storeAlarmInfo="true">
+  <name>Alarm4</name>
+  <source>/maxTDiffAlarm</source>
+  <remoteAck></remoteAck>
+  <ackNotify></ackNotify>
+  <enabled>true</enabled>
+  <active>true</active>
+  <requireAck>false</requireAck>
+  <blinkTxt>false</blinkTxt>
+  <requireReset>false</requireReset>
+  <actions/>
+  <description>[7@Alarm]TEMPERATURE DIFFERENCE HIGH</description>
+  <severity>1</severity>
+  <priority>3</priority>
+  <value>1</value>
+  <logMask>120</logMask>
+  <notifyMask>120</notifyMask>
+  <actionMask>1</actionMask>
+  <printMask>1</printMask>
+  <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+ </valueAlarm>
+ <valueAlarm eventBuffer="AlarmBuffer1" logToEventArchive="true" alarmId="5" eventType="14" subType="1" storeAlarmInfo="true">
+  <name>Alarm5</name>
+  <source>/iInletMCBTrip</source>
+  <remoteAck></remoteAck>
+  <ackNotify></ackNotify>
+  <enabled>true</enabled>
+  <active>true</active>
+  <requireAck>false</requireAck>
+  <blinkTxt>false</blinkTxt>
+  <requireReset>false</requireReset>
+  <actions/>
+  <description>[8@Alarm]INLET TUNNEL TRIP</description>
+  <severity>1</severity>
+  <priority>3</priority>
+  <value>1</value>
+  <logMask>76</logMask>
+  <notifyMask>76</notifyMask>
+  <actionMask>1</actionMask>
+  <printMask>1</printMask>
+  <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+ </valueAlarm>
+ <valueAlarm eventBuffer="AlarmBuffer1" logToEventArchive="true" alarmId="6" eventType="14" subType="1" storeAlarmInfo="true">
+  <name>Alarm6</name>
+  <source>/iRecirculationFanTrip</source>
+  <remoteAck></remoteAck>
+  <ackNotify></ackNotify>
+  <enabled>true</enabled>
+  <active>true</active>
+  <requireAck>false</requireAck>
+  <blinkTxt>false</blinkTxt>
+  <requireReset>false</requireReset>
+  <actions/>
+  <description>[9@Alarm]RECIRCULATION FAN TRIP</description>
+  <severity>1</severity>
+  <priority>3</priority>
+  <value>1</value>
+  <logMask>76</logMask>
+  <notifyMask>76</notifyMask>
+  <actionMask>1</actionMask>
+  <printMask>1</printMask>
+  <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+ </valueAlarm>
+ <valueAlarm eventBuffer="AlarmBuffer1" logToEventArchive="true" alarmId="7" eventType="14" subType="1" storeAlarmInfo="true">
+  <name>Alarm7</name>
+  <source>/iFeedTrip</source>
+  <remoteAck></remoteAck>
+  <ackNotify></ackNotify>
+  <enabled>true</enabled>
+  <active>true</active>
+  <requireAck>false</requireAck>
+  <blinkTxt>false</blinkTxt>
+  <requireReset>false</requireReset>
+  <actions/>
+  <description>[10@Alarm]FEED MOTOR TRIP</description>
+  <severity>1</severity>
+  <priority>3</priority>
+  <value>1</value>
+  <logMask>76</logMask>
+  <notifyMask>76</notifyMask>
+  <actionMask>1</actionMask>
+  <printMask>1</printMask>
+  <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+ </valueAlarm>
+ <valueAlarm eventBuffer="AlarmBuffer1" logToEventArchive="true" alarmId="9" eventType="14" subType="1" storeAlarmInfo="true">
+  <name>Alarm9</name>
+  <source>/iSupplyAugerTrip</source>
+  <remoteAck></remoteAck>
+  <ackNotify></ackNotify>
+  <enabled>true</enabled>
+  <active>true</active>
+  <requireAck>false</requireAck>
+  <blinkTxt>false</blinkTxt>
+  <requireReset>false</requireReset>
+  <actions/>
+  <description>[14@Alarm]AUGER MOTOR TRIP</description>
+  <severity>1</severity>
+  <priority>3</priority>
+  <value>1</value>
+  <logMask>76</logMask>
+  <notifyMask>76</notifyMask>
+  <actionMask>1</actionMask>
+  <printMask>1</printMask>
+  <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+ </valueAlarm>
+</alarms>

@@ -1,0 +1,727 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="HOME" pageSize="800,480" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" templateFile="templatepage1.jmx" staticFile="opt/home.png" id="HOME" staticOptEnable="true">
+  <wgtStyle width="800" x="0" y="0" height="480" ver="020000161" color="rgb(255,240,200)" v="02.00.00.161"/>
+  <object class="GroupWgt" id="GaugesRound1" customType="Gauge">
+   <wgtStyle width="201" x="43.50" y="37" cx="95.25" cy="99.30" height="202" mtx="0.947761,0,0,0,0.983193,0,0,0,1" groupStyle="xform-scaling"/>
+   <links>
+    <attr attrName="min" alias="NeedleWgt.min;ScaleWgt.min;LabelsWgt.min;TicksWgt.min"/>
+    <attr attrName="max" alias="NeedleWgt.max;ScaleWgt.max;LabelsWgt.max;TicksWgt.max"/>
+    <attr attrName="startAngle" alias="NeedleWgt.startAngle;LabelsWgt.startAngle;TicksWgt.startAngle;ScaleWgt.startAngle"/>
+    <attr attrName="endAngle" alias="NeedleWgt.endAngle;LabelsWgt.endAngle;TicksWgt.endAngle;ScaleWgt.endAngle"/>
+    <attr attrName="reverseScale" alias="NeedleWgt.reverseScale;ScaleWgt.reverseScale;LabelsWgt.reverseScale;TicksWgt.reverseScale"/>
+    <attr attrName="autoAdjust" alias="TicksWgt.autoAdjust;LabelsWgt.autoAdjust"/>
+    <attr attrName="labelFreq" alias="TicksWgt.labelFreq;LabelsWgt.labelFreq"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:black plastic; hmi-shape:rect_1; hmi-type:bkgd-gau" id="image9" static="true">
+    <wgtStyle width="249" enableCache="false" x="-23" y="-18" visibility="false" cx="21" cy="8" height="206"/>
+   </object>
+   <object class="GroupWgt" id="GroupWgt2">
+    <wgtStyle width="201" x="0" y="0" cx="100.50" cy="101" height="202"/>
+    <links>
+     <attr attrName="min" alias="NeedleWgt.min;ScaleWgt.min;LabelsWgt.min"/>
+     <attr attrName="max" alias="NeedleWgt.max;ScaleWgt.max;LabelsWgt.max"/>
+     <attr attrName="startAngle" alias="NeedleWgt.startAngle;LabelsWgt.startAngle;TicksWgt.startAngle;ScaleWgt.startAngle"/>
+     <attr attrName="endAngle" alias="NeedleWgt.endAngle;LabelsWgt.endAngle;TicksWgt.endAngle;ScaleWgt.endAngle"/>
+     <attr attrName="reverseScale" alias="NeedleWgt.reverseScale;ScaleWgt.reverseScale;LabelsWgt.reverseScale;TicksWgt.reverseScale"/>
+     <attr attrName="labelFreq" alias="TicksWgt.labelFreq;LabelsWgt.labelFreq"/>
+    </links>
+    <object class="ScaleWgt" id="scale13" static="true">
+     <wgtStyle alarmMin="45" cx="100" cy="100" reverseScale="false" endAngle="180" x="0" y="0" max="60" autoAdjust="true" stroke-width="30" width="201" Color="none" fill="none" size="35" alarmMax="60" height="202" stroke="rgb(255,0,0)" form="round"/>
+    </object>
+    <object class="LabelsWgt" id="labels7" static="true">
+     <wgtStyle font-family="Tahoma" font-sizepx="13" cx="96" cy="84" timeSpec="local" endAngle="180" x="4" y="11" rotated="true" vert-align="top" max="60" width="194" labelNames="" tickFreq="5" height="165" labelFreq="5" form="round" font-size="10"/>
+    </object>
+    <object class="TicksWgt" id="ticks7" static="true">
+     <wgtStyle width="144" reverseScale="true" x="29" y="28" cx="71" form="round" labelFreq="5" cy="71" height="143" tickSize2="15" tickFreq="3" tickSize="6" stroke-linecap="square" max="60" stroke-width="3" endAngle="180" minorStroke-width="2"/>
+    </object>
+    <object class="NeedleWgt" hmiStyle="hmi-name:solid; hmi-shape:custom; hmi-type:needle" id="needle2">
+     <wgtStyle forcePaint="8" cx="71" cy="79" acceptClick="true" endAngle="180" x="30" y="20" discrete="true" max="60" initAngle="180" width="140" toolTipFontSize="12" toolTipFontName="Tahoma" toolTipTextColor="rgb(0,0,0)" writeMode="0" toolTipBgColor="rgb(255,255,255)" height="95" form="round"/>
+     <dataLinks>
+      <dataLink readWrite="R/W" tagType="float" attribute="value" tag="/hFinalTemp" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+     </dataLinks>
+     <object class="ImageWgt" id="needle2-image1">
+      <wgtStyle width="69" rot="-180" imagePath="images/ne_2line_1.svg" enableCache="false" x="65" forcePaint="65" y="72" fill="rgb(255,0,0)" cx="6" cy="7" height="13" stroke="rgb(255,0,0)"/>
+     </object>
+    </object>
+   </object>
+  </object>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Tahoma"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="" id="1"/>
+    <MLText L1="Front Cooling" id="3"/>
+    <MLText L1="Message" id="4"/>
+    <MLText L1="Message" id="5"/>
+    <MLText L1="Message" id="6"/>
+    <MLText L1="HOUSE TEMP" id="7"/>
+    <MLText L1="Message" id="8"/>
+    <MLText L1="Message" id="9"/>
+    <MLText L1="Message" id="10"/>
+    <MLText L1="Side Cooling" id="11"/>
+    <MLText L1="Message" id="12"/>
+    <MLText L1="Message" id="13"/>
+    <MLText L1="Message" id="14"/>
+    <MLText L1="PV" id="15"/>
+    <MLText L1="Message" id="16"/>
+    <MLText L1="Message" id="17"/>
+    <MLText L1="Message" id="18"/>
+    <MLText L1="Natural Phase" id="19"/>
+    <MLText L1="Message" id="20"/>
+    <MLText L1="Message" id="21"/>
+    <MLText L1="Message" id="22"/>
+    <MLText L1="Natural Phase&#xa;Fans On" id="23"/>
+    <MLText L1="Message" id="24"/>
+    <MLText L1="Message" id="25"/>
+    <MLText L1="Message" id="26"/>
+    <MLText L1="SV" id="95"/>
+    <MLText L1="Message" id="96"/>
+    <MLText L1="Message" id="97"/>
+    <MLText L1="Message" id="98"/>
+    <MLText L1="M-PHASE" id="99"/>
+    <MLText L1="Message" id="100"/>
+    <MLText L1="Message" id="101"/>
+    <MLText L1="Message" id="102"/>
+    <MLText L1="T-PHASE" id="103"/>
+    <MLText L1="Message" id="104"/>
+    <MLText L1="Message" id="105"/>
+    <MLText L1="Message" id="106"/>
+    <MLText L1="HOUSE RH" id="123"/>
+    <MLText L1="Message" id="124"/>
+    <MLText L1="Message" id="125"/>
+    <MLText L1="Message" id="126"/>
+    <MLText L1="OUTSIDE TEMP" id="127"/>
+    <MLText L1="Message" id="128"/>
+    <MLText L1="Message" id="129"/>
+    <MLText L1="Message" id="130"/>
+    <MLText L1="OUTSIDE RH" id="131"/>
+    <MLText L1="Message" id="132"/>
+    <MLText L1="Message" id="133"/>
+    <MLText L1="Message" id="134"/>
+   </MLTexts>
+  </object>
+  <object class="MsgTextWgt" id="msgtext1">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="21" cx="64.39" cy="12.79" x="85" y="10" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(72,0,72)" min="0" width="131" continous="true" lineSeparator="" font-underline="true" height="27" font-size="16">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="7"/>
+     <textid idx="1" val="8"/>
+     <textid idx="2" val="9"/>
+     <textid idx="3" val="10"/>
+    </lang>
+   </links>
+  </object>
+  <object class="MsgTextWgt" id="msgtext2">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="21" cx="52.10" cy="11.84" x="351" y="11" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(72,0,72)" min="0" width="106" continous="true" lineSeparator="" font-underline="true" height="25" font-size="16">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="123"/>
+     <textid idx="1" val="124"/>
+     <textid idx="2" val="125"/>
+     <textid idx="3" val="126"/>
+    </lang>
+   </links>
+  </object>
+  <object class="MsgTextWgt" id="msgtext3">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="21" cx="75.20" cy="12.79" x="67" y="243" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(72,0,72)" min="0" width="153" continous="true" lineSeparator="" font-underline="true" height="27" font-size="16">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="127"/>
+     <textid idx="1" val="128"/>
+     <textid idx="2" val="129"/>
+     <textid idx="3" val="130"/>
+    </lang>
+   </links>
+  </object>
+  <object class="MsgTextWgt" id="msgtext4">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="21" cx="59.97" cy="12.79" x="343" y="243" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(72,0,72)" min="0" width="122" continous="true" lineSeparator="" font-underline="true" height="27" font-size="16">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="131"/>
+     <textid idx="1" val="132"/>
+     <textid idx="2" val="133"/>
+     <textid idx="3" val="134"/>
+    </lang>
+   </links>
+  </object>
+  <object class="MsgTextWgt" id="msgtext5">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="18" cx="44.73" cy="12.31" x="622" y="175" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(72,0,72)" min="0" width="91" continous="true" lineSeparator="" font-underline="true" height="26" font-size="14">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="99"/>
+     <textid idx="1" val="100"/>
+     <textid idx="2" val="101"/>
+     <textid idx="3" val="102"/>
+    </lang>
+   </links>
+  </object>
+  <object class="MsgTextWgt" id="msgtext6">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="18" cx="42.27" cy="11.84" x="628" y="312" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(72,0,72)" min="0" width="86" continous="true" lineSeparator="" font-underline="true" height="25" font-size="14">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="103"/>
+     <textid idx="1" val="104"/>
+     <textid idx="2" val="105"/>
+     <textid idx="3" val="106"/>
+    </lang>
+   </links>
+  </object>
+  <object class="MsgTextWgt" id="msgtext9">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="18" cx="13.27" cy="9" x="16" y="108" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(72,0,72)" min="0" width="27" continous="true" lineSeparator="" height="19" font-size="14">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="15"/>
+     <textid idx="1" val="16"/>
+     <textid idx="2" val="17"/>
+     <textid idx="3" val="18"/>
+    </lang>
+   </links>
+  </object>
+  <object class="MsgTextWgt" id="msgtext10">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="18" cx="13.27" cy="9" x="16" y="156" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(72,0,72)" min="0" width="27" continous="true" lineSeparator="" height="19" font-size="14">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="95"/>
+     <textid idx="1" val="96"/>
+     <textid idx="2" val="97"/>
+     <textid idx="3" val="98"/>
+    </lang>
+   </links>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt2.roundrect3" static="true">
+   <wgtStyle width="67.62" x="103" y="154" fill="rgb(4,231,231)" cx="32.46" cy="16.93" rx="20" height="35" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="NumericWgt" id="field2">
+   <wgtStyle font-bold="true" forcePaint="73" font-family="Cambria" font-sizepx="18" cx="22.54" cy="9.45" step="1" timeSpec="local" alignment="right" x="106" y="105" vert-align="top" text="0" max="3.40282e+038" usingFormat="#.#" value="0" keypad-type="None" font-color="rgb(23,30,40)" min="-3.40282e+038" width="49" readWrite="true" height="21" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="float" attribute="value" tag="/hFinalTemp" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt2.field3">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="29.72" cy="13.50" step="1" timeSpec="local" alignment="center" x="104" y="156" vert-align="middle" text="0" max="3.40282e+038" usingFormat="#.#" value="0" keypad-type="None" min="-3.40282e+038" width="64.62" height="30" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="float" attribute="value" tag="/setTemp" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="GroupWgt" id="GaugesRound2" customType="Gauge">
+   <wgtStyle width="201" x="309" y="37" cx="95.25" cy="99.30" height="202" mtx="0.947761,0,0,0,0.983193,0,0,0,1" groupStyle="xform-scaling"/>
+   <links>
+    <attr attrName="min" alias="NeedleWgt.min;ScaleWgt.min;LabelsWgt.min;TicksWgt.min"/>
+    <attr attrName="max" alias="NeedleWgt.max;ScaleWgt.max;LabelsWgt.max;TicksWgt.max"/>
+    <attr attrName="startAngle" alias="NeedleWgt.startAngle;LabelsWgt.startAngle;TicksWgt.startAngle;ScaleWgt.startAngle"/>
+    <attr attrName="endAngle" alias="NeedleWgt.endAngle;LabelsWgt.endAngle;TicksWgt.endAngle;ScaleWgt.endAngle"/>
+    <attr attrName="reverseScale" alias="NeedleWgt.reverseScale;ScaleWgt.reverseScale;LabelsWgt.reverseScale;TicksWgt.reverseScale"/>
+    <attr attrName="autoAdjust" alias="TicksWgt.autoAdjust;LabelsWgt.autoAdjust"/>
+    <attr attrName="labelFreq" alias="TicksWgt.labelFreq;LabelsWgt.labelFreq"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:black plastic; hmi-shape:rect_1; hmi-type:bkgd-gau" id="image11" static="true">
+    <wgtStyle width="249" enableCache="false" x="-23" y="-18" visibility="false" cx="21" cy="8" height="206"/>
+   </object>
+   <object class="GroupWgt" id="GroupWgt1">
+    <wgtStyle width="201" x="0" y="0" cx="100.50" cy="101" height="202"/>
+    <links>
+     <attr attrName="min" alias="NeedleWgt.min;ScaleWgt.min;LabelsWgt.min"/>
+     <attr attrName="max" alias="NeedleWgt.max;ScaleWgt.max;LabelsWgt.max"/>
+     <attr attrName="startAngle" alias="NeedleWgt.startAngle;LabelsWgt.startAngle;TicksWgt.startAngle;ScaleWgt.startAngle"/>
+     <attr attrName="endAngle" alias="NeedleWgt.endAngle;LabelsWgt.endAngle;TicksWgt.endAngle;ScaleWgt.endAngle"/>
+     <attr attrName="reverseScale" alias="NeedleWgt.reverseScale;ScaleWgt.reverseScale;LabelsWgt.reverseScale;TicksWgt.reverseScale"/>
+     <attr attrName="labelFreq" alias="TicksWgt.labelFreq;LabelsWgt.labelFreq"/>
+    </links>
+    <object class="ScaleWgt" id="scale1" static="true">
+     <wgtStyle alarmMin="75" cx="100" cy="100" reverseScale="false" endAngle="180" x="0" y="0" max="100" autoAdjust="true" stroke-width="30" width="201" Color="none" fill="none" size="35" alarmMax="100" height="202" stroke="rgb(255,0,0)" form="round"/>
+    </object>
+    <object class="LabelsWgt" id="labels1" static="true">
+     <wgtStyle font-family="Tahoma" font-sizepx="13" cx="96" cy="84" timeSpec="local" endAngle="180" x="4" y="11" rotated="true" vert-align="top" max="100" width="194" labelNames="" tickFreq="5" height="165" labelFreq="5" form="round" font-size="10"/>
+    </object>
+    <object class="TicksWgt" id="ticks1" static="true">
+     <wgtStyle width="144" reverseScale="true" x="29" y="28" cx="71" form="round" labelFreq="5" cy="71" height="143" tickSize2="15" tickFreq="3" tickSize="6" stroke-linecap="square" max="100" stroke-width="3" endAngle="180" minorStroke-width="2"/>
+    </object>
+    <object class="NeedleWgt" hmiStyle="hmi-name:solid; hmi-shape:custom; hmi-type:needle" id="needle1">
+     <wgtStyle forcePaint="8" cx="71" cy="79" acceptClick="true" endAngle="180" x="30" y="20" discrete="true" max="100" initAngle="180" width="140" toolTipFontSize="12" toolTipFontName="Tahoma" toolTipTextColor="rgb(0,0,0)" writeMode="0" toolTipBgColor="rgb(255,255,255)" height="95" form="round"/>
+     <dataLinks>
+      <dataLink readWrite="R/W" tagType="float" attribute="value" tag="/hRH" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+     </dataLinks>
+     <object class="ImageWgt" id="needle1-image1">
+      <wgtStyle width="69" rot="-180" imagePath="images/ne_2line_1.svg" enableCache="false" x="65" forcePaint="65" y="72" fill="rgb(255,0,0)" cx="6" cy="7" height="13" stroke="rgb(255,0,0)"/>
+     </object>
+    </object>
+   </object>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt2.roundrect1" static="true">
+   <wgtStyle width="67.62" x="368" y="154" fill="rgb(4,231,231)" cx="32.46" cy="16.93" rx="20" height="35" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="NumericWgt" id="field1">
+   <wgtStyle font-bold="true" forcePaint="73" font-family="Cambria" font-sizepx="18" cx="23.92" cy="9.45" step="1" timeSpec="local" alignment="right" x="368" y="105" vert-align="top" text="0" max="3.40282e+038" usingFormat="#.#" value="0" keypad-type="None" font-color="rgb(23,30,40)" min="-3.40282e+038" width="52" height="21" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="float" attribute="value" tag="/hRH" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt2.field1">
+   <wgtStyle forcePaint="8" font-family="Cambria" font-sizepx="18" cx="31.27" cy="13.05" step="1" timeSpec="local" alignment="center" x="367" y="156" vert-align="middle" text="0" max="3.40282e+038" usingFormat="#.#" value="0" keypad-type="None" min="-3.40282e+038" width="68" readWrite="true" height="29" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="float" attribute="value" tag="/setRH" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="GroupWgt" id="GaugesRound3" customType="Gauge">
+   <wgtStyle width="201" x="309" forcePaint="33" y="271" cx="95.25" cy="99.30" height="202" staticFile="opt/HOMEGaugesRound3.png" mtx="0.947761,0,0,0,0.983193,0,0,0,1" groupStyle="xform-scaling"/>
+   <links>
+    <attr attrName="min" alias="NeedleWgt.min;ScaleWgt.min;LabelsWgt.min;TicksWgt.min"/>
+    <attr attrName="max" alias="NeedleWgt.max;ScaleWgt.max;LabelsWgt.max;TicksWgt.max"/>
+    <attr attrName="startAngle" alias="NeedleWgt.startAngle;LabelsWgt.startAngle;TicksWgt.startAngle;ScaleWgt.startAngle"/>
+    <attr attrName="endAngle" alias="NeedleWgt.endAngle;LabelsWgt.endAngle;TicksWgt.endAngle;ScaleWgt.endAngle"/>
+    <attr attrName="reverseScale" alias="NeedleWgt.reverseScale;ScaleWgt.reverseScale;LabelsWgt.reverseScale;TicksWgt.reverseScale"/>
+    <attr attrName="autoAdjust" alias="TicksWgt.autoAdjust;LabelsWgt.autoAdjust"/>
+    <attr attrName="labelFreq" alias="TicksWgt.labelFreq;LabelsWgt.labelFreq"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:black plastic; hmi-shape:rect_1; hmi-type:bkgd-gau" id="image12" static="true">
+    <wgtStyle width="249" enableCache="false" x="-23" y="-18" visibility="false" cx="21" cy="8" height="206"/>
+   </object>
+   <object class="GroupWgt" id="GroupWgt3">
+    <wgtStyle width="201" x="0" y="0" cx="100.50" cy="101" height="202"/>
+    <links>
+     <attr attrName="min" alias="NeedleWgt.min;ScaleWgt.min;LabelsWgt.min"/>
+     <attr attrName="max" alias="NeedleWgt.max;ScaleWgt.max;LabelsWgt.max"/>
+     <attr attrName="startAngle" alias="NeedleWgt.startAngle;LabelsWgt.startAngle;TicksWgt.startAngle;ScaleWgt.startAngle"/>
+     <attr attrName="endAngle" alias="NeedleWgt.endAngle;LabelsWgt.endAngle;TicksWgt.endAngle;ScaleWgt.endAngle"/>
+     <attr attrName="reverseScale" alias="NeedleWgt.reverseScale;ScaleWgt.reverseScale;LabelsWgt.reverseScale;TicksWgt.reverseScale"/>
+     <attr attrName="labelFreq" alias="TicksWgt.labelFreq;LabelsWgt.labelFreq"/>
+    </links>
+    <object class="ScaleWgt" id="scale2" static="true">
+     <wgtStyle alarmMin="75" cx="100" cy="100" reverseScale="false" endAngle="180" x="0" y="0" max="100" autoAdjust="true" stroke-width="30" width="201" Color="none" fill="none" size="35" alarmMax="100" height="202" stroke="rgb(255,0,0)" form="round"/>
+    </object>
+    <object class="LabelsWgt" id="labels2" static="true">
+     <wgtStyle font-family="Tahoma" font-sizepx="13" cx="96" cy="84" timeSpec="local" endAngle="180" x="4" y="11" rotated="true" vert-align="top" max="100" width="194" labelNames="" tickFreq="5" height="165" labelFreq="5" form="round" font-size="10"/>
+    </object>
+    <object class="TicksWgt" id="ticks2" static="true">
+     <wgtStyle width="144" reverseScale="true" x="29" y="28" cx="71" form="round" labelFreq="5" cy="71" height="143" tickSize2="15" tickFreq="3" tickSize="6" stroke-linecap="square" max="100" stroke-width="3" endAngle="180" minorStroke-width="2"/>
+    </object>
+    <object class="NeedleWgt" hmiStyle="hmi-name:solid; hmi-shape:custom; hmi-type:needle" id="needle3">
+     <wgtStyle forcePaint="8" cx="71" cy="79" acceptClick="true" endAngle="180" x="30" y="20" discrete="true" max="100" initAngle="180" width="140" toolTipFontSize="12" toolTipFontName="Tahoma" toolTipTextColor="rgb(0,0,0)" writeMode="0" toolTipBgColor="rgb(255,255,255)" height="95" form="round"/>
+     <dataLinks>
+      <dataLink readWrite="R/W" tagType="float" attribute="value" tag="/oRH" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+     </dataLinks>
+     <object class="ImageWgt" id="needle3-image1">
+      <wgtStyle width="69" rot="-180" imagePath="images/ne_2line_1.svg" enableCache="false" x="65" forcePaint="65" y="72" fill="rgb(255,0,0)" cx="6" cy="7" height="13" stroke="rgb(255,0,0)"/>
+     </object>
+    </object>
+   </object>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt2.roundrect4">
+   <wgtStyle width="67.62" x="368" forcePaint="1" y="388" fill="rgb(4,231,231)" cx="32.46" cy="16.93" rx="20" height="35" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="NumericWgt" id="GroupWgt2.field4">
+   <wgtStyle forcePaint="9" font-family="Cambria" font-sizepx="18" cx="31.10" cy="9" step="1" timeSpec="local" alignment="center" x="367" y="394" vert-align="top" text="0" max="3.40282e+038" usingFormat="#.#" value="0" keypad-type="None" min="-3.40282e+038" width="67.62" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="float" attribute="value" tag="/oRH" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="GroupWgt" id="GaugesRound4" customType="Gauge">
+   <wgtStyle width="201" x="38" forcePaint="33" y="271" cx="95.25" cy="99.30" height="202" staticFile="opt/HOMEGaugesRound4.png" mtx="0.947761,0,0,0,0.983193,0,0,0,1" groupStyle="xform-scaling"/>
+   <links>
+    <attr attrName="min" alias="NeedleWgt.min;ScaleWgt.min;LabelsWgt.min;TicksWgt.min"/>
+    <attr attrName="max" alias="NeedleWgt.max;ScaleWgt.max;LabelsWgt.max;TicksWgt.max"/>
+    <attr attrName="startAngle" alias="NeedleWgt.startAngle;LabelsWgt.startAngle;TicksWgt.startAngle;ScaleWgt.startAngle"/>
+    <attr attrName="endAngle" alias="NeedleWgt.endAngle;LabelsWgt.endAngle;TicksWgt.endAngle;ScaleWgt.endAngle"/>
+    <attr attrName="reverseScale" alias="NeedleWgt.reverseScale;ScaleWgt.reverseScale;LabelsWgt.reverseScale;TicksWgt.reverseScale"/>
+    <attr attrName="autoAdjust" alias="TicksWgt.autoAdjust;LabelsWgt.autoAdjust"/>
+    <attr attrName="labelFreq" alias="TicksWgt.labelFreq;LabelsWgt.labelFreq"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:black plastic; hmi-shape:rect_1; hmi-type:bkgd-gau" id="image13" static="true">
+    <wgtStyle width="249" enableCache="false" x="-23" y="-18" visibility="false" cx="21" cy="8" height="206"/>
+   </object>
+   <object class="GroupWgt" id="GroupWgt4">
+    <wgtStyle width="201" x="0" y="0" cx="100.50" cy="101" height="202"/>
+    <links>
+     <attr attrName="min" alias="NeedleWgt.min;ScaleWgt.min;LabelsWgt.min"/>
+     <attr attrName="max" alias="NeedleWgt.max;ScaleWgt.max;LabelsWgt.max"/>
+     <attr attrName="startAngle" alias="NeedleWgt.startAngle;LabelsWgt.startAngle;TicksWgt.startAngle;ScaleWgt.startAngle"/>
+     <attr attrName="endAngle" alias="NeedleWgt.endAngle;LabelsWgt.endAngle;TicksWgt.endAngle;ScaleWgt.endAngle"/>
+     <attr attrName="reverseScale" alias="NeedleWgt.reverseScale;ScaleWgt.reverseScale;LabelsWgt.reverseScale;TicksWgt.reverseScale"/>
+     <attr attrName="labelFreq" alias="TicksWgt.labelFreq;LabelsWgt.labelFreq"/>
+    </links>
+    <object class="ScaleWgt" id="scale3" static="true">
+     <wgtStyle alarmMin="45" cx="100" cy="100" reverseScale="false" endAngle="180" x="0" y="0" max="60" autoAdjust="true" stroke-width="30" width="201" Color="none" fill="none" size="35" alarmMax="60" height="202" stroke="rgb(255,0,0)" form="round"/>
+    </object>
+    <object class="LabelsWgt" id="labels3" static="true">
+     <wgtStyle font-family="Tahoma" font-sizepx="13" cx="96" cy="84" timeSpec="local" endAngle="180" x="4" y="11" rotated="true" vert-align="top" max="60" width="194" labelNames="" tickFreq="5" height="165" labelFreq="5" form="round" font-size="10"/>
+    </object>
+    <object class="TicksWgt" id="ticks3" static="true">
+     <wgtStyle width="144" reverseScale="true" x="29" y="28" cx="71" form="round" labelFreq="5" cy="71" height="143" tickSize2="15" tickFreq="3" tickSize="6" stroke-linecap="square" max="60" stroke-width="3" endAngle="180" minorStroke-width="2"/>
+    </object>
+    <object class="NeedleWgt" hmiStyle="hmi-name:solid; hmi-shape:custom; hmi-type:needle" id="needle4">
+     <wgtStyle forcePaint="8" cx="71" cy="79" acceptClick="true" endAngle="180" x="30" y="20" discrete="true" max="60" initAngle="180" width="140" toolTipFontSize="12" toolTipFontName="Tahoma" toolTipTextColor="rgb(0,0,0)" writeMode="0" toolTipBgColor="rgb(255,255,255)" height="95" form="round"/>
+     <dataLinks>
+      <dataLink readWrite="R/W" tagType="float" attribute="value" tag="/oTemp" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+     </dataLinks>
+     <object class="ImageWgt" id="needle4-image1">
+      <wgtStyle width="69" rot="-180" imagePath="images/ne_2line_1.svg" enableCache="false" x="65" forcePaint="65" y="72" fill="rgb(255,0,0)" cx="6" cy="7" height="13" stroke="rgb(255,0,0)"/>
+     </object>
+    </object>
+   </object>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt2.roundrect5">
+   <wgtStyle width="67.62" x="97" forcePaint="1" y="388" fill="rgb(4,231,231)" cx="32.46" cy="16.93" rx="20" height="35" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="NumericWgt" id="GroupWgt2.field5">
+   <wgtStyle forcePaint="9" font-family="Cambria" font-sizepx="18" cx="31.10" cy="9" step="1" timeSpec="local" alignment="center" x="96" y="394" vert-align="top" text="0" max="3.40282e+038" usingFormat="#.#" value="0" keypad-type="None" min="-3.40282e+038" width="67.62" height="20" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="float" attribute="value" tag="/oTemp" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="GroupWgt" id="GaugesRound5" customType="Gauge">
+   <wgtStyle width="201" x="598" forcePaint="97" y="325" cx="66" cy="66" height="202" staticFile="opt/HOMEGaugesRound5.png" mtx="0.656716,0,0,0,0.653465,0,0,0,1" groupStyle="xform-scaling"/>
+   <links>
+    <attr attrName="min" alias="NeedleWgt.min;ScaleWgt.min;LabelsWgt.min;TicksWgt.min"/>
+    <attr attrName="max" alias="NeedleWgt.max;ScaleWgt.max;LabelsWgt.max;TicksWgt.max"/>
+    <attr attrName="startAngle" alias="NeedleWgt.startAngle;LabelsWgt.startAngle;TicksWgt.startAngle;ScaleWgt.startAngle"/>
+    <attr attrName="endAngle" alias="NeedleWgt.endAngle;LabelsWgt.endAngle;TicksWgt.endAngle;ScaleWgt.endAngle"/>
+    <attr attrName="reverseScale" alias="NeedleWgt.reverseScale;ScaleWgt.reverseScale;LabelsWgt.reverseScale;TicksWgt.reverseScale"/>
+    <attr attrName="autoAdjust" alias="TicksWgt.autoAdjust;LabelsWgt.autoAdjust"/>
+    <attr attrName="labelFreq" alias="TicksWgt.labelFreq;LabelsWgt.labelFreq"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:black plastic; hmi-shape:rect_1; hmi-type:bkgd-gau" id="image15" static="true">
+    <wgtStyle width="249" enableCache="false" x="-23" y="-18" visibility="false" cx="21" cy="8" height="206"/>
+   </object>
+   <object class="GroupWgt" id="GroupWgt5">
+    <wgtStyle width="201" x="0" y="0" cx="100.50" cy="101" height="202"/>
+    <links>
+     <attr attrName="min" alias="NeedleWgt.min;ScaleWgt.min;LabelsWgt.min"/>
+     <attr attrName="max" alias="NeedleWgt.max;ScaleWgt.max;LabelsWgt.max"/>
+     <attr attrName="startAngle" alias="NeedleWgt.startAngle;LabelsWgt.startAngle;TicksWgt.startAngle;ScaleWgt.startAngle"/>
+     <attr attrName="endAngle" alias="NeedleWgt.endAngle;LabelsWgt.endAngle;TicksWgt.endAngle;ScaleWgt.endAngle"/>
+     <attr attrName="reverseScale" alias="NeedleWgt.reverseScale;ScaleWgt.reverseScale;LabelsWgt.reverseScale;TicksWgt.reverseScale"/>
+     <attr attrName="labelFreq" alias="TicksWgt.labelFreq;LabelsWgt.labelFreq"/>
+    </links>
+    <object class="ScaleWgt" id="scale4" static="true">
+     <wgtStyle alarmMin="10.5" cx="100" cy="100" reverseScale="false" endAngle="180" x="0" y="0" max="14" autoAdjust="true" stroke-width="30" width="201" Color="none" fill="none" size="35" alarmMax="14" height="202" stroke="rgb(255,0,0)" form="round"/>
+    </object>
+    <object class="LabelsWgt" id="labels4" static="true">
+     <wgtStyle font-family="Tahoma" font-sizepx="13" cx="96" cy="84" timeSpec="local" endAngle="180" x="4" y="11" rotated="true" vert-align="top" max="14" width="194" labelNames="" tickFreq="5" height="165" labelFreq="7" form="round" font-size="10"/>
+    </object>
+    <object class="TicksWgt" id="ticks4" static="true">
+     <wgtStyle width="144" reverseScale="true" x="29" y="28" cx="71" form="round" labelFreq="7" cy="71" height="143" tickSize2="15" tickFreq="1" tickSize="6" stroke-linecap="square" max="14" stroke-width="3" endAngle="180" minorStroke-width="2"/>
+    </object>
+    <object class="NeedleWgt" hmiStyle="hmi-name:solid; hmi-shape:custom; hmi-type:needle" id="needle5">
+     <wgtStyle forcePaint="8" cx="71" cy="79" acceptClick="true" endAngle="180" x="30" y="20" discrete="true" max="14" initAngle="180" width="140" toolTipFontSize="12" toolTipFontName="Tahoma" toolTipTextColor="rgb(0,0,0)" writeMode="0" toolTipBgColor="rgb(255,255,255)" height="95" form="round"/>
+     <dataLinks>
+      <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/tphaseNumSelected" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+     </dataLinks>
+     <object class="ImageWgt" id="needle5-image1">
+      <wgtStyle width="69" rot="-180" imagePath="images/ne_2line_1.svg" enableCache="false" x="65" forcePaint="65" y="72" fill="rgb(255,0,0)" cx="6" cy="7" height="13" stroke="rgb(255,0,0)"/>
+     </object>
+    </object>
+   </object>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt2.roundrect6">
+   <wgtStyle width="55.02" x="636" forcePaint="65" y="398" fill="rgb(4,231,231)" cx="26.41" cy="13.55" rx="20" height="28.02" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="NumericWgt" id="GroupWgt2.field6">
+   <wgtStyle forcePaint="73" font-family="Cambria" font-sizepx="18" cx="25.30" cy="9.45" step="1" timeSpec="local" alignment="right" x="620" y="400" vert-align="top" text="0" max="32767" usingFormat="#" value="0" keypad-type="None" min="-32768" width="55" readWrite="true" height="21" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/tphaseNumSelected" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="GroupWgt" id="GaugesRound6" customType="Gauge">
+   <wgtStyle width="201" x="594" forcePaint="33" y="195" cx="66" cy="66" height="202" staticFile="opt/HOMEGaugesRound6.png" mtx="0.656716,0,0,0,0.653465,0,0,0,1" groupStyle="xform-scaling"/>
+   <links>
+    <attr attrName="min" alias="NeedleWgt.min;ScaleWgt.min;LabelsWgt.min;TicksWgt.min"/>
+    <attr attrName="max" alias="NeedleWgt.max;ScaleWgt.max;LabelsWgt.max;TicksWgt.max"/>
+    <attr attrName="startAngle" alias="NeedleWgt.startAngle;LabelsWgt.startAngle;TicksWgt.startAngle;ScaleWgt.startAngle"/>
+    <attr attrName="endAngle" alias="NeedleWgt.endAngle;LabelsWgt.endAngle;TicksWgt.endAngle;ScaleWgt.endAngle"/>
+    <attr attrName="reverseScale" alias="NeedleWgt.reverseScale;ScaleWgt.reverseScale;LabelsWgt.reverseScale;TicksWgt.reverseScale"/>
+    <attr attrName="autoAdjust" alias="TicksWgt.autoAdjust;LabelsWgt.autoAdjust"/>
+    <attr attrName="labelFreq" alias="TicksWgt.labelFreq;LabelsWgt.labelFreq"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:black plastic; hmi-shape:rect_1; hmi-type:bkgd-gau" id="image16" static="true">
+    <wgtStyle width="249" enableCache="false" x="-23" y="-18" visibility="false" cx="21" cy="8" height="206"/>
+   </object>
+   <object class="GroupWgt" id="GroupWgt6">
+    <wgtStyle width="201" x="0" y="0" cx="100.50" cy="101" height="202"/>
+    <links>
+     <attr attrName="min" alias="NeedleWgt.min;ScaleWgt.min;LabelsWgt.min"/>
+     <attr attrName="max" alias="NeedleWgt.max;ScaleWgt.max;LabelsWgt.max"/>
+     <attr attrName="startAngle" alias="NeedleWgt.startAngle;LabelsWgt.startAngle;TicksWgt.startAngle;ScaleWgt.startAngle"/>
+     <attr attrName="endAngle" alias="NeedleWgt.endAngle;LabelsWgt.endAngle;TicksWgt.endAngle;ScaleWgt.endAngle"/>
+     <attr attrName="reverseScale" alias="NeedleWgt.reverseScale;ScaleWgt.reverseScale;LabelsWgt.reverseScale;TicksWgt.reverseScale"/>
+     <attr attrName="labelFreq" alias="TicksWgt.labelFreq;LabelsWgt.labelFreq"/>
+    </links>
+    <object class="ScaleWgt" id="scale5" static="true">
+     <wgtStyle alarmMin="75" cx="100" cy="100" reverseScale="false" endAngle="180" x="0" y="0" max="100" autoAdjust="true" stroke-width="30" width="201" Color="none" fill="none" size="35" alarmMax="100" height="202" stroke="rgb(255,0,0)" form="round"/>
+    </object>
+    <object class="LabelsWgt" id="labels5" static="true">
+     <wgtStyle font-family="Tahoma" font-sizepx="13" cx="96" cy="84" timeSpec="local" endAngle="180" x="4" y="11" rotated="true" vert-align="top" max="100" width="194" labelNames="" tickFreq="5" height="165" labelFreq="5" form="round" font-size="10"/>
+    </object>
+    <object class="TicksWgt" id="ticks5" static="true">
+     <wgtStyle width="144" reverseScale="true" x="29" y="28" cx="71" form="round" labelFreq="5" cy="71" height="143" tickSize2="15" tickFreq="3" tickSize="6" stroke-linecap="square" max="100" stroke-width="3" endAngle="180" minorStroke-width="2"/>
+    </object>
+    <object class="NeedleWgt" hmiStyle="hmi-name:solid; hmi-shape:custom; hmi-type:needle" id="needle6">
+     <wgtStyle forcePaint="8" cx="71" cy="79" acceptClick="true" endAngle="180" x="30" y="20" discrete="true" max="100" initAngle="180" width="140" toolTipFontSize="12" toolTipFontName="Tahoma" toolTipTextColor="rgb(0,0,0)" writeMode="0" toolTipBgColor="rgb(255,255,255)" height="95" form="round"/>
+     <dataLinks>
+      <dataLink readWrite="R/W" tagType="short" attribute="value" tag="/mPhasePCINT" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+     </dataLinks>
+     <object class="ImageWgt" id="needle6-image1">
+      <wgtStyle width="69" rot="-180" imagePath="images/ne_2line_1.svg" enableCache="false" x="65" forcePaint="65" y="72" fill="rgb(255,0,0)" cx="6" cy="7" height="13" stroke="rgb(255,0,0)"/>
+     </object>
+    </object>
+   </object>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt2.roundrect7">
+   <wgtStyle width="55.02" x="636" forcePaint="1" y="272" fill="rgb(4,231,231)" cx="26.41" cy="13.55" rx="20" height="28.02" nodeName="rect" ry="20" stroke="rgb(26,26,26)"/>
+  </object>
+  <object class="NumericWgt" id="GroupWgt2.field7">
+   <wgtStyle forcePaint="9" font-family="Cambria" font-sizepx="18" cx="25.30" cy="9.45" step="1" timeSpec="local" alignment="right" x="620" y="274" vert-align="top" text="0" max="32767" usingFormat="#" value="0" keypad-type="None" min="-32768" width="55" height="21" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="short" attribute="value" tag="/mPhasePCINT" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="GroupSubscribeWgt" id="HOME@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="GroupWgt" id="LightsStd1" customType="Light">
+   <wgtStyle width="40" x="574" y="42" cx="20" cy="19" height="38"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image17" static="true">
+    <wgtStyle width="40" imagePath="images/frame_round_chrome.svg" enableCache="false" x="0" y="0" cx="19.64" cy="18.61" height="38"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:light; type:light" id="light_ind03">
+    <wgtStyle width="29.23" imagePath="images/li_round_shiney1_rev2.svg" x="5.38" forcePaint="8" y="4.38" cx="18.91" cy="11.63" bkgColor="rgb(255,0,0);rgb(0,255,0)" height="28.50" stroke="rgb(255,251,240)"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="value" tag="/frontCoolingOnInd" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label5" static="true">
+    <wgtStyle width="26.15" x="6.92" font-sizepx="13" y="6.58" font-family="Tahoma" cx="13.09" cy="12.41" height="25.58" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="1">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; ; hmi-type:icon" id="icon2" static="true">
+    <wgtStyle width="11.54" enableCache="true" x="13.85" y="13.88" cx="5.82" cy="5.43" height="10.96"/>
+   </object>
+  </object>
+  <object class="MsgTextWgt" id="msgtext7">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="16" cx="52.59" cy="12.78" x="542" y="10" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(72,0,72)" min="0" width="107" continous="true" lineSeparator="" font-underline="true" height="27" font-size="12">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="3"/>
+     <textid idx="1" val="4"/>
+     <textid idx="2" val="5"/>
+     <textid idx="3" val="6"/>
+    </lang>
+   </links>
+  </object>
+  <object class="GroupWgt" id="LightsStd2" customType="Light">
+   <wgtStyle width="40" x="699" y="42" cx="20" cy="19" height="38"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image18" static="true">
+    <wgtStyle width="40" imagePath="images/frame_round_chrome.svg" enableCache="false" x="0" y="0" cx="19.64" cy="18.61" height="38"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:light; type:light" id="light_ind1">
+    <wgtStyle width="29.23" imagePath="images/li_round_shiney1_rev2.svg" x="5.38" forcePaint="8" y="4.38" cx="18.91" cy="11.63" bkgColor="rgb(255,0,0);rgb(0,255,0)" height="28.50" stroke="rgb(255,251,240)"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="value" tag="/sideCoolingOnInd" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label7" static="true">
+    <wgtStyle width="26.15" x="6.92" font-sizepx="13" y="6.58" font-family="Tahoma" cx="13.09" cy="12.41" height="25.58" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="1">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="icon1" static="true">
+    <wgtStyle width="11.54" enableCache="true" x="13.85" y="13.88" cx="5.82" cy="5.43" height="10.96"/>
+   </object>
+  </object>
+  <object class="MsgTextWgt" id="msgtext11">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="16" cx="52.59" cy="12.78" x="674" y="10" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(72,0,72)" min="0" width="107" continous="true" lineSeparator="" font-underline="true" height="27" font-size="12">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="11"/>
+     <textid idx="1" val="12"/>
+     <textid idx="2" val="13"/>
+     <textid idx="3" val="14"/>
+    </lang>
+   </links>
+  </object>
+  <object class="GroupWgt" id="LightsStd3" customType="Light">
+   <wgtStyle width="40" x="574" y="129" cx="20" cy="19" height="38"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image19" static="true">
+    <wgtStyle width="40" imagePath="images/frame_round_chrome.svg" enableCache="false" x="0" y="0" cx="19.64" cy="18.61" height="38"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:light; type:light" id="light_ind2">
+    <wgtStyle width="29.23" imagePath="images/li_round_shiney1_rev2.svg" x="5.38" forcePaint="8" y="4.38" cx="18.91" cy="11.63" bkgColor="rgb(255,0,0);rgb(0,255,0)" height="28.50" stroke="rgb(255,251,240)"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="value" tag="/naturalOnInd" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label8" static="true">
+    <wgtStyle width="26.15" x="6.92" font-sizepx="13" y="6.58" font-family="Tahoma" cx="13.09" cy="12.41" height="25.58" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="1">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="icon3" static="true">
+    <wgtStyle width="11.54" enableCache="true" x="13.85" y="13.88" cx="5.82" cy="5.43" height="10.96"/>
+   </object>
+  </object>
+  <object class="MsgTextWgt" id="msgtext12">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="16" cx="52.59" cy="12.78" x="542" y="89" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(72,0,72)" min="0" width="107" continous="true" lineSeparator="" font-underline="true" height="27" font-size="12">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="19"/>
+     <textid idx="1" val="20"/>
+     <textid idx="2" val="21"/>
+     <textid idx="3" val="22"/>
+    </lang>
+   </links>
+  </object>
+  <object class="GroupWgt" id="LightsStd4" customType="Light">
+   <wgtStyle width="40" x="700" y="128" cx="20" cy="19" height="38"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image20" static="true">
+    <wgtStyle width="40" imagePath="images/frame_round_chrome.svg" enableCache="false" x="0" y="0" cx="19.64" cy="18.61" height="38"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:light; type:light" id="light_ind3">
+    <wgtStyle width="29.23" imagePath="images/li_round_shiney1_rev2.svg" x="5.38" forcePaint="8" y="4.38" cx="18.91" cy="11.63" bkgColor="rgb(255,0,0);rgb(0,255,0)" height="28.50" stroke="rgb(255,251,240)"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="value" tag="/naturalFanOnInd" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label9" static="true">
+    <wgtStyle width="26.15" x="6.92" font-sizepx="13" y="6.58" font-family="Tahoma" cx="13.09" cy="12.41" height="25.58" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="1">
+      <MLFontFamily L1="Tahoma"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="icon4" static="true">
+    <wgtStyle width="11.54" enableCache="true" x="13.85" y="13.88" cx="5.82" cy="5.43" height="10.96"/>
+   </object>
+  </object>
+  <object class="MsgTextWgt" id="msgtext13">
+   <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="16" cx="52.59" cy="19.88" alignment="center" x="668" y="87" viewindex="false" vert-align="middle" text="" max="3" value="0" keypad-type="None" font-color="rgb(72,0,72)" min="0" width="107" continous="true" lineSeparator="" font-underline="true" height="42" font-size="12">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="23"/>
+     <textid idx="1" val="24"/>
+     <textid idx="2" val="25"/>
+     <textid idx="3" val="26"/>
+    </lang>
+   </links>
+  </object>
+ </object>
+</wgtPage>

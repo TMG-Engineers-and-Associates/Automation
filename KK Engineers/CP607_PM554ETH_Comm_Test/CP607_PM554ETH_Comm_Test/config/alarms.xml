@@ -1,0 +1,9 @@
+<alarms>
+ <multiLangs>
+  <langs defLangId="L1" curLangId="L1">
+   <lang removable="false" langCode="" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Tahoma"/>
+  </langs>
+  <MLTexts/>
+ </multiLangs>
+ <defaultColors notTriggeredNotAckedBgColor="#ffffff" ackBgColor="#ffff00" triggeredNotAckedBgColor="#ffffff" ackTxtColor="#ff0000" notTriggeredTxtColor="#000000" triggeredBgColor="#ffffff" triggeredTxtColor="#000000" triggeredNotAckedTxtColor="#000000" notTriggeredAckedTxtColor="#000000" triggeredAckedBgColor="#ffffff" disabledBgColor="#ffffff" notTriggeredNotAckedTxtColor="#000000" triggeredAckedTxtColor="#000000" notTriggeredBgColor="#ffffff" disabledTxtColor="#000000" notTriggeredAckedBgColor="#ffffff"/>
+</alarms>

@@ -1,0 +1,119 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="DeliverPopup" pageSize="800,480" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" templateFile="templatepage1.jmx" staticFile="opt/deliverpopup.png" id="DeliverPopup" staticOptEnable="true">
+  <wgtStyle width="800" x="0" y="0" height="480" ver="020000161" color="rgb(255,240,200)" v="02.00.00.161"/>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Tahoma"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="DELIVER" id="15"/>
+    <MLText L1="Message" id="16"/>
+    <MLText L1="Message" id="17"/>
+    <MLText L1="Message" id="18"/>
+    <MLText L1="OK" id="31"/>
+    <MLText L1="CANCEL" id="32"/>
+    <MLText L1="Deliver all animals to the feed place  ?" id="47"/>
+    <MLText L1="Message" id="48"/>
+    <MLText L1="Message" id="49"/>
+    <MLText L1="Message" id="50"/>
+   </MLTexts>
+  </object>
+  <object class="GroupWgt" id="GroupWgt1">
+   <wgtStyle width="225" x="287.50" y="15" cx="112.50" cy="25.50" height="51"/>
+   <object class="ShapeWgt" id="GroupWgt1.roundrect11" static="true">
+    <wgtStyle width="225" x="0" y="7" fill="rgb(210,180,140)" cx="109.10" cy="18.87" rx="20" height="39" nodeName="rect" ry="20"/>
+   </object>
+   <object class="MsgTextWgt" id="GroupWgt1.msgtext1">
+    <wgtStyle font-bold="true" marker="true" font-family="Cambria" font-sizepx="42" cx="85.03" cy="24.16" x="26.50" y="0" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(23,30,40)" min="0" width="173" continous="true" lineSeparator="" height="51" font-size="32">
+     <msgtxt>
+      <msg index="0"/>
+      <msg index="1"/>
+      <msg index="2"/>
+      <msg index="3"/>
+     </msgtxt>
+    </wgtStyle>
+    <links>
+     <lang class="MLMsgLink">
+      <MLFontFamily L1="Cambria"/>
+      <textid idx="0" val="15"/>
+      <textid idx="1" val="16"/>
+      <textid idx="2" val="17"/>
+      <textid idx="3" val="18"/>
+     </lang>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd11" customType="Button">
+   <wgtStyle width="130" x="135.50" y="333" cx="64.30" cy="19.43" height="40"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:roundbar; hmi-type:bkgd" id="image11" static="true">
+    <wgtStyle width="130" imagePath="images/frame_roundbar_chrome.svg" enableCache="false" x="0" y="0" cx="63.20" cy="19.46" height="40"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:roundbar; hmi-type:btn; type:btn" id="buttonStd11">
+    <wgtStyle width="118.82" x="5.59" forcePaint="8" y="5.71" fill="rgb(255,170,255)" cx="55.48" form="standard" cy="13.12" height="28.57" releasePath="images\btn_shiney_roundbar_1.svg" needlePath="images\btn_shiney_roundbar_2.svg" type="momentary" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="value" tag="/deliverAnimals" class="TagMgrWgt" widgetType="Project" sourceType="Tag" dataSource="_TagMgr"/>
+    </dataLinks>
+    <links>
+     <action class="HomePageAction" attribute="onMouseRelease" event="onMouseUp" actionID="3" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label6">
+    <wgtStyle width="102.04" font-color="rgb(40,40,40)" x="12.58" forcePaint="1" font-sizepx="24" y="5.71" font-family="Cambria" font-bold="true" wrapping="true" cx="68.61" cy="16.22" height="26.29" alignment="center" vert-align="middle" keypad-type="None" font-size="18"/>
+    <links>
+     <lang class="MLTextLink" textid="31">
+      <MLFontFamily L1="Cambria"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image14" static="true">
+    <wgtStyle width="39.14" enableCache="false" x="43.33" y="9.14" cx="19.86" cy="8.65" height="19.43"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd1" customType="Button">
+   <wgtStyle width="130" x="542" y="333" cx="64.30" cy="19.43" height="40"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:roundbar; hmi-type:bkgd" id="image1" static="true">
+    <wgtStyle width="130" imagePath="images/frame_roundbar_chrome.svg" enableCache="false" x="0" y="0" cx="63.20" cy="19.46" height="40"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:roundbar; hmi-type:btn; type:btn" id="buttonStd1">
+    <wgtStyle width="118.82" x="5.59" y="5.71" fill="rgb(255,170,255)" cx="55.48" form="standard" cy="13.12" height="28.57" releasePath="images\btn_shiney_roundbar_1.svg" needlePath="images\btn_shiney_roundbar_2.svg" type="momentary" value="0"/>
+    <links>
+     <action class="LastVisitedPageAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label1">
+    <wgtStyle width="102.04" font-color="rgb(40,40,40)" x="12.58" forcePaint="1" font-sizepx="24" y="5.71" font-family="Cambria" font-bold="true" wrapping="true" cx="68.61" cy="16.22" height="26.29" alignment="center" vert-align="middle" keypad-type="None" font-size="18"/>
+    <links>
+     <lang class="MLTextLink" textid="32">
+      <MLFontFamily L1="Cambria"/>
+     </lang>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image2" static="true">
+    <wgtStyle width="39.14" enableCache="false" x="43.33" y="9.14" cx="19.87" cy="8.65" height="19.43"/>
+   </object>
+  </object>
+  <object class="MsgTextWgt" id="msgtext1">
+   <wgtStyle marker="true" font-family="Cambria" font-sizepx="32" cx="289.01" cy="17.05" alignment="center" x="108" y="144" viewindex="false" vert-align="top" text="" max="3" value="0" keypad-type="None" font-color="rgb(72,0,72)" min="0" width="588" continous="true" lineSeparator="" height="36" font-size="24">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+    </msgtxt>
+   </wgtStyle>
+   <links>
+    <lang class="MLMsgLink">
+     <MLFontFamily L1="Cambria"/>
+     <textid idx="0" val="47"/>
+     <textid idx="1" val="48"/>
+     <textid idx="2" val="49"/>
+     <textid idx="3" val="50"/>
+    </lang>
+   </links>
+  </object>
+  <object class="GroupSubscribeWgt" id="DeliverPopup@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+ </object>
+</wgtPage>
